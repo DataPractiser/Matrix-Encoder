@@ -22,17 +22,15 @@ FormularioAcerca::FormularioAcerca(wxWindow* parent, const wxString & Titulo) : 
 	stbWXWidgetLogo = new wxBitmapButton(panelFormularioAcerca, ID_STATICBITMAP_WXWIDGETLOGO, wxBitmap(wxwidgetlogo), wxPoint(30, 80), wxDefaultSize, 0, wxDefaultValidator, wxString("ID_STATICBITMAP_WXWIDGETLOGO"));
 	stbWXWidgetLogo->SetToolTip("www.wxwidget.org");
 
-	//stbPortAudioLogo = new wxBitmapButton(panelFormularioAcerca, ID_STATICBITMAP_PORTAUDIOLOGO, wxBitmap(wxImage(_T("F:\\Programación\\Proyectos\\Proyecto Pro Logic II\\Imagenes\\\Wxwidget\\portaudio_logo.bmp"))), wxPoint(30, 170), wxDefaultSize, 0,wxDefaultValidator, wxString("ID_STATICBITMAP_PORTAUDIOLOGO"));
 	stbPortAudioLogo = new wxBitmapButton(panelFormularioAcerca, ID_STATICBITMAP_PORTAUDIOLOGO, wxBitmap(portaudio_logo), wxPoint(30, 170), wxDefaultSize, 0, wxDefaultValidator, wxString("ID_STATICBITMAP_PORTAUDIOLOGO"));
 	stbPortAudioLogo->SetToolTip("www.portaudio.com");
 
 	stetiquetaAudacity = new wxStaticText(panelFormularioAcerca, ID_STATICTEXT_ETIQUETA_AUDACITY, _("Con modificaciones del equipo:"), wxPoint(30, 265), wxDefaultSize, 0, wxString("ID_STATICTEXT_ETIQUETA_AUDACITY"));
 
-	//stbAudacityLogo = new wxBitmapButton(panelFormularioAcerca, ID_STATICBITMAP_AUDACITYLOGO, wxBitmap(wxImage(_T("F:\\Programación\\Proyectos\\Proyecto Pro Logic II\\Imagenes\\\Wxwidget\\The audacity team.bmp"))), wxPoint(30, 280), wxDefaultSize, 0, wxDefaultValidator, wxString("ID_STATICBITMAP_AUDACITYLOGO"));
 	stbAudacityLogo = new wxBitmapButton(panelFormularioAcerca, ID_STATICBITMAP_AUDACITYLOGO, wxBitmap(the_audacity_team), wxPoint(30, 280), wxDefaultSize, 0, wxDefaultValidator, wxString("ID_STATICBITMAP_AUDACITYLOGO"));
 	stbAudacityLogo->SetToolTip("www.audacityteam.org");
 
-	stFecha = new wxStaticText(panelFormularioAcerca, ID_STATICTEXT_FECHA, "2017", wxPoint(150, 400), wxDefaultSize, wxALIGN_CENTER, wxString("ID_STATICTEXT_FECHA"));
+	stFecha = new wxStaticText(panelFormularioAcerca, ID_STATICTEXT_FECHA, "2018", wxPoint(150, 400), wxDefaultSize, wxALIGN_CENTER, wxString("ID_STATICTEXT_FECHA"));
 
 }
 
