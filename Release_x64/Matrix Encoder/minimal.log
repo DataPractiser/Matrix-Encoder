@@ -1,0 +1,25 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(367,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+  FormularioAcerca.cpp
+  FormularioAyuda.cpp
+  FormularioControlVolumen.cpp
+  Inicializacion.cpp
+FormularioAcerca.cpp(39): warning C4100: 'event': unreferenced formal parameter (compiling source file FormularioAcerca.cpp)
+FormularioAcerca.cpp(44): warning C4100: 'event': unreferenced formal parameter (compiling source file FormularioAcerca.cpp)
+FormularioAcerca.cpp(49): warning C4100: 'event': unreferenced formal parameter (compiling source file FormularioAcerca.cpp)
+FormularioAcerca.cpp(54): warning C4100: 'event': unreferenced formal parameter (compiling source file FormularioAcerca.cpp)
+FormularioControlVolumen.cpp(176): warning C4100: 'event': unreferenced formal parameter (compiling source file FormularioControlVolumen.cpp)
+  MatrixEncoder.cpp
+  minimal.cpp
+  PantallaPrincipal.cpp
+PantallaPrincipal.cpp(122): warning C4100: 'event': unreferenced formal parameter (compiling source file PantallaPrincipal.cpp)
+PantallaPrincipal.cpp(165): warning C4100: 'event': unreferenced formal parameter (compiling source file PantallaPrincipal.cpp)
+PantallaPrincipal.cpp(174): warning C4100: 'event': unreferenced formal parameter (compiling source file PantallaPrincipal.cpp)
+PantallaPrincipal.cpp(201): warning C4100: 'event': unreferenced formal parameter (compiling source file PantallaPrincipal.cpp)
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1189,5): warning MSB8012: TargetPath(F:\Programación\Librerias\C++\Interfaz grafica\wxWidgets-3.1.0\samples\2_Matrix_Encoder\Release_x64\Matrix Encoder.exe) does not match the Linker's OutputFile property value (F:\Programación\Librerias\C++\Interfaz grafica\wxWidgets-3.1.0\samples\2_Matrix_Encoder\Debug_x86\Matrix Encoder.exe). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/FORCE' specification
+Inicializacion.obj : warning LNK4006: "bool EstadoFormularioControlVolumen" (?EstadoFormularioControlVolumen@@3_NA) already defined in FormularioControlVolumen.obj; second definition ignored
+PantallaPrincipal.obj : warning LNK4006: "class PantallaPrincipal * formularioPrincipal" (?formularioPrincipal@@3PAVPantallaPrincipal@@A) already defined in Inicializacion.obj; second definition ignored
+PantallaPrincipal.obj : warning LNK4006: "bool EstadoFormularioControlVolumen" (?EstadoFormularioControlVolumen@@3_NA) already defined in FormularioControlVolumen.obj; second definition ignored
+Debug_x86\Matrix Encoder.exe : warning LNK4088: image being generated due to /FORCE option; image may not run
+  minimal.vcxproj -> F:\Programación\Librerias\C++\Interfaz grafica\wxWidgets-3.1.0\samples\2_Matrix_Encoder\Release_x64\Matrix Encoder.exe
+  minimal.vcxproj -> Release_x64\Matrix Encoder.pdb (Full PDB)
