@@ -1,0 +1,541 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-10 14:32-0600\n"
+"PO-Revision-Date: 2018-01-10 17:12-0600\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-10 14:10-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-10 14:10-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-10 14:11-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-10 14:11-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.5\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: fr\n"
+
+#. MessageBox::Show(MensajedeError, "Advertencia", MessageBoxButtons::OK, MessageBoxIcon::Warning);
+#: Traduccion3/ErroresPrograma.cpp:116
+msgid "Advertencia"
+msgstr "Avertissement"
+
+#: Traduccion3/ErroresPrograma.cpp:107
+msgid "Cambio el numero de canales del dispositivo de salida"
+msgstr "Changement du nombre de canaux du périphérique de sortie"
+
+#: Traduccion3/ErroresPrograma.cpp:103
+msgid "Cambio la frecuencia de muestreo del dispositivo de salida"
+msgstr "Changement de la fréquence d'échantillonnage du périphérique de sortie"
+
+#: Traduccion3/ErroresPrograma.cpp:99
+msgid "Cambio la frecuencia de muestreo del dispositivo predeterminado"
+msgstr "Changement de la fréquence d'échantillonnage de l'appareil par défaut"
+
+#: Traduccion3/ErroresPrograma.cpp:111
+msgid "Codigo de error no existente"
+msgstr "Code d'erreur manquant"
+
+#: Traduccion3/ErroresPrograma.cpp:95
+msgid "Dispositivo no compatible, elija otro por favor"
+msgstr "Appareil non compatible, choisissez un autre s'il vous plat"
+
+#: Traduccion3/ErroresPrograma.cpp:31
+msgid "El dispositivo Predeterminado de entrada no es compatible"
+msgstr "Le périphérique d'entrée par défaut n'est pas compatible"
+
+#: Traduccion3/ErroresPrograma.cpp:71
+msgid "El dispositivo de Predeterminado no esta configurado en modo 5.1 o 7.1"
+msgstr "Le priphrique par dfaut n'est pas configur en mode 5.1 ou 7.1"
+
+#: Traduccion3/ErroresPrograma.cpp:35 Traduccion3/ErroresPrograma.cpp:63
+msgid "El numero de canales del dispositivo de audio no es compatible"
+msgstr "Le nombre de canaux de l'appareil audio n'est pas compatible"
+
+#: Traduccion3/ErroresPrograma.cpp:79
+msgid "Error al procesar el audio"
+msgstr "Erreur lors du traitement de l'audio"
+
+#: Traduccion3/ErroresPrograma.cpp:47
+msgid ""
+"Este dispositivo de audio no se encuentra disponible o hubo cambios en los "
+"dispositivos de audio"
+msgstr ""
+"Ce périphérique audio n'est pas disponible ou des modifications ont été "
+"apportées aux périphériques audio"
+
+#: Traduccion3/ErroresPrograma.cpp:51
+msgid ""
+"Hay demasiados dispositivos de audio en el sistema, desactive los que no use"
+msgstr ""
+"Il y a trop de périphériques audio dans le système, désactivez ceux qui ne "
+"sont pas utilisés"
+
+#: Traduccion3/ErroresPrograma.cpp:39
+msgid ""
+"La frecuencias de muestreo de los dispositivos de audio deben ser iguales"
+msgstr ""
+"Les fréquences d'échantillonnage des appareils audio devraient être les mêmes"
+
+#: Traduccion3/ErroresPrograma.cpp:67
+msgid "Ningun dispositivo de Entrada o Salida ha sido seleccionado"
+msgstr "Aucun périphérique d'entrée ou de sortie n'a été sélectionné"
+
+#: Traduccion3/ErroresPrograma.cpp:55
+msgid ""
+"No hay dispositivos de audio compatibles en el sistema, instalelos o "
+"activelos por favor"
+msgstr ""
+"Il n'y a pas d'appareils audio compatibles dans le systme, installez-les ou "
+"activez-les s'il vous plat"
+
+#: Traduccion3/ErroresPrograma.cpp:59
+msgid ""
+"No se encontraron dispositivos con 2 canales de Salida, configure alguno y "
+"presione el boton Refrescar"
+msgstr ""
+"Aucun périphérique avec 2 canaux de sortie n'a été trouvé, configurez-en un "
+"et appuyez sur le bouton Actualiser"
+
+#: Traduccion3/ErroresPrograma.cpp:75
+msgid "No se ha seleccionado un dispositivo de Salida"
+msgstr "Un périphérique de sortie n'a pas été sélectionné"
+
+#: Traduccion3/ErroresPrograma.cpp:83
+msgid "No se pudo abrir el panel de dispositivos de audio"
+msgstr "Le panneau de l'appareil audio n'a pas pu être ouvert"
+
+#: Traduccion3/ErroresPrograma.cpp:91
+msgid "No se pudo cerrar el Engine de audio"
+msgstr "Impossible de fermer le moteur audio"
+
+#: Traduccion3/ErroresPrograma.cpp:87
+msgid "No se pudo cerrar el proceso de audio"
+msgstr "Le processus audio n'a pas pu être fermé"
+
+#: Traduccion3/ErroresPrograma.cpp:43
+msgid ""
+"Se cambio o elimino el dispositivo de Salida usado durante la ultima "
+"Ejecucion"
+msgstr ""
+"Le périphérique de sortie utilisé a été modifié lors de la dernière exécution"
+
+#: Traduccion3/FormularioAcerca.cpp:29
+msgid "Con modificaciones del equipo:"
+msgstr "Avec des modifications d'équipement:"
+
+#: Traduccion3/FormularioAcerca.cpp:20
+msgid "Este programa fue hecho con: "
+msgstr "Ce programme a été réalisé avec:"
+
+#: Traduccion3/FormularioAyuda.cpp:22
+msgid ""
+"\n"
+"\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+"\n"
+
+#: Traduccion3/FormularioAyuda.cpp:25
+msgid ""
+"**Cambiar de un usuario a otro puede interrumpir tambien el flujo de audio."
+msgstr ""
+"** Le passage d'un utilisateur à un autre peut également interrompre le flux "
+"audio."
+
+#: Traduccion3/FormularioAyuda.cpp:24
+msgid ""
+"*Cambios a la frecuencia de muestreo, numero de canales o profundidad de "
+"bits,  puede interrumpir proceso de audio, pero el programa realiza los "
+"ajustes necesarios para mantenerlo activo\n"
+"\n"
+msgstr ""
+"* Les changements de fréquence d'échantillonnage, de nombre de canaux ou de "
+"profondeur de bits peuvent interrompre le processus audio, mais le programme "
+"effectue les ajustements nécessaires pour le maintenir actif\n"
+"\n"
+
+#: Traduccion3/FormularioAyuda.cpp:18
+msgid ""
+"1) Instale o configure un dispositivo de audio en modo de 5.1 o 7.1 y "
+"establezcalo como el predeterminado este puede ser virtual o fisico\n"
+"\n"
+msgstr ""
+"1) Installer ou configurer un périphérique audio en mode 5.1 ou 7.1 et le "
+"définir par défaut cela peut être virtuel ou physique\n"
+"\n"
+
+#: Traduccion3/FormularioAyuda.cpp:19
+msgid ""
+"2) Configure un segundo dispositivo en modo estereo o 2 canales de salida, "
+"este debe ser un dispositivo fisico para que puede escuchar el audio "
+"mezclado como HDMI, altavoces, etc.\n"
+"\n"
+msgstr ""
+"2) Configurez un second appareil en mode stéréo ou 2 canaux de sortie, cela "
+"devrait être un périphérique physique afin que vous puissiez écouter des "
+"mixages audio tels que HDMI, haut-parleurs, etc.\n"
+
+#: Traduccion3/FormularioAyuda.cpp:20
+msgid ""
+"3) Asegurese que la frecuencia de muestreo de ambos dispositivos sea la "
+"misma.\n"
+"\n"
+msgstr ""
+"3) Assurez-vous que la fréquence d'échantillonnage des deux appareils est la "
+"même.\n"
+"\n"
+
+#: Traduccion3/FormularioAyuda.cpp:21
+msgid ""
+"4) Presione el boton refrescar o codificar y escuche el audio en una mezcla "
+"compatible con sistemas matriciales de audio.\n"
+msgstr ""
+"4) Appuyez sur le bouton de rafraîchissement ou d'encodage et écoutez "
+"l'audio dans un mix compatible avec les systèmes matriciels audio.\n"
+
+#: Traduccion3/FormularioAyuda.cpp:23
+msgid "Notas: \n"
+msgstr "Notes:\n"
+
+#: Traduccion3/FormularioAyuda.cpp:15
+msgid "Uso del programa"
+msgstr "Utilisation du programme"
+
+#: Traduccion3/FormularioControlVolumen.cpp:48
+msguid "Control de Volumen"
+msgstr ""
+
+#: Traduccion3/FormularioControlVolumen.cpp:189
+msgid "Filtrar canal LFE"
+msgstr "Filtrer le canal LFE"
+
+#. 565 - valorPosicion, 65
+#: Traduccion3/FormularioControlVolumen.cpp:184
+msgid "Incluir canal LFE"
+msgstr "Inclure le canal LFE"
+
+#: Traduccion3/FormularioControlVolumen.cpp:192
+msgid ""
+"Marque para aplicar un filtro de pase bajo de 120hz a este canal y eliminar "
+"frecuencias que no corresponden a este canal. Advertencia: activar esto "
+"puede causar un aumento en el uso del CPU"
+msgstr ""
+"Cochez pour appliquer un filtre passe-bas de 120 Hz à ce canal et éliminer "
+"les fréquences qui ne correspondent pas à ce canal. Attention: l'activation "
+"de cette option peut entraîner une augmentation de l'utilisation du "
+"processeur"
+
+#: Traduccion3/FormularioControlVolumen.cpp:187
+msgid "Marque para incluir el canal de bajas frecuencias en la mezcla estereo"
+msgstr "Cochez pour inclure le canal basse fréquence dans le mixage stéréo"
+
+#: Traduccion3/FormularioControlVolumen.cpp:206
+msgid ""
+"Marque para no utilizar la compresion del rango dinamico. Usualmente las "
+"peliculas o videos tienen un rango dinamico o volumen menor a los juegos. "
+"Use esto modo cuando considere que el volumen de lo que esta reproduciendo "
+"es muy bajo"
+msgstr ""
+"Vérifiez de ne pas utiliser la compression de la plage dynamique. "
+"Habituellement, les films ou les vidéos ont une gamme dynamique ou un volume "
+"plus petit que les jeux. Utilisez ce mode lorsque vous considérez que le "
+"volume de ce que vous jouez est très faible"
+
+#: Traduccion3/FormularioControlVolumen.cpp:201
+#: Traduccion3/PantallaPrincipal.cpp:1644
+msgid ""
+"Marque para usar todo el rango dinamico disponible. Los juegos usualmente "
+"poseen un rango dinamico o volumen muy alto, esto ayuda a usar todo el rango "
+"de un mezcla estero"
+msgstr ""
+"Cochez pour utiliser toute la plage dynamique disponible. Les jeux ont "
+"généralement une gamme dynamique ou un volume très élevé, ce qui permet "
+"d'utiliser toute la gamme d'un mélange estero"
+
+#. 578 - valorPosicion, 150
+#: Traduccion3/FormularioControlVolumen.cpp:198
+#: Traduccion3/PantallaPrincipal.cpp:1644
+msgid "Modo Juego"
+msgstr "Mode de jeu"
+
+#: Traduccion3/FormularioControlVolumen.cpp:203
+#: Traduccion3/PantallaPrincipal.cpp:1645
+msgid "Modo Pelicula"
+msgstr "Mode film"
+
+#: Traduccion3/FormularioControlVolumen.cpp:181
+msgid "Opciones LFE"
+msgstr "Options LFE"
+
+#: Traduccion3/FormularioControlVolumen.cpp:71
+msgid "Perfil de Volumen"
+msgstr "Profil de volume"
+
+#: Traduccion3/FormularioControlVolumen.cpp:875
+msgid "Personalizado"
+msgstr "Personnalisé"
+
+#: Traduccion3/FormularioControlVolumen.cpp:194
+msgid "Rango Dinamico"
+msgstr "Plage dynamique"
+
+#: Traduccion3/FormularioControlVolumen.cpp:76
+msgid "Reiniciar"
+msgstr "Redémarrer"
+
+#. 3 Solo C
+#: Traduccion3/FormularioControlVolumen.cpp:355
+#: Traduccion3/FormularioControlVolumen.cpp:881
+#: Traduccion3/FormularioControlVolumen.cpp:892
+msgid "Solo C"
+msgstr "Seulement C"
+
+#. 1 Solo L
+#: Traduccion3/FormularioControlVolumen.cpp:285
+#: Traduccion3/FormularioControlVolumen.cpp:879
+#: Traduccion3/FormularioControlVolumen.cpp:890
+msgid "Solo L"
+msgstr "Seulement L"
+
+#. 9 Solo L y R
+#: Traduccion3/FormularioControlVolumen.cpp:569
+#: Traduccion3/FormularioControlVolumen.cpp:885
+#: Traduccion3/FormularioControlVolumen.cpp:898
+msgid "Solo L y R"
+msgstr "Seulement L et R"
+
+#. 4 Solo LFE
+#: Traduccion3/FormularioControlVolumen.cpp:391
+#: Traduccion3/FormularioControlVolumen.cpp:882
+#: Traduccion3/FormularioControlVolumen.cpp:893
+msgid "Solo LFE"
+msgstr "Seulement LFE"
+
+#. 2 Solo R
+#: Traduccion3/FormularioControlVolumen.cpp:320
+#: Traduccion3/FormularioControlVolumen.cpp:880
+#: Traduccion3/FormularioControlVolumen.cpp:891
+msgid "Solo R"
+msgstr "Seulement R"
+
+#. 7 Solo RL
+#: Traduccion3/FormularioControlVolumen.cpp:498
+#: Traduccion3/FormularioControlVolumen.cpp:896
+msgid "Solo RL"
+msgstr "Seulement RL"
+
+#. 11 Solo RL y RR
+#: Traduccion3/FormularioControlVolumen.cpp:639
+#: Traduccion3/FormularioControlVolumen.cpp:900
+msgid "Solo RL y RR"
+msgstr "Seulement RL et RR"
+
+#. 8 Solo RR
+#: Traduccion3/FormularioControlVolumen.cpp:533
+#: Traduccion3/FormularioControlVolumen.cpp:897
+msgid "Solo RR"
+msgstr "Seulement RR"
+
+#. 5 Solo SL
+#: Traduccion3/FormularioControlVolumen.cpp:427
+#: Traduccion3/FormularioControlVolumen.cpp:883
+#: Traduccion3/FormularioControlVolumen.cpp:894
+msgid "Solo SL"
+msgstr "Seulement SL"
+
+#. 10 Solo SL y SR
+#: Traduccion3/FormularioControlVolumen.cpp:604
+#: Traduccion3/FormularioControlVolumen.cpp:886
+#: Traduccion3/FormularioControlVolumen.cpp:899
+msgid "Solo SL y SR"
+msgstr "Seulement SL et SR"
+
+#. 6 Solo SR
+#: Traduccion3/FormularioControlVolumen.cpp:463
+#: Traduccion3/FormularioControlVolumen.cpp:884
+#: Traduccion3/FormularioControlVolumen.cpp:895
+msgid "Solo SR"
+msgstr "Seulement SR"
+
+#: Traduccion3/FormularioControlVolumen.cpp:80
+msgid "Volumen Canales de Entrada"
+msgstr "Voies d'entrée de volume"
+
+#: Traduccion3/FormularioControlVolumen.cpp:159
+msgid "Volumen de Salida"
+msgstr "Volume de sortie"
+
+#: Traduccion3/PantallaPrincipal.cpp:1637
+msgid "Abrir Pantalla Principal"
+msgstr "Ouvrir l'écran principal"
+
+#: Traduccion3/PantallaPrincipal.cpp:137
+msgid "Acerca"
+msgstr "À propos"
+
+#: Traduccion3/PantallaPrincipal.cpp:1523
+msgid "Acerca de este programa"
+msgstr "À propos de ce programme"
+
+#: Traduccion3/PantallaPrincipal.cpp:177 Traduccion3/PantallaPrincipal.cpp:203
+msgid "Altas frecuencias de muestreo pueden incrementar el uso del CPU"
+msgstr ""
+"Des taux d'échantillonnage élevés peuvent augmenter l'utilisation du "
+"processeur"
+
+#: Traduccion3/PantallaPrincipal.cpp:141
+msgid "Archivo"
+msgstr "Archives"
+
+#: Traduccion3/PantallaPrincipal.cpp:138 Traduccion3/PantallaPrincipal.cpp:143
+msgid "Ayuda"
+msgstr "Aide"
+
+#: Traduccion3/PantallaPrincipal.cpp:1533
+msgid "Ayuda de este programa"
+msgstr "Aide de ce programme"
+
+#: Traduccion3/PantallaPrincipal.cpp:138
+msgid "Ayuda del programa"
+msgstr "Aide au programme"
+
+#: Traduccion3/PantallaPrincipal.cpp:134
+msgid "Cambiar Idioma"
+msgstr "Changer la langue du programme"
+
+#: Traduccion3/PantallaPrincipal.cpp:162 Traduccion3/PantallaPrincipal.cpp:188
+msgid "Canales"
+msgstr "Canaux"
+
+#: Traduccion3/PantallaPrincipal.cpp:129
+msgid "Cerrar"
+msgstr "Fermer"
+
+#: Traduccion3/PantallaPrincipal.cpp:1656
+msgid "Cerrar Programa"
+msgstr "Fermer le programme"
+
+#: Traduccion3/PantallaPrincipal.cpp:129
+msgid "Cierra el programa"
+msgstr "Fermez le programme"
+
+#: Traduccion3/PantallaPrincipal.cpp:208
+msgid "Codificar"
+msgstr "Encoder"
+
+#: Traduccion3/PantallaPrincipal.cpp:133 Traduccion3/PantallaPrincipal.cpp:1641
+msgid "Control de Volumen"
+msgstr "Contrôle du volume"
+
+#: Traduccion3/PantallaPrincipal.cpp:210
+msgid "Detener"
+msgstr "Arrêter"
+
+#. ContenedorDispositivoEntrada
+#: Traduccion3/PantallaPrincipal.cpp:154
+msgid "Dispositivo de Entrada"
+msgstr "Périphérique d'entrée"
+
+#. Contenedor Dispositivo Salida
+#: Traduccion3/PantallaPrincipal.cpp:180
+msgid "Dispositivo de Salida"
+msgstr "Périphérique de sortie"
+
+#: Traduccion3/PantallaPrincipal.cpp:167 Traduccion3/PantallaPrincipal.cpp:192
+msgid "Frecuencia de Muestreo"
+msgstr "Fréquence d'échantillonnage"
+
+#: Traduccion3/PantallaPrincipal.cpp:1593
+msgid "Idiomas disponibles"
+msgstr "Langues disponibles"
+
+#: Traduccion3/PantallaPrincipal.cpp:137
+msgid "Informacion del Programa"
+msgstr "Informations sur le programme"
+
+#: Traduccion3/PantallaPrincipal.cpp:133
+msgid "Le permite ajustar el volumen de la mezcla"
+msgstr "Vous permet d'ajuster le volume du mix"
+
+#: Traduccion3/PantallaPrincipal.cpp:1604
+msgid "Los cambios se efectuaran despues de que reinicie el programa"
+msgstr "Les modifications seront effectuées après le redémarrage du programme"
+
+#: Traduccion3/PantallaPrincipal.cpp:1645
+msgid ""
+"Marque para no utilizar la compresion del rango dinamico. Usualmente las "
+"peliculas o videos tiene un rango dinamico o volumen menor a los juegos. Use "
+"esto modo cuando considere que el volumen de lo que esta reproduciendo es "
+"muy bajo"
+msgstr ""
+"Vérifiez de ne pas utiliser la compression de la plage dynamique. "
+"Habituellement, les films ou les vidéos ont une gamme dynamique ou un volume "
+"plus petit que les jeux. Utilisez ce mode lorsque vous considérez que le "
+"volume de ce que vous jouez est très faible"
+
+#: Traduccion3/PantallaPrincipal.cpp:1647
+msgid "Modos de Rango Dinamico"
+msgstr "Modes de plage dynamique"
+
+#: Traduccion3/PantallaPrincipal.cpp:1604
+msgid "Notificacion"
+msgstr "Notification"
+
+#: Traduccion3/PantallaPrincipal.cpp:142
+msgid "Opciones"
+msgstr "Options"
+
+#: Traduccion3/PantallaPrincipal.cpp:132
+msgid "Panel de Dispositivos de Audio"
+msgstr "Panneau des périphériques audio"
+
+#: Traduccion3/PantallaPrincipal.cpp:1592
+msgid "Por favor elija un idioma:"
+msgstr "Veuillez choisir une langue:"
+
+#. Botones
+#: Traduccion3/PantallaPrincipal.cpp:206
+msgid "Refrescar"
+msgstr "Actualiser"
+
+#: Traduccion3/PantallaPrincipal.cpp:1639
+msgid "Reiniciar Sonido"
+msgstr "Redémarrer le son"

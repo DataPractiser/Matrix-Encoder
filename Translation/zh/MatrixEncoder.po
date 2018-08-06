@@ -1,0 +1,516 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-10 14:32-0600\n"
+"PO-Revision-Date: 2018-01-10 16:51-0600\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-10 14:10-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-10 14:10-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-10 14:11-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-10 14:11-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.5\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: zh\n"
+
+#. MessageBox::Show(MensajedeError, "Advertencia", MessageBoxButtons::OK, MessageBoxIcon::Warning);
+#: Traduccion3/ErroresPrograma.cpp:116
+msgid "Advertencia"
+msgstr "警告"
+
+#: Traduccion3/ErroresPrograma.cpp:107
+msgid "Cambio el numero de canales del dispositivo de salida"
+msgstr "更改了输出设备的通道数量"
+
+#: Traduccion3/ErroresPrograma.cpp:103
+msgid "Cambio la frecuencia de muestreo del dispositivo de salida"
+msgstr "改变了输出设备的采样频率"
+
+#: Traduccion3/ErroresPrograma.cpp:99
+msgid "Cambio la frecuencia de muestreo del dispositivo predeterminado"
+msgstr "更改了默认设备的采样率"
+
+#: Traduccion3/ErroresPrograma.cpp:111
+msgid "Codigo de error no existente"
+msgstr "缺少错误代码"
+
+#: Traduccion3/ErroresPrograma.cpp:95
+msgid "Dispositivo no compatible, elija otro por favor"
+msgstr "设备不兼容，请选择另一个"
+
+#: Traduccion3/ErroresPrograma.cpp:31
+msgid "El dispositivo Predeterminado de entrada no es compatible"
+msgstr "默认输入设备不兼容"
+
+#: Traduccion3/ErroresPrograma.cpp:71
+msgid "El dispositivo de Predeterminado no esta configurado en modo 5.1 o 7.1"
+msgstr "默认设备未配置为5.1或7.1模式"
+
+#: Traduccion3/ErroresPrograma.cpp:35 Traduccion3/ErroresPrograma.cpp:63
+msgid "El numero de canales del dispositivo de audio no es compatible"
+msgstr "音频设备的通道数量不兼容"
+
+#: Traduccion3/ErroresPrograma.cpp:79
+msgid "Error al procesar el audio"
+msgstr "处理音频时出错"
+
+#: Traduccion3/ErroresPrograma.cpp:47
+msgid ""
+"Este dispositivo de audio no se encuentra disponible o hubo cambios en los "
+"dispositivos de audio"
+msgstr "此音频设备不可用，或音频设备发生变化"
+
+#: Traduccion3/ErroresPrograma.cpp:51
+msgid ""
+"Hay demasiados dispositivos de audio en el sistema, desactive los que no use"
+msgstr "系统中音频设备太多，请禁用那些不使用的设备"
+
+#: Traduccion3/ErroresPrograma.cpp:39
+msgid ""
+"La frecuencias de muestreo de los dispositivos de audio deben ser iguales"
+msgstr "音频设备的采样频率应该相同"
+
+#: Traduccion3/ErroresPrograma.cpp:67
+msgid "Ningun dispositivo de Entrada o Salida ha sido seleccionado"
+msgstr "没有输入或输出设备已被选中"
+
+#: Traduccion3/ErroresPrograma.cpp:55
+msgid ""
+"No hay dispositivos de audio compatibles en el sistema, instalelos o "
+"activelos por favor"
+msgstr "系统中没有兼容的音频设备，请安装或激活它们"
+
+#: Traduccion3/ErroresPrograma.cpp:59
+msgid ""
+"No se encontraron dispositivos con 2 canales de Salida, configure alguno y "
+"presione el boton Refrescar"
+msgstr "没有发现有2个输出通道的设备，配置任何设备，然后按刷新按钮"
+
+#: Traduccion3/ErroresPrograma.cpp:75
+msgid "No se ha seleccionado un dispositivo de Salida"
+msgstr "输出设备尚未被选中"
+
+#: Traduccion3/ErroresPrograma.cpp:83
+msgid "No se pudo abrir el panel de dispositivos de audio"
+msgstr "音频设备面板无法打开"
+
+#: Traduccion3/ErroresPrograma.cpp:91
+msgid "No se pudo cerrar el Engine de audio"
+msgstr "无法关闭音频引擎"
+
+#: Traduccion3/ErroresPrograma.cpp:87
+msgid "No se pudo cerrar el proceso de audio"
+msgstr "音频进程无法关闭"
+
+#: Traduccion3/ErroresPrograma.cpp:43
+msgid ""
+"Se cambio o elimino el dispositivo de Salida usado durante la ultima "
+"Ejecucion"
+msgstr "上次执行中使用的退出设备已更改或删除"
+
+#: Traduccion3/FormularioAcerca.cpp:29
+msgid "Con modificaciones del equipo:"
+msgstr "随着设备的修改："
+
+#: Traduccion3/FormularioAcerca.cpp:20
+msgid "Este programa fue hecho con: "
+msgstr "这个程序是由："
+
+#: Traduccion3/FormularioAyuda.cpp:22
+msgid ""
+"\n"
+"\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+"\n"
+
+#: Traduccion3/FormularioAyuda.cpp:25
+msgid ""
+"**Cambiar de un usuario a otro puede interrumpir tambien el flujo de audio."
+msgstr "**从一个用户切换到另一个用户也可以中断音频流。"
+
+#: Traduccion3/FormularioAyuda.cpp:24
+msgid ""
+"*Cambios a la frecuencia de muestreo, numero de canales o profundidad de "
+"bits,  puede interrumpir proceso de audio, pero el programa realiza los "
+"ajustes necesarios para mantenerlo activo\n"
+"\n"
+msgstr ""
+"*采样频率，通道数量或位深度的变化可能会中断音频处理，但是程序会进行必要的调整"
+"以保持其处于活动状态\n"
+"\n"
+
+#: Traduccion3/FormularioAyuda.cpp:18
+msgid ""
+"1) Instale o configure un dispositivo de audio en modo de 5.1 o 7.1 y "
+"establezcalo como el predeterminado este puede ser virtual o fisico\n"
+"\n"
+msgstr ""
+"1）以5.1或7.1模式安装或配置音频设备，并将其设置为默认设置，可以是虚拟的或物理"
+"的\n"
+"\n"
+
+#: Traduccion3/FormularioAyuda.cpp:19
+msgid ""
+"2) Configure un segundo dispositivo en modo estereo o 2 canales de salida, "
+"este debe ser un dispositivo fisico para que puede escuchar el audio "
+"mezclado como HDMI, altavoces, etc.\n"
+"\n"
+msgstr ""
+"2）在立体声模式或2个输出通道中设置第二个设备，这应该是一个物理设备，因此您可"
+"以听混合音频，如HDMI，扬声器等。\n"
+"\n"
+
+#: Traduccion3/FormularioAyuda.cpp:20
+msgid ""
+"3) Asegurese que la frecuencia de muestreo de ambos dispositivos sea la "
+"misma.\n"
+"\n"
+msgstr ""
+"3）确保两个设备的采样频率相同。\n"
+"\n"
+
+#: Traduccion3/FormularioAyuda.cpp:21
+msgid ""
+"4) Presione el boton refrescar o codificar y escuche el audio en una mezcla "
+"compatible con sistemas matriciales de audio.\n"
+msgstr "4）按下刷新或编码按钮，听取与音频矩阵系统兼容的音频。\n"
+
+#: Traduccion3/FormularioAyuda.cpp:23
+msgid "Notas: \n"
+msgstr "注意事项：\n"
+
+#: Traduccion3/FormularioAyuda.cpp:15
+msgid "Uso del programa"
+msgstr "程序的使用"
+
+#: Traduccion3/FormularioControlVolumen.cpp:48
+msguid "Control de Volumen"
+msgstr ""
+
+#: Traduccion3/FormularioControlVolumen.cpp:189
+msgid "Filtrar canal LFE"
+msgstr "过滤LFE频道"
+
+#. 565 - valorPosicion, 65
+#: Traduccion3/FormularioControlVolumen.cpp:184
+msgid "Incluir canal LFE"
+msgstr "包括LFE频道"
+
+#: Traduccion3/FormularioControlVolumen.cpp:192
+msgid ""
+"Marque para aplicar un filtro de pase bajo de 120hz a este canal y eliminar "
+"frecuencias que no corresponden a este canal. Advertencia: activar esto "
+"puede causar un aumento en el uso del CPU"
+msgstr ""
+"选择将120hz的低通滤波器应用到该通道，并消除不对应于该通道的频率。 警告：激活"
+"这可能会导致CPU使用率的增加"
+
+#: Traduccion3/FormularioControlVolumen.cpp:187
+msgid "Marque para incluir el canal de bajas frecuencias en la mezcla estereo"
+msgstr "检查在立体声混音中包含低频声道"
+
+#: Traduccion3/FormularioControlVolumen.cpp:206
+msgid ""
+"Marque para no utilizar la compresion del rango dinamico. Usualmente las "
+"peliculas o videos tienen un rango dinamico o volumen menor a los juegos. "
+"Use esto modo cuando considere que el volumen de lo que esta reproduciendo "
+"es muy bajo"
+msgstr ""
+"选中不使用动态范围的压缩。 通常电影或视频的动态范围或音量小于游戏。 当您考虑"
+"您正在播放的音量非常低时，请使用此模式"
+
+#: Traduccion3/FormularioControlVolumen.cpp:201
+#: Traduccion3/PantallaPrincipal.cpp:1644
+msgid ""
+"Marque para usar todo el rango dinamico disponible. Los juegos usualmente "
+"poseen un rango dinamico o volumen muy alto, esto ayuda a usar todo el rango "
+"de un mezcla estero"
+msgstr ""
+"选中使用所有可用的动态范围。 游戏通常具有动态范围或非常高的音量，这有助于使用"
+"整个混合酯的范围"
+
+#. 578 - valorPosicion, 150
+#: Traduccion3/FormularioControlVolumen.cpp:198
+#: Traduccion3/PantallaPrincipal.cpp:1644
+msgid "Modo Juego"
+msgstr "游戏模式"
+
+#: Traduccion3/FormularioControlVolumen.cpp:203
+#: Traduccion3/PantallaPrincipal.cpp:1645
+msgid "Modo Pelicula"
+msgstr "电影模式"
+
+#: Traduccion3/FormularioControlVolumen.cpp:181
+msgid "Opciones LFE"
+msgstr "LFE选项"
+
+#: Traduccion3/FormularioControlVolumen.cpp:71
+msgid "Perfil de Volumen"
+msgstr "卷配置文件"
+
+#: Traduccion3/FormularioControlVolumen.cpp:875
+msgid "Personalizado"
+msgstr "个性化"
+
+#: Traduccion3/FormularioControlVolumen.cpp:194
+msgid "Rango Dinamico"
+msgstr "动态范围"
+
+#: Traduccion3/FormularioControlVolumen.cpp:76
+msgid "Reiniciar"
+msgstr "重启"
+
+#. 3 Solo C
+#: Traduccion3/FormularioControlVolumen.cpp:355
+#: Traduccion3/FormularioControlVolumen.cpp:881
+#: Traduccion3/FormularioControlVolumen.cpp:892
+msgid "Solo C"
+msgstr "只有C"
+
+#. 1 Solo L
+#: Traduccion3/FormularioControlVolumen.cpp:285
+#: Traduccion3/FormularioControlVolumen.cpp:879
+#: Traduccion3/FormularioControlVolumen.cpp:890
+msgid "Solo L"
+msgstr "只有L"
+
+#. 9 Solo L y R
+#: Traduccion3/FormularioControlVolumen.cpp:569
+#: Traduccion3/FormularioControlVolumen.cpp:885
+#: Traduccion3/FormularioControlVolumen.cpp:898
+msgid "Solo L y R"
+msgstr "只有L和R"
+
+#. 4 Solo LFE
+#: Traduccion3/FormularioControlVolumen.cpp:391
+#: Traduccion3/FormularioControlVolumen.cpp:882
+#: Traduccion3/FormularioControlVolumen.cpp:893
+msgid "Solo LFE"
+msgstr "只有LFE"
+
+#. 2 Solo R
+#: Traduccion3/FormularioControlVolumen.cpp:320
+#: Traduccion3/FormularioControlVolumen.cpp:880
+#: Traduccion3/FormularioControlVolumen.cpp:891
+msgid "Solo R"
+msgstr "只有R"
+
+#. 7 Solo RL
+#: Traduccion3/FormularioControlVolumen.cpp:498
+#: Traduccion3/FormularioControlVolumen.cpp:896
+msgid "Solo RL"
+msgstr "只有RL"
+
+#. 11 Solo RL y RR
+#: Traduccion3/FormularioControlVolumen.cpp:639
+#: Traduccion3/FormularioControlVolumen.cpp:900
+msgid "Solo RL y RR"
+msgstr "只有RL和RR"
+
+#. 8 Solo RR
+#: Traduccion3/FormularioControlVolumen.cpp:533
+#: Traduccion3/FormularioControlVolumen.cpp:897
+msgid "Solo RR"
+msgstr "只有RR"
+
+#. 5 Solo SL
+#: Traduccion3/FormularioControlVolumen.cpp:427
+#: Traduccion3/FormularioControlVolumen.cpp:883
+#: Traduccion3/FormularioControlVolumen.cpp:894
+msgid "Solo SL"
+msgstr "只有SL"
+
+#. 10 Solo SL y SR
+#: Traduccion3/FormularioControlVolumen.cpp:604
+#: Traduccion3/FormularioControlVolumen.cpp:886
+#: Traduccion3/FormularioControlVolumen.cpp:899
+msgid "Solo SL y SR"
+msgstr "只有SL和SR"
+
+#. 6 Solo SR
+#: Traduccion3/FormularioControlVolumen.cpp:463
+#: Traduccion3/FormularioControlVolumen.cpp:884
+#: Traduccion3/FormularioControlVolumen.cpp:895
+msgid "Solo SR"
+msgstr "只有SR"
+
+#: Traduccion3/FormularioControlVolumen.cpp:80
+msgid "Volumen Canales de Entrada"
+msgstr "音量输入通道"
+
+#: Traduccion3/FormularioControlVolumen.cpp:159
+msgid "Volumen de Salida"
+msgstr "输出音量"
+
+#: Traduccion3/PantallaPrincipal.cpp:1637
+msgid "Abrir Pantalla Principal"
+msgstr "打开主屏幕"
+
+#: Traduccion3/PantallaPrincipal.cpp:137
+msgid "Acerca"
+msgstr "关于"
+
+#: Traduccion3/PantallaPrincipal.cpp:1523
+msgid "Acerca de este programa"
+msgstr "关于这个程序"
+
+#: Traduccion3/PantallaPrincipal.cpp:177 Traduccion3/PantallaPrincipal.cpp:203
+msgid "Altas frecuencias de muestreo pueden incrementar el uso del CPU"
+msgstr "高采样率可能会增加CPU使用率"
+
+#: Traduccion3/PantallaPrincipal.cpp:141
+msgid "Archivo"
+msgstr "档案"
+
+#: Traduccion3/PantallaPrincipal.cpp:138 Traduccion3/PantallaPrincipal.cpp:143
+msgid "Ayuda"
+msgstr "帮助"
+
+#: Traduccion3/PantallaPrincipal.cpp:1533
+msgid "Ayuda de este programa"
+msgstr "这个程序的帮助"
+
+#: Traduccion3/PantallaPrincipal.cpp:138
+msgid "Ayuda del programa"
+msgstr "程序帮助"
+
+#: Traduccion3/PantallaPrincipal.cpp:134
+msgid "Cambiar Idioma"
+msgstr "更改语言"
+
+#: Traduccion3/PantallaPrincipal.cpp:162 Traduccion3/PantallaPrincipal.cpp:188
+msgid "Canales"
+msgstr "卡纳莱斯"
+
+#: Traduccion3/PantallaPrincipal.cpp:129
+msgid "Cerrar"
+msgstr "关闭"
+
+#: Traduccion3/PantallaPrincipal.cpp:1656
+msgid "Cerrar Programa"
+msgstr "关闭程序"
+
+#: Traduccion3/PantallaPrincipal.cpp:129
+msgid "Cierra el programa"
+msgstr "关闭程序"
+
+#: Traduccion3/PantallaPrincipal.cpp:208
+msgid "Codificar"
+msgstr "编码"
+
+#: Traduccion3/PantallaPrincipal.cpp:133 Traduccion3/PantallaPrincipal.cpp:1641
+msgid "Control de Volumen"
+msgstr "音量控制"
+
+#: Traduccion3/PantallaPrincipal.cpp:210
+msgid "Detener"
+msgstr "停止"
+
+#. ContenedorDispositivoEntrada
+#: Traduccion3/PantallaPrincipal.cpp:154
+msgid "Dispositivo de Entrada"
+msgstr "输入设备"
+
+#. Contenedor Dispositivo Salida
+#: Traduccion3/PantallaPrincipal.cpp:180
+msgid "Dispositivo de Salida"
+msgstr "输出设备"
+
+#: Traduccion3/PantallaPrincipal.cpp:167 Traduccion3/PantallaPrincipal.cpp:192
+msgid "Frecuencia de Muestreo"
+msgstr "采样频率"
+
+#: Traduccion3/PantallaPrincipal.cpp:1593
+msgid "Idiomas disponibles"
+msgstr "可用的语言"
+
+#: Traduccion3/PantallaPrincipal.cpp:137
+msgid "Informacion del Programa"
+msgstr "节目信息"
+
+#: Traduccion3/PantallaPrincipal.cpp:133
+msgid "Le permite ajustar el volumen de la mezcla"
+msgstr "允许您调整混音的音量"
+
+#: Traduccion3/PantallaPrincipal.cpp:1604
+msgid "Los cambios se efectuaran despues de que reinicie el programa"
+msgstr "重新启动程序后将进行更改"
+
+#: Traduccion3/PantallaPrincipal.cpp:1645
+msgid ""
+"Marque para no utilizar la compresion del rango dinamico. Usualmente las "
+"peliculas o videos tiene un rango dinamico o volumen menor a los juegos. Use "
+"esto modo cuando considere que el volumen de lo que esta reproduciendo es "
+"muy bajo"
+msgstr ""
+"选中不使用动态范围的压缩。 通常电影或视频的动态范围或音量小于游戏。 当您考虑"
+"您正在播放的音量非常低时，请使用此模式"
+
+#: Traduccion3/PantallaPrincipal.cpp:1647
+msgid "Modos de Rango Dinamico"
+msgstr "动态范围模式"
+
+#: Traduccion3/PantallaPrincipal.cpp:1604
+msgid "Notificacion"
+msgstr "通知"
+
+#: Traduccion3/PantallaPrincipal.cpp:142
+msgid "Opciones"
+msgstr "选项"
+
+#: Traduccion3/PantallaPrincipal.cpp:132
+msgid "Panel de Dispositivos de Audio"
+msgstr "音频设备面板"
+
+#: Traduccion3/PantallaPrincipal.cpp:1592
+msgid "Por favor elija un idioma:"
+msgstr "请选择一种语言："
+
+#. Botones
+#: Traduccion3/PantallaPrincipal.cpp:206
+msgid "Refrescar"
+msgstr "梳洗"
+
+#: Traduccion3/PantallaPrincipal.cpp:1639
+msgid "Reiniciar Sonido"
+msgstr "重新启动声音"
