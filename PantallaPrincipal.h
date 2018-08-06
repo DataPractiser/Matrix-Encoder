@@ -243,6 +243,10 @@ private:
 	void DetenerAudio();
 	void formatoEtiquetaCanales();
 
+	//Estas funciones activan o desactivan los elementos de las pantalla principal
+	void activarElementosPantallaPrincipal();
+	void desactivarElementosPantallaPrincipal();
+
 	//Abrir panel de dispositivos de audio.
 	void AbrirPanelDispositivosAudio(wxCommandEvent & Evento);
 
@@ -334,7 +338,7 @@ public:
 	void abrirFormularioAcerca(wxCommandEvent& event);
 	void abrirFormularioAyuda(wxCommandEvent& event);
 	void abrirFormularioControlVolumen(wxCommandEvent& event);
-	void  abrirFormularioControlVolumen();
+	void abrirFormularioControlVolumen();
 	void CambiarIdiomaPrograma(wxCommandEvent& event);
 	void ReiniciarSonido();
 	void Minimizar(wxIconizeEvent& event);

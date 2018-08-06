@@ -468,6 +468,11 @@ PaError PantallaPrincipal::InicializarAudio()
 	{
 		Pa_Terminate();
 		MensajeError(ErrorSalida);
+
+		activarElementosPantallaPrincipal();
+		cbDispositivoSalida->SetSelection(-1);
+		formatoEtiquetaCanales();
+
 		MostrarVentana();
 		return Error;
 	}
@@ -527,12 +532,8 @@ PaError PantallaPrincipal::InicializarAudio()
 
 	if (Error != paNoError || ErrorPredeterminado != paNoError || ErrorSalida != paNoError)
 	{
-		cbDispositivoEntrada->Enable(true);
-		cbDispositivoSalida->Enable(true);
+		activarElementosPantallaPrincipal();
 		cbDispositivoSalida->SetSelection(-1);
-		btnCodificar->Enable(true);
-		btnRefrescar->Enable(true);
-		btnDetener->Enable(false);
 		formatoEtiquetaCanales();
 
 		if (Error != paNoError)
@@ -545,11 +546,7 @@ PaError PantallaPrincipal::InicializarAudio()
 	}
 	else
 	{
-		cbDispositivoEntrada->Enable(false);
-		cbDispositivoSalida->Enable(false);
-		btnCodificar->Enable(false);
-		btnRefrescar->Enable(false);
-		btnDetener->Enable(true);
+		desactivarElementosPantallaPrincipal();
 		formatoEtiquetaCanales();
 
 		if (this->IsShown() == true)
@@ -590,12 +587,7 @@ PaError PantallaPrincipal::Codificar()
 
 	else if (cbDispositivoEntrada->GetSelection() >= 0 && cbDispositivoSalida->GetSelection() >= 0)
 	{
-
-		cbDispositivoEntrada->Enable(false);
-		cbDispositivoSalida->Enable(false);
-		btnCodificar->Enable(false);
-		btnRefrescar->Enable(false);
-		btnDetener->Enable(true);
+		desactivarElementosPantallaPrincipal();
 
 		DispositivoSalida = ListaDispositivosSalida[cbDispositivoSalida->GetSelection()].IDdispositivo;
 
@@ -1242,11 +1234,7 @@ void PantallaPrincipal::DetenerAudio()
 	PaError Error = NULL;
 	PaError ErrorEntrada = NULL;
 	PaError ErrorSalida = NULL;
-	btnCodificar->Enable(true);
-	btnRefrescar->Enable(true);
-	btnDetener->Enable(false);
-	cbDispositivoEntrada->Enable(true);
-	cbDispositivoSalida->Enable(true);
+	activarElementosPantallaPrincipal();
 
 	BotonDeteneHaSidoPresionado = true;
 
@@ -1317,6 +1305,24 @@ void PantallaPrincipal::formatoEtiquetaCanales()
 	{
 		LDSCanales->SetLabel("N/S");
 	}
+}
+
+void PantallaPrincipal::activarElementosPantallaPrincipal()
+{
+	cbDispositivoEntrada->Enable(true);
+	cbDispositivoSalida->Enable(true);
+	btnCodificar->Enable(true);
+	btnRefrescar->Enable(true);
+	btnDetener->Enable(false);
+}
+
+void PantallaPrincipal::desactivarElementosPantallaPrincipal()
+{
+	cbDispositivoEntrada->Enable(false);
+	cbDispositivoSalida->Enable(false);
+	btnCodificar->Enable(false);
+	btnRefrescar->Enable(false);
+	btnDetener->Enable(true);
 }
 
 void PantallaPrincipal::AbrirPanelDispositivosAudio(wxCommandEvent& WXUNUSED(event))
