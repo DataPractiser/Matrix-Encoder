@@ -1,8 +1,0 @@
-﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(367,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
-LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/FORCE' specification
-Inicializacion.obj : warning LNK4006: "bool EstadoFormularioControlVolumen" (?EstadoFormularioControlVolumen@@3_NA) already defined in FormularioControlVolumen.obj; second definition ignored
-PantallaPrincipal.obj : warning LNK4006: "bool EstadoFormularioControlVolumen" (?EstadoFormularioControlVolumen@@3_NA) already defined in FormularioControlVolumen.obj; second definition ignored
-PantallaPrincipal.obj : warning LNK4006: "class PantallaPrincipal * formularioPrincipal" (?formularioPrincipal@@3PEAVPantallaPrincipal@@EA) already defined in Inicializacion.obj; second definition ignored
-Debug_x64\Matrix Encoder.exe : warning LNK4088: image being generated due to /FORCE option; image may not run
-  minimal.vcxproj -> F:\Programación\Librerias\C++\Interfaz grafica\wxWidgets-3.1.0\samples\2_Matrix_Encoder\Debug_x64\Matrix Encoder.exe
-  minimal.vcxproj -> Debug_x64\Matrix Encoder.pdb (Full PDB)
