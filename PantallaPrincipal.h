@@ -5,6 +5,7 @@
 
 // For compilers that support precompilation, includes "wx/wx.h".
 #include "wx/wxprec.h"
+#include <wx/taskbar.h>
 //#include "wx/slider.h"
 
 #ifdef __BORLANDC__
@@ -15,10 +16,8 @@
 // need because it includes almost all "standard" wxWidgets headers)
 #ifndef WX_PRECOMP
 #include "wx/wx.h"
-#include "wx/taskbar.h"
-#include "Conexion.h"
 #endif
-
+#include "Conexion.h"
 // ----------------------------------------------------------------------------
 // resources
 // ----------------------------------------------------------------------------
