@@ -25,10 +25,10 @@
 #include "../sample.xpm"
 #endif*/
 
-#include "xrc\rc\MisXPM\MatrixEncoderIcon_4.xpm"
-#include "xrc\rc\MisXPM\wxwidgetlogo.xpm"
-#include "xrc\rc\MisXPM\portaudio_logo.xpm"
-#include "xrc\rc\MisXPM\the_audacity_team.xpm"
+#include "img\MatrixEncoderIcon_4.xpm"
+#include "img\wxwidgetlogo.xpm"
+#include "img\portaudio_logo.xpm"
+#include "img\the_audacity_team.xpm"
 
 class FormularioAcerca : public wxDialog
 {

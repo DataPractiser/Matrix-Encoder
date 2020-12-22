@@ -29,10 +29,10 @@
 #include "../sample.xpm"
 #endif
 
-#include "xrc\rc\MisXPM\MatrixEncoderl6to2.xpm" 
-#include "xrc\rc\MisXPM\MatrixEncoderl8to2.xpm"
-#include "xrc\rc\MisXPM\advertencia.xpm"
-#include "xrc\rc\MisXPM\MatrixEncoderIcon_1.xpm"
+#include "img\MatrixEncoderl6to2.xpm" 
+#include "img\MatrixEncoderl8to2.xpm"
+#include "img\advertencia.xpm"
+#include "img\MatrixEncoderIcon_1.xpm"
 
 #include "Callbacks.h"
 #include "MatrixEncoder.h"

@@ -26,7 +26,7 @@
 #include "../sample.xpm"
 #endif
 
-#include "xrc\rc\MisXPM\MatrixEncoderIcon_3.xpm"
+#include "img\MatrixEncoderIcon_3.xpm"
 
 class textoInstrucciones : public wxTextCtrl
 {

@@ -25,7 +25,7 @@
 #include "../sample.xpm"
 #endif
 
-#include "xrc\rc\MisXPM\MatrixEncoderIcon_2.xpm"
+#include "img\MatrixEncoderIcon_2.xpm"
 #include "RutaArchivo.h"
 
 #include "Callbacks.h"
