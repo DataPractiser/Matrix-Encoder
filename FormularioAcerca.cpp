@@ -2,16 +2,16 @@
 
 FormularioAcerca::FormularioAcerca(wxWindow* parent, const wxString & Titulo) : wxDialog(parent, wxID_ANY, Titulo)
 {
-	this->SetSize(wxSize(TamañoVentanaX, TamañoVentanaY));
-	this->SetMinSize(wxSize(TamañoVentanaX, TamañoVentanaY));
-	this->SetMaxSize(wxSize(TamañoVentanaX, TamañoVentanaY));
+	this->SetSize(wxSize(TamanoVentanaX, TamanoVentanaY));
+	this->SetMinSize(wxSize(TamanoVentanaX, TamanoVentanaY));
+	this->SetMaxSize(wxSize(TamanoVentanaX, TamanoVentanaY));
 	Icono.CopyFromBitmap(wxBitmap(MatrixEncoderIcon_4));
 	this->SetIcon(Icono);
 
 	fondoVersionPrograma = new wxFont(11, wxFONTFAMILY_SWISS, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_BOLD, false, _T("Microsoft Sans Serif"), wxFONTENCODING_DEFAULT);
 	fondofechaPrograma = new wxFont(8, wxFONTFAMILY_SWISS, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_BOLD, false, _T("Microsoft Sans Serif"), wxFONTENCODING_DEFAULT);
 
-	panelFormularioAcerca = new wxPanel(this, ID_PANEL_FORMULARIO_ACERCAR, wxDefaultPosition, wxSize(TamañoVentanaX, TamañoVentanaY), NULL, wxString("ID_PANEL_FORMULARIO_ACERCAR"));
+	panelFormularioAcerca = new wxPanel(this, ID_PANEL_FORMULARIO_ACERCAR, wxDefaultPosition, wxSize(TamanoVentanaX, TamanoVentanaY), NULL, wxString("ID_PANEL_FORMULARIO_ACERCAR"));
 	panelFormularioAcerca->SetBackgroundColour(wxColor(255, 255, 255));
 
 	stVersionPrograma = new wxStaticText(panelFormularioAcerca, ID_STATICTEXT_VERSION_PROGRAMA, "Matrix Encoder v1.0", wxPoint(15, 20), wxDefaultSize, 0, wxString("ID_STATICTEXT_VERSION_PROGRAMA"));

@@ -35,8 +35,8 @@ class FormularioAcerca : public wxDialog
 
 private:
 	wxIcon Icono;
-	int TamañoVentanaX = 340;
-	int TamañoVentanaY = 480;
+	int TamanoVentanaX = 340;
+	int TamanoVentanaY = 480;
 
 	wxPanel* panelFormularioAcerca = nullptr;
 
