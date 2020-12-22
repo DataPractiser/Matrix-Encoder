@@ -33,7 +33,7 @@ void ArchivoDatosDispositivoSalida::InicializarDatosPredeterminadosCabecera()
 	Cabecera.NumeroCanalesAudio = 0;
 	Cabecera.FrecuenciadeMuestreo = 0;
 	Cabecera.ApiDispositivo = 0;
-	Cabecera.TamañoNombreDispositivoSalidaAudio = 0;
+	Cabecera.TamanoNombreDispositivoSalidaAudio = 0;
 }
 
 
@@ -60,7 +60,7 @@ bool ArchivoDatosDispositivoSalida::LeerArchivoDatosDispositivo(std::string Ruta
 		ArchivoLectura.read(reinterpret_cast<char*>(&Cabecera), sizeof(Cabecera));
 		DesplazamientoArchivo = sizeof(Cabecera);
 
-		if (Cabecera.TamañoNombreDispositivoSalidaAudio > 100)
+		if (Cabecera.TamanoNombreDispositivoSalidaAudio > 100)
 		{
 			NombreDispostivoSalidaAudio = "no_audio_device";
 			Cabecera.FrecuenciadeMuestreo = 0;
@@ -70,10 +70,10 @@ bool ArchivoDatosDispositivoSalida::LeerArchivoDatosDispositivo(std::string Ruta
 		}
 		else
 		{
-			NombreObtenido[Cabecera.TamañoNombreDispositivoSalidaAudio] = '\0'; //para cerrar la cadena
+			NombreObtenido[Cabecera.TamanoNombreDispositivoSalidaAudio] = '\0'; //para cerrar la cadena
 
 			ArchivoLectura.seekg(DesplazamientoArchivo);
-			ArchivoLectura.read(NombreObtenido, Cabecera.TamañoNombreDispositivoSalidaAudio);
+			ArchivoLectura.read(NombreObtenido, Cabecera.TamanoNombreDispositivoSalidaAudio);
 		}
 
 		
@@ -141,7 +141,7 @@ bool ArchivoDatosDispositivoSalida::GuardarDatosDispositivoSalidaAudio(std::stri
 
 	//	delete NombreDispostivoSalidaAudio;
 
-	Cabecera.TamañoNombreDispositivoSalidaAudio = NombreDispositivoAudio.length();
+	Cabecera.TamanoNombreDispositivoSalidaAudio = NombreDispositivoAudio.length();
 
 
 	NombreDispostivoSalidaAudio = NombreDispositivoAudio;
@@ -169,7 +169,7 @@ bool ArchivoDatosDispositivoSalida::GuardarDatosDispositivoSalidaAudio(std::stri
 
 		//Luego el nombre del dispositivo de audio
 		ArchivoGuardado.seekp(DesplazamientoArchivo);
-		ArchivoGuardado.write(NombreDispostivoSalidaAudio.c_str(), Cabecera.TamañoNombreDispositivoSalidaAudio);
+		ArchivoGuardado.write(NombreDispostivoSalidaAudio.c_str(), Cabecera.TamanoNombreDispositivoSalidaAudio);
 		ArchivoGuardado.close();
 
 		return true;

@@ -113,9 +113,9 @@ void PantallaPrincipal::AjusteFormularioporIdioma(wxLanguage IdiomaenUso)
 
 PantallaPrincipal::PantallaPrincipal(const wxString& Titulo, wxLocale& Localizacion, wxLanguage Idioma) : wxFrame(NULL, wxID_ANY, Titulo), LocalizacionPantallaPrincipal(Localizacion), Idiomaenuso(Idioma)
 {
-	this->SetSize(wxSize(TamañoVentanaX, TamañoVentanaY));
-	this->SetMinSize(wxSize(TamañoVentanaX, TamañoVentanaY));
-	this->SetMaxSize(wxSize(TamañoVentanaX, TamañoVentanaY));
+	this->SetSize(wxSize(TamanoVentanaX, TamanoVentanaY));
+	this->SetMinSize(wxSize(TamanoVentanaX, TamanoVentanaY));
+	this->SetMaxSize(wxSize(TamanoVentanaX, TamanoVentanaY));
 	Icono.CopyFromBitmap(wxBitmap(MatrixEncoderIcon_1));
 	this->SetIcon(Icono);
 
@@ -146,7 +146,7 @@ PantallaPrincipal::PantallaPrincipal(const wxString& Titulo, wxLocale& Localizac
 
 
 	//Panel Principal
-	PanelPrincipal = new wxPanel(this, ID_PANEL_PRINCIPAL, wxPoint(0, 0), wxSize(TamañoVentanaX, TamañoVentanaY), NULL, wxString("Panel Principal"));
+	PanelPrincipal = new wxPanel(this, ID_PANEL_PRINCIPAL, wxPoint(0, 0), wxSize(TamanoVentanaX, TamanoVentanaY), NULL, wxString("Panel Principal"));
 	PanelPrincipal->SetBackgroundColour(wxColor(255, 255, 255));
 
 	//ContenedorDispositivoEntrada
@@ -217,7 +217,7 @@ PantallaPrincipal::PantallaPrincipal(const wxString& Titulo, wxLocale& Localizac
 	pbMatrixEncoder8to2 = new wxStaticBitmap(PanelPrincipal, ID_STATICBITMAP_ME8TO2, wxBitmap(MatrixEncoderl8to2), wxPoint(275, 155), wxDefaultSize, wxNO_BORDER, _T("ID_STATICBITMAP_ME8TO2"));
 	pbMatrixEncoder8to2->Hide();
 
-	//pbAdvertenciaFrecuenciaMuestreo = new wxStaticBitmap(PanelPrincipal, ID_STATICBITMAP_ADVERTENCIA_FRECUENCIA_MUESTREO, wxBitmap(wxImage(_T("F:\\Programación\\Proyectos\\Proyecto Pro Logic II\\Imagenes\\\Wxwidget\\Advertencia.bmp"))), wxPoint(400, 108), wxDefaultSize, 0, _T("ID_STATICBITMAP_ADVERTENCIA_FRECUENCIA_MUESTREO"));
+	//pbAdvertenciaFrecuenciaMuestreo = new wxStaticBitmap(PanelPrincipal, ID_STATICBITMAP_ADVERTENCIA_FRECUENCIA_MUESTREO, wxBitmap(wxImage(_T("F:\\Programacinn\\Proyectos\\Proyecto Pro Logic II\\Imagenes\\\Wxwidget\\Advertencia.bmp"))), wxPoint(400, 108), wxDefaultSize, 0, _T("ID_STATICBITMAP_ADVERTENCIA_FRECUENCIA_MUESTREO"));
 	pbAdvertenciaFrecuenciaMuestreo = new wxStaticBitmap(PanelPrincipal, ID_STATICBITMAP_ADVERTENCIA_FRECUENCIA_MUESTREO, wxBitmap(advertencia), wxPoint(400, 108), wxDefaultSize, 0, _T("ID_STATICBITMAP_ADVERTENCIA_FRECUENCIA_MUESTREO"));
 	pbAdvertenciaFrecuenciaMuestreo->Hide();
 
@@ -1111,14 +1111,20 @@ PaError PantallaPrincipal::TransformarAudio(PaDeviceIndex DispositivoSalidaAudio
 	}
 
 	
-
+	/*
+	* Esta funcion es para abrin un stream que se usa para monitorear cambios en el dispositvo principal de audio
+	*/
 	Error = Pa_OpenStream(&FlujoMonitorDispositivoEntrada, &parametrosEntrada, NULL, FrecuenciaMuestreo, 128, NULL, callbacknulo, NULL);
 
 	ptrFuncionMonitorDispositivoEntrada = InterrupcionAudioDispositivoPredeterminado;
 	Error = Pa_SetStreamFinishedCallback(FlujoMonitorDispositivoEntrada, ptrFuncionMonitorDispositivoEntrada);
 
 	Error = Pa_StartStream(FlujoMonitorDispositivoEntrada);
-	
+
+
+	/*
+	* Callback Principal el cual se encargar de tomar y procesar el audio.
+	*/
 	Error = Pa_OpenStream(&Flujo, &parametrosEntrada, &parametrosSalida, FrecuenciaMuestreo, 1, paClipOff, punteroFuncionDeProceso, NULL);
 
 	ptrFuncionMonitorDispositivoSalida = InterrupcionAudioDispositivoSalida;
@@ -1330,14 +1336,14 @@ void PantallaPrincipal::AbrirPanelDispositivosAudio(wxCommandEvent& WXUNUSED(eve
 	//Necesita windows.h
 	int Error = NULL;
 	std::string CadenaComplementaria = { '\\','c','o','n','t','r','o','l','.','e','x','e',' ','m','m','s','y','s','.','c','p','l' };
-	const unsigned int TamañoCadena = MAX_PATH;
+	const unsigned int TamanoCadena = MAX_PATH;
 	TCHAR DireccionDirectorioTemporal[MAX_PATH];
 	char DireccionDirectorioSistema[MAX_PATH];
 
 	//MAX_
-	GetSystemDirectory(DireccionDirectorioTemporal, TamañoCadena);
+	GetSystemDirectory(DireccionDirectorioTemporal, TamanoCadena);
 
-	for (int i = 0; i < TamañoCadena; i++)
+	for (int i = 0; i < TamanoCadena; i++)
 	{
 		DireccionDirectorioSistema[i] = DireccionDirectorioTemporal[i];
 	}

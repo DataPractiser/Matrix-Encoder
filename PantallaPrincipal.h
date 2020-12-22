@@ -97,7 +97,7 @@ const wxString IdiomasDisponibles[] =
 	"Francais",
 	"Deutsch",
 	"Russky",
-	"Español",
+	"Espanol",
 	"Portugesse",
 	"Chinese",
 	"Hindi",
@@ -114,7 +114,7 @@ struct InformacionDispositivo
 	unsigned char NumCanales;
 	unsigned int FrecuenciaMuestreo;
 	unsigned int Api;
-	unsigned int tamañoNombre;
+	unsigned int tamanoNombre;
 	std::string NombreDispositivo;
 };
 
@@ -250,8 +250,8 @@ private:
 	void AbrirPanelDispositivosAudio(wxCommandEvent & Evento);
 
 
-	int TamañoVentanaX = 530;
-	int TamañoVentanaY = 300;
+	int TamanoVentanaX = 530;
+	int TamanoVentanaY = 300;
 
 	//Servidor Interno;
 	bool EstadoServidorInterno;

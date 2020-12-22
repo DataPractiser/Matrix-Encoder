@@ -27,7 +27,7 @@ private:
 		uint16_t NumeroCanalesAudio;
 		uint32_t FrecuenciadeMuestreo;
 		uint16_t ApiDispositivo;
-		uint16_t TamañoNombreDispositivoSalidaAudio;
+		uint16_t TamanoNombreDispositivoSalidaAudio;
 	}Cabecera;
 
 	std::string NombreDispostivoSalidaAudio;
