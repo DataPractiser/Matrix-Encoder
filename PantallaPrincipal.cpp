@@ -1041,7 +1041,7 @@ PaError PantallaPrincipal::TransformarAudio(PaDeviceIndex DispositivoSalidaAudio
 
 	FrecuenciaMuestreo = informacionDispositivoSalida->defaultSampleRate;
 
-	//Este mejora es parte de la implmentacion de un filtro de bajas frecuencias para el canal LFE
+	//Esta mejora es parte de la implementacion de un filtro de bajas frecuencias para el canal LFE
 	CodificadorMatriz->inicializarFiltroPaseBajo(FrecuenciaMuestreo, 120.00);
 	//////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -1112,7 +1112,7 @@ PaError PantallaPrincipal::TransformarAudio(PaDeviceIndex DispositivoSalidaAudio
 
 	
 	/*
-	* Esta funcion es para abrin un stream que se usa para monitorear cambios en el dispositvo principal de audio
+	* Esta funcion es para abrir un stream que se usa para monitorear cambios en el dispositvo principal de audio
 	*/
 	Error = Pa_OpenStream(&FlujoMonitorDispositivoEntrada, &parametrosEntrada, NULL, FrecuenciaMuestreo, 128, NULL, callbacknulo, NULL);
 
