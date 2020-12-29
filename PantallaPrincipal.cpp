@@ -1275,6 +1275,24 @@ void PantallaPrincipal::DetenerAudio()
 			MensajeError(ceFalloCierreProcesoAudio);
 		}
 
+		/*
+		* Se cierran los procesos de audio, este paso es importante 
+		* para evitar que el programa empieze a dejar memoria sin
+		* usar y crezca sin necesidad.
+		*/
+
+		ErrorEntrada = Pa_CloseStream(FlujoMonitorDispositivoEntrada);
+
+		ErrorSalida = Pa_CloseStream(Flujo);
+
+		if (ErrorEntrada != paNoError || ErrorSalida != paNoError)
+		{
+			MensajeError(ceFalloCierreProcesoAudio);
+		}
+
+
+		FlujoMonitorDispositivoEntrada = NULL;
+
 		Flujo = NULL;
 
 		Error = Pa_Terminate();
