@@ -14,7 +14,7 @@ FormularioAcerca::FormularioAcerca(wxWindow* parent, const wxString & Titulo) : 
 	panelFormularioAcerca = new wxPanel(this, ID_PANEL_FORMULARIO_ACERCAR, wxDefaultPosition, wxSize(TamanoVentanaX, TamanoVentanaY), NULL, wxString("ID_PANEL_FORMULARIO_ACERCAR"));
 	panelFormularioAcerca->SetBackgroundColour(wxColor(255, 255, 255));
 
-	stVersionPrograma = new wxStaticText(panelFormularioAcerca, ID_STATICTEXT_VERSION_PROGRAMA, "Matrix Encoder v1.0", wxPoint(15, 20), wxDefaultSize, 0, wxString("ID_STATICTEXT_VERSION_PROGRAMA"));
+	stVersionPrograma = new wxStaticText(panelFormularioAcerca, ID_STATICTEXT_VERSION_PROGRAMA, "Matrix Encoder v1.0.1", wxPoint(15, 20), wxDefaultSize, 0, wxString("ID_STATICTEXT_VERSION_PROGRAMA"));
 	stVersionPrograma->SetFont(*fondoVersionPrograma);
 
 	stAgradecimiento = new wxStaticText(panelFormularioAcerca, ID_STATICTEXT_AGRADECIMIENTO, _("Este programa fue hecho con: "), wxPoint(30, 50), wxDefaultSize, 0, wxString("ID_STATICTEXT_AGRADECIMIENTO"));
@@ -30,7 +30,7 @@ FormularioAcerca::FormularioAcerca(wxWindow* parent, const wxString & Titulo) : 
 	stbAudacityLogo = new wxBitmapButton(panelFormularioAcerca, ID_STATICBITMAP_AUDACITYLOGO, wxBitmap(the_audacity_team), wxPoint(30, 280), wxDefaultSize, 0, wxDefaultValidator, wxString("ID_STATICBITMAP_AUDACITYLOGO"));
 	stbAudacityLogo->SetToolTip("www.audacityteam.org");
 
-	stFecha = new wxStaticText(panelFormularioAcerca, ID_STATICTEXT_FECHA, "2018", wxPoint(150, 400), wxDefaultSize, wxALIGN_CENTER, wxString("ID_STATICTEXT_FECHA"));
+	stFecha = new wxStaticText(panelFormularioAcerca, ID_STATICTEXT_FECHA, "2021", wxPoint(150, 400), wxDefaultSize, wxALIGN_CENTER, wxString("ID_STATICTEXT_FECHA"));
 
 }
 
