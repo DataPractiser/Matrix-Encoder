@@ -158,6 +158,7 @@ public:
 	void abrirPantallaPrincipal(wxCommandEvent& event);
 	void CerrarPrograma(wxCommandEvent& evento);
 	void AbrirPanelControlVolumen(wxCommandEvent& event);
+	void AbrirPanelDispositivos_Audio(wxCommandEvent& event);
 	void ReiniciarSonido(wxCommandEvent& event);
 	void elegirModoJuego(wxCommandEvent& event);
 	void elegirModoPelicula(wxCommandEvent& event);
@@ -174,6 +175,7 @@ enum
 	ID_MENU_REINICIAR_AUDIO,
 	ID_MENU_CERRAR,
 	ID_MENU_CAMBIAR_MODO_VOLUMEN,
+	ID_MENU_ABRIR_PANEL_DISPOSITIVOS_AUDIO,
 	ID_MENU_MODO_JUEGO,
 	ID_MENU_MODO_PELICULA
 };
@@ -247,7 +249,7 @@ private:
 	void desactivarElementosPantallaPrincipal();
 
 	//Abrir panel de dispositivos de audio.
-	void AbrirPanelDispositivosAudio(wxCommandEvent & Evento);
+	void AbrirPanelDispositivosAudio(wxCommandEvent& Evento);
 
 
 	int TamanoVentanaX = 530;
@@ -326,6 +328,7 @@ public:
 	void CambioDispositivoPrincipal();
 	void CambiosDispositivoPredeterminadoEntrada();
 	void CambiosDispositivoSalida();
+	void abrir_panel_dispositivos_audio();
 
 	// event handlers (these functions should _not_ be virtual)
 	void CerrarPrograma(wxCommandEvent& event);

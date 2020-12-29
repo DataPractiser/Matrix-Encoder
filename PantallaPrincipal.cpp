@@ -1339,7 +1339,7 @@ void PantallaPrincipal::desactivarElementosPantallaPrincipal()
 	btnDetener->Enable(true);
 }
 
-void PantallaPrincipal::AbrirPanelDispositivosAudio(wxCommandEvent& WXUNUSED(event))
+void PantallaPrincipal::abrir_panel_dispositivos_audio()
 {
 	//Necesita windows.h
 	int Error = NULL;
@@ -1364,6 +1364,11 @@ void PantallaPrincipal::AbrirPanelDispositivosAudio(wxCommandEvent& WXUNUSED(eve
 	{
 		MensajeError(ceFalloAbrirPanelDispositivoAudio);
 	}
+}
+
+void PantallaPrincipal::AbrirPanelDispositivosAudio(wxCommandEvent& WXUNUSED(event))
+{
+	this->abrir_panel_dispositivos_audio();
 }
 
 
@@ -1553,6 +1558,7 @@ wxMenu *IconoBarra::CreatePopupMenu()
 	Menu->AppendSeparator();
 	Menu->Append(ID_MENU_ABRIR_FORUMALRIO_CONTROL_VOLUMEN, _("Control de Volumen"));
 	Menu->AppendSeparator();
+	Menu->Append(ID_MENU_ABRIR_PANEL_DISPOSITIVOS_AUDIO, _("Abrir Panel Dispositivos de Audio"));
 	SubMenuModoVolumen = new wxMenu;
 	SubMenuModoVolumen->AppendRadioItem(ID_MENU_MODO_JUEGO, _("Modo Juego"), _("Marque para usar todo el rango dinamico disponible. Los juegos usualmente poseen un rango dinamico o volumen muy alto, esto ayuda a usar todo el rango de un mezcla estero"));
 	SubMenuModoVolumen->AppendRadioItem(ID_MENU_MODO_PELICULA, _("Modo Pelicula"), _("Marque para no utilizar la compresion del rango dinamico. Usualmente las peliculas o videos tiene un rango dinamico o volumen menor a los juegos. Use esto modo cuando considere que el volumen de lo que esta reproduciendo es muy bajo"));
@@ -1602,6 +1608,11 @@ void IconoBarra::AbrirPanelControlVolumen(wxCommandEvent& WXUNUSED(event))
 	formularioPrincipal->abrirFormularioControlVolumen();
 }
 
+void IconoBarra::AbrirPanelDispositivos_Audio(wxCommandEvent& event)
+{
+	formularioPrincipal->abrir_panel_dispositivos_audio();
+}
+
 void IconoBarra::elegirModoJuego(wxCommandEvent& WXUNUSED(event))
 {
 	ModoRangoDinamico = false;
@@ -1640,8 +1651,21 @@ void IconoBarra::actualizarRadioBotonModoPelicula(wxUpdateUIEvent & event)
 	{
 		event.Check(false);
 	}
-
 }
+
+wxBEGIN_EVENT_TABLE(IconoBarra, wxTaskBarIcon)
+EVT_MENU(ID_MENU_ABRIR_PANTALLA_PRINCIPAL, IconoBarra::abrirPantallaPrincipal)
+EVT_MENU(ID_MENU_ABRIR_FORUMALRIO_CONTROL_VOLUMEN, IconoBarra::AbrirPanelControlVolumen)
+EVT_MENU(ID_MENU_REINICIAR_AUDIO, IconoBarra::ReiniciarSonido)
+EVT_MENU(ID_MENU_CERRAR, IconoBarra::CerrarPrograma)
+EVT_MENU(ID_MENU_ABRIR_PANEL_DISPOSITIVOS_AUDIO, IconoBarra::AbrirPanelDispositivos_Audio)
+EVT_MENU(ID_MENU_MODO_JUEGO, IconoBarra::elegirModoJuego)
+EVT_MENU(ID_MENU_MODO_PELICULA, IconoBarra::elegirModoPelicula)
+EVT_UPDATE_UI(ID_MENU_MODO_JUEGO, IconoBarra::actualizarRadioBotonModoJuego)
+EVT_UPDATE_UI(ID_MENU_MODO_PELICULA, IconoBarra::actualizarRadioBotonModoPelicula)
+EVT_TASKBAR_LEFT_DCLICK(IconoBarra::dobleClickIzquierdo)
+wxEND_EVENT_TABLE()
+
 
 //Cliente monitor
 
@@ -1769,17 +1793,3 @@ HRESULT   STDMETHODCALLTYPE ClienteMonitor::OnPropertyValueChanged(LPCWSTR, cons
 {
 	return E_NOTIMPL;
 }
-
-
-wxBEGIN_EVENT_TABLE(IconoBarra, wxTaskBarIcon)
-EVT_MENU(ID_MENU_ABRIR_PANTALLA_PRINCIPAL, IconoBarra::abrirPantallaPrincipal)
-EVT_MENU(ID_MENU_ABRIR_FORUMALRIO_CONTROL_VOLUMEN, IconoBarra::AbrirPanelControlVolumen)
-EVT_MENU(ID_MENU_REINICIAR_AUDIO, IconoBarra::ReiniciarSonido)
-EVT_MENU(ID_MENU_CERRAR, IconoBarra::CerrarPrograma)
-EVT_MENU(ID_MENU_MODO_JUEGO, IconoBarra::elegirModoJuego)
-EVT_MENU(ID_MENU_MODO_PELICULA, IconoBarra::elegirModoPelicula)
-EVT_UPDATE_UI(ID_MENU_MODO_JUEGO, IconoBarra::actualizarRadioBotonModoJuego)
-EVT_UPDATE_UI(ID_MENU_MODO_PELICULA, IconoBarra::actualizarRadioBotonModoPelicula)
-EVT_TASKBAR_LEFT_DCLICK(IconoBarra::dobleClickIzquierdo)
-wxEND_EVENT_TABLE()
-
