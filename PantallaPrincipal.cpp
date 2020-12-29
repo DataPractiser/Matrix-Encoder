@@ -449,6 +449,12 @@ PaError PantallaPrincipal::InicializarAudio()
 	if (Error != paNoError)
 	{
 		Pa_Terminate();
+		/*
+		*Dispositivo vacios
+		* para evitar los grandes combo box inicializados
+		*/
+		cbDispositivoEntrada->Append(" ");
+		cbDispositivoSalida->Append(" ");
 		MensajeError(Error);
 		this->Show(true);
 		return Error;
@@ -800,6 +806,7 @@ PaError PantallaPrincipal::establecerDispositivoPredeterminadoEntrada(int Numero
 	}
 	else if (InformacionDispositivoPredeterminadoEntrada->maxInputChannels != NumeroCanalesMinimo || InformacionDispositivoPredeterminadoEntrada->maxInputChannels != NumeroCanalesMaximo)
 	{
+		cbDispositivoEntrada->Append(" ");
 		Error = ceNoDispositivoEntradaSeleccionado;
 		return Error;
 	}
@@ -855,6 +862,7 @@ PaError PantallaPrincipal::establecerDispositivosdeSalida(int CanalesSalida, PaH
 	if (ConteoDispositivosSalida == 0)
 	{
 		cbDispositivoSalida->SetSelection(wxNOT_FOUND);
+		cbDispositivoSalida->Append(" ");
 		//MessageBox::Show("No se encontro ningun dispositivo con 2 canales de salida");
 		Error = ceNoDispositivoCon2canalesdeSalida;
 		return Error;
