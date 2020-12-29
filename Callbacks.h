@@ -7,9 +7,7 @@
 #include <memory>
 #include <portaudio.h>
 
-//Sin dolbe deinicion
-
-//varaibles usadas para balancear el volumen de los respectivos canales
+//variables usadas para balancear el volumen de los respectivos canales
 extern float volumenL;
 extern float volumenR;
 extern float volumenC;
