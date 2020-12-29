@@ -949,7 +949,13 @@ PaError PantallaPrincipal::TransformarAudio(PaDeviceIndex DispositivoSalidaAudio
 	wxString CanalesEntrada, CanalesSalida, FrecuenciaEntrada , FrecuenciaSalida;
 	std::string NombreDispositvioaGuardar;
 
-
+	/*
+	* El valor de la latencia es el que al parecer, hace que sucedar los 
+	* cortes de audio en las versiones mas recientes de windows 10 empezando
+	* con windows 10 2004, esta latencia más alta de lo habitual es 
+	* el compromiso para garantizar sonido continuo
+	*/
+	float Latencia = 1.0;
 
 
 	//esta variable se usara para selecionar cual de las dos funciones callback a utilizar se usara
@@ -1000,7 +1006,7 @@ PaError PantallaPrincipal::TransformarAudio(PaDeviceIndex DispositivoSalidaAudio
 
 	parametrosEntrada.channelCount = informacionDispositivoEntrada->maxInputChannels;
 	parametrosEntrada.sampleFormat = paFloat32;
-	parametrosEntrada.suggestedLatency = informacionDispositivoEntrada->defaultLowInputLatency;
+	parametrosEntrada.suggestedLatency = Latencia;
 	parametrosEntrada.hostApiSpecificStreamInfo = NULL;
 
 	//Verificar que el dispositivo de Salida tenga el mismo nombre que el registrado al inicalizar;
@@ -1025,7 +1031,7 @@ PaError PantallaPrincipal::TransformarAudio(PaDeviceIndex DispositivoSalidaAudio
 	parametrosSalida.device = DispositivoSalidaAudio;
 	parametrosSalida.channelCount = informacionDispositivoSalida->maxOutputChannels;
 	parametrosSalida.sampleFormat = paFloat32;
-	parametrosSalida.suggestedLatency = informacionDispositivoSalida->defaultLowOutputLatency;
+	parametrosSalida.suggestedLatency = Latencia;
 	parametrosSalida.hostApiSpecificStreamInfo = NULL;// &WasapiInformacionEspecificaSalida;
 
 	//La frecuencias de muestreo de los dos dispositivos debe ser la misma para funcionar
@@ -1041,8 +1047,10 @@ PaError PantallaPrincipal::TransformarAudio(PaDeviceIndex DispositivoSalidaAudio
 
 	FrecuenciaMuestreo = informacionDispositivoSalida->defaultSampleRate;
 
-	//Esta mejora es parte de la implementacion de un filtro de bajas frecuencias para el canal LFE
-	CodificadorMatriz->inicializarFiltroPaseBajo(FrecuenciaMuestreo, 120.00);
+	/*Esta mejora es parte de la implementacion de un filtro de bajas frecuencias para el canal LFE
+	* Se redujo al estandar de corte de 80hz.
+	*/
+	CodificadorMatriz->inicializarFiltroPaseBajo(FrecuenciaMuestreo, 80.00);
 	//////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -1125,7 +1133,7 @@ PaError PantallaPrincipal::TransformarAudio(PaDeviceIndex DispositivoSalidaAudio
 	/*
 	* Callback Principal el cual se encargar de tomar y procesar el audio.
 	*/
-	Error = Pa_OpenStream(&Flujo, &parametrosEntrada, &parametrosSalida, FrecuenciaMuestreo, 1, paClipOff, punteroFuncionDeProceso, NULL);
+	Error = Pa_OpenStream(&Flujo, &parametrosEntrada, &parametrosSalida, FrecuenciaMuestreo, 1, paClipOff && paDitherOff, punteroFuncionDeProceso, NULL);
 
 	ptrFuncionMonitorDispositivoSalida = InterrupcionAudioDispositivoSalida;
 	Pa_SetStreamFinishedCallback(Flujo, ptrFuncionMonitorDispositivoSalida);
