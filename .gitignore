@@ -1,0 +1,127 @@
+*gitignore
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+#Folders
+.vs
+Debug
+Debug_x64
+Debug_x86
+minimal_cocoa.xcodeproj
+minimal_iphone.xcodeproj
+Release_x64
+Release_x84
+
+Archivos
+Info_cocoa.plist
+Info_iphone.plist
+LICENSE
+Makefile.in
+Matrix Encoder.VC.db
+Matrix Encoder.sln
+Matrix_Encoder.sln
+README.md
+Matrix Encoder.pdb
+Matrix Encoder.Build.CppClean.log
+CL.1072.write.1.tlog
+CL.command.1.tlog
+CL.read.1.tlog
+Matrix Encoder.lastbuildstate
+link.command.1.tlog
+link.read.1.tlog
+link.write.1.tlog
+rc.command.1.tlog
+rc.read.1.tlog
+rc.write.1.tlog
+minimal.log
+sample.res
+vc140.pdb
+Matrix Encoder.pdb
+Matrix Encoder.Build.CppClean.log
+CL.16224.write.1.tlog
+CL.command.1.tlog
+CL.read.1.tlog
+Matrix Encoder.lastbuildstate
+link.command.1.tlog
+link.read.1.tlog
+link.write.1.tlog
+rc.command.1.tlog
+rc.read.1.tlog
+rc.write.1.tlog
+minimal.log
+sample.res
+vc140.pdb
+UpgradeLog.htm
+descrip.mms
+makefile.bcc
+makefile.gcc
+makefile.unx
+makefile.vc
+minimal.bkl
+minimal.cpp
+minimal.log
+minimal.plc
+minimal.vcxproj
+minimal.vcxproj.filters
+minimal.vcxproj.user
+minimal_vc10.sln
+minimal_vc11.sln
+minimal_vc12.VC.db
+minimal_vc12.sln
+minimal_vc14.VC.db
+minimal_vc7.vcproj
+minimal_vc8.vcproj
+minimal_vc9.vcproj
+minimal_vc9.vcxproj
+minimal_vc9.vcxproj.filters
+minimal_vc9.vcxproj.user
+sample.icns
+
+##Archivos de generación
+/libs/portaudio-v19/build/msvc/.vs
+/libs/portaudio-v19/build/msvc/Backup
+/libs/portaudio-v19/build/msvc/Win32
+/libs/portaudio-v19/build/msvc/x64
+/libs/portaudio-v19/build/msvc/portaudio.VC.db 
+/libs/portaudio-v19/build/msvc/portaudio.VC.VC.opendb 
+/libs/portaudio-v19/build/msvc/portaudio.vcxproj
+/libs/portaudio-v19/build/msvc/portaudio.vcxproj.filters
+/libs/portaudio-v19/build/msvc/portaudio.vcxproj.user 
+/libs/portaudio-v19/build/msvc/UpgradeLog.htm
+
+##Archivos de Visual Studio
+/Matrix_Encoder_Build/.vs
+/Matrix_Encoder_Build/Debug 
+/Matrix_Encoder_Build/Matrix_Encoder_Build 
+/Matrix_Encoder_Build/Release
+/Matrix_Encoder_Build/x64
