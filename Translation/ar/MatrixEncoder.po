@@ -7,512 +7,462 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-10 14:32-0600\n"
-"PO-Revision-Date: 2018-01-10 15:29-0600\n"
-"Language-Team: \n"
+"POT-Creation-Date: 2020-12-29 15:27-0600\n"
+"PO-Revision-Date: 2020-12-29 19:23-0600\n"
+"Last-Translator: \n"
+"Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-10 14:10-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-10 14:10-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-10 14:11-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-10 14:11-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.5\n"
-"Last-Translator: \n"
-"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n"
-"%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
-"Language: ar\n"
+"X-Generator: Poedit 2.4.2\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"Language-Team: \n"
 
-#. MessageBox::Show(MensajedeError, "Advertencia", MessageBoxButtons::OK, MessageBoxIcon::Warning);
-#: Traduccion3/ErroresPrograma.cpp:116
-msgid "Advertencia"
-msgstr "تحذير"
-
-#: Traduccion3/ErroresPrograma.cpp:107
-msgid "Cambio el numero de canales del dispositivo de salida"
-msgstr "غير عدد قنوات جهاز الإخراج"
-
-#: Traduccion3/ErroresPrograma.cpp:103
-msgid "Cambio la frecuencia de muestreo del dispositivo de salida"
-msgstr "تغيير معدل أخذ العينات من جهاز الإخراج"
-
-#: Traduccion3/ErroresPrograma.cpp:99
-msgid "Cambio la frecuencia de muestreo del dispositivo predeterminado"
-msgstr "تغيير معدل العينة من الجهاز الافتراضي"
-
-#: Traduccion3/ErroresPrograma.cpp:111
-msgid "Codigo de error no existente"
-msgstr "رمز الخطأ مفقود"
-
-#: Traduccion3/ErroresPrograma.cpp:95
-msgid "Dispositivo no compatible, elija otro por favor"
-msgstr "الجهاز غير متوافق، اختيار واحد آخر من فضلك"
-
-#: Traduccion3/ErroresPrograma.cpp:31
+#: ErroresPrograma.cpp:13
 msgid "El dispositivo Predeterminado de entrada no es compatible"
-msgstr "جهاز الإدخال الافتراضي غير متوافق"
+msgstr "جهاز الإدخال الافتراضي غير مدعوم"
 
-#: Traduccion3/ErroresPrograma.cpp:71
-msgid "El dispositivo de Predeterminado no esta configurado en modo 5.1 o 7.1"
-msgstr "لم يتم تكوين الجهاز الافتراضي في وضع 5.1 أو 7.1"
-
-#: Traduccion3/ErroresPrograma.cpp:35 Traduccion3/ErroresPrograma.cpp:63
+#: ErroresPrograma.cpp:17 ErroresPrograma.cpp:45
 msgid "El numero de canales del dispositivo de audio no es compatible"
-msgstr "عدد قنوات جهاز الصوت غير متوافق"
+msgstr "عدد قنوات جهاز الصوت غير مدعوم"
 
-#: Traduccion3/ErroresPrograma.cpp:79
-msgid "Error al procesar el audio"
-msgstr "حدث خطأ أثناء معالجة الصوت"
+#: ErroresPrograma.cpp:21
+msgid ""
+"La frecuencias de muestreo de los dispositivos de audio deben ser iguales"
+msgstr "يجب أن تكون معدلات عينات أجهزة الصوت هي نفسها"
 
-#: Traduccion3/ErroresPrograma.cpp:47
+#: ErroresPrograma.cpp:25
+msgid ""
+"Se cambio o elimino el dispositivo de Salida usado durante la ultima "
+"Ejecucion"
+msgstr "تم تغيير أو حذف جهاز الإخراج المستخدم أثناء التنفيذ الأخير"
+
+#: ErroresPrograma.cpp:29
 msgid ""
 "Este dispositivo de audio no se encuentra disponible o hubo cambios en los "
 "dispositivos de audio"
-msgstr "هذا الجهاز الصوتي غير متوفر أو كانت هناك تغييرات في أجهزة الصوت"
+msgstr "جهاز الصوت هذا غير متوفر أو أنه تم إجراء تغييرات على أجهزة الصوت"
 
-#: Traduccion3/ErroresPrograma.cpp:51
+#: ErroresPrograma.cpp:33
 msgid ""
 "Hay demasiados dispositivos de audio en el sistema, desactive los que no use"
-msgstr "هناك الكثير من أجهزة الصوت في النظام، تعطيل تلك التي لا تستخدم"
+msgstr ""
+"يوجد الكثير من أجهزة الصوت في النظام ، قم بإيقاف تشغيل الأجهزة التي لا "
+"تستخدمها"
 
-#: Traduccion3/ErroresPrograma.cpp:39
-msgid "La frecuencias de muestreo de los dispositivos de audio deben ser iguales"
-msgstr "وينبغي أن تكون ترددات أخذ العينات للأجهزة السمعية هي نفسها"
-
-#: Traduccion3/ErroresPrograma.cpp:67
-msgid "Ningun dispositivo de Entrada o Salida ha sido seleccionado"
-msgstr "لم يتم تحديد جهاز الإدخال أو الإخراج"
-
-#: Traduccion3/ErroresPrograma.cpp:55
+#: ErroresPrograma.cpp:37
 msgid ""
-"No hay dispositivos de audio compatibles en el sistema, instalelos o activelos "
-"por favor"
-msgstr "لا توجد أجهزة الصوت المتوافقة في النظام، وتثبيتها أو تفعيلها من فضلك"
+"No hay dispositivos de audio compatibles en el sistema, instalelos o "
+"activelos por favor"
+msgstr "لا توجد أجهزة صوتية متوافقة في النظام ، يرجى تثبيتها أو تنشيطها"
 
-#: Traduccion3/ErroresPrograma.cpp:59
+#: ErroresPrograma.cpp:41
 msgid ""
 "No se encontraron dispositivos con 2 canales de Salida, configure alguno y "
 "presione el boton Refrescar"
-msgstr "لم يتم العثور على أجهزة مع 2 قنوات الإخراج، تكوين أي واضغط على زر تحديث"
+msgstr ""
+"لم يتم العثور على أجهزة ذات قناتين للإخراج ، قم بتكوين واحدة واضغط على زر "
+"التحديث"
 
-#: Traduccion3/ErroresPrograma.cpp:75
+#: ErroresPrograma.cpp:49
+msgid "Ningun dispositivo de Entrada o Salida ha sido seleccionado"
+msgstr "لم يتم تحديد أي جهاز إدخال أو إخراج"
+
+#: ErroresPrograma.cpp:53
+msgid "El dispositivo de Predeterminado no esta configurado en modo 5.1 o 7.1"
+msgstr "لم يتم ضبط الجهاز الافتراضي على الوضع 5.1 أو 7.1"
+
+#: ErroresPrograma.cpp:57
 msgid "No se ha seleccionado un dispositivo de Salida"
 msgstr "لم يتم تحديد جهاز الإخراج"
 
-#: Traduccion3/ErroresPrograma.cpp:83
+#: ErroresPrograma.cpp:61
+msgid "Error al procesar el audio"
+msgstr "خطأ في معالجة الصوت"
+
+#: ErroresPrograma.cpp:65
 msgid "No se pudo abrir el panel de dispositivos de audio"
-msgstr "تعذر فتح لوحة جهاز الصوت"
+msgstr "تعذر فتح لوحة أجهزة الصوت"
 
-#: Traduccion3/ErroresPrograma.cpp:91
-msgid "No se pudo cerrar el Engine de audio"
-msgstr "تعذر إغلاق محرك الصوت"
-
-#: Traduccion3/ErroresPrograma.cpp:87
+#: ErroresPrograma.cpp:69
 msgid "No se pudo cerrar el proceso de audio"
-msgstr "تعذر إغلاق العملية الصوتية"
+msgstr "تعذر إغلاق عملية الصوت"
 
-#: Traduccion3/ErroresPrograma.cpp:43
-msgid ""
-"Se cambio o elimino el dispositivo de Salida usado durante la ultima Ejecucion"
-msgstr "تم تغيير أو حذف جهاز الخروج المستخدم أثناء التنفيذ الأخير"
+#: ErroresPrograma.cpp:73
+msgid "No se pudo cerrar el Engine de audio"
+msgstr "تعذر إيقاف تشغيل محرك الصوت"
 
-#: Traduccion3/FormularioAcerca.cpp:29
+#: ErroresPrograma.cpp:77
+msgid "Dispositivo no compatible, elija otro por favor"
+msgstr "جهاز غير مدعوم ، الرجاء اختيار جهاز آخر"
+
+#: ErroresPrograma.cpp:81
+msgid "Cambio la frecuencia de muestreo del dispositivo predeterminado"
+msgstr "تغيير معدل عينة الجهاز الافتراضي"
+
+#: ErroresPrograma.cpp:85
+msgid "Cambio la frecuencia de muestreo del dispositivo de salida"
+msgstr "قم بتغيير معدل العينة لجهاز الإخراج"
+
+#: ErroresPrograma.cpp:89
+msgid "Cambio el numero de canales del dispositivo de salida"
+msgstr "تم تغيير عدد قنوات جهاز الإخراج"
+
+#: ErroresPrograma.cpp:93
+msgid "Codigo de error no existente"
+msgstr "رمز الخطأ غير موجود"
+
+#: ErroresPrograma.cpp:99
+msgid "Advertencia"
+msgstr "تحذير"
+
+#: FormularioAcerca.cpp:20
+msgid "Este programa fue hecho con: "
+msgstr "هذا البرنامج مصنوع من:"
+
+#: FormularioAcerca.cpp:28
 msgid "Con modificaciones del equipo:"
 msgstr "مع تعديلات المعدات:"
 
-#: Traduccion3/FormularioAcerca.cpp:20
-msgid "Este programa fue hecho con: "
-msgstr "وقد تم هذا البرنامج مع:"
+#: FormularioAyuda.cpp:15
+msgid "Uso del programa"
+msgstr "باستخدام البرنامج"
 
-#: Traduccion3/FormularioAyuda.cpp:22
-msgid ""
-"\n"
-"\n"
-"\n"
-msgstr ""
-"\n"
-"\n"
-"\n"
-
-#: Traduccion3/FormularioAyuda.cpp:25
-msgid "**Cambiar de un usuario a otro puede interrumpir tambien el flujo de audio."
-msgstr "** التبديل من مستخدم إلى آخر يمكن أيضا أن يقطع تدفق الصوت."
-
-#: Traduccion3/FormularioAyuda.cpp:24
-msgid ""
-"*Cambios a la frecuencia de muestreo, numero de canales o profundidad de bits,  "
-"puede interrumpir proceso de audio, pero el programa realiza los ajustes "
-"necesarios para mantenerlo activo\n"
-"\n"
-msgstr ""
-"* التغييرات في تردد أخذ العينات، وعدد القنوات أو عمق بت، يمكن أن تقطع العملية "
-"الصوتية، ولكن البرنامج يجعل التعديلات اللازمة للحفاظ على نشاطه\n"
-"\n"
-
-#: Traduccion3/FormularioAyuda.cpp:18
+#: FormularioAyuda.cpp:18
 msgid ""
 "1) Instale o configure un dispositivo de audio en modo de 5.1 o 7.1 y "
 "establezcalo como el predeterminado este puede ser virtual o fisico\n"
 "\n"
 msgstr ""
-"1) تثبيت أو تكوين جهاز الصوت في وضع 5.1 أو 7.1 وتعيينها على أنها الافتراضي يمكن "
-"أن يكون الظاهري أو المادي\n"
+"1) قم بتثبيت أو تكوين جهاز صوتي في الوضع 5.1 أو 7.1 وتعيينه كجهاز افتراضي "
+"يمكن أن يكون افتراضيًا أو ماديًا\n"
 "\n"
 
-#: Traduccion3/FormularioAyuda.cpp:19
+#: FormularioAyuda.cpp:19
 msgid ""
-"2) Configure un segundo dispositivo en modo estereo o 2 canales de salida, este "
-"debe ser un dispositivo fisico para que puede escuchar el audio mezclado como "
-"HDMI, altavoces, etc.\n"
+"2) Configure un segundo dispositivo en modo estereo o 2 canales de salida, "
+"este debe ser un dispositivo fisico para que puede escuchar el audio "
+"mezclado como HDMI, altavoces, etc.\n"
 "\n"
 msgstr ""
-"2) إعداد جهاز الثاني في وضع ستيريو أو 2 قنوات الإخراج، وينبغي أن يكون هذا الجهاز "
-"الفعلي حتى تتمكن من الاستماع إلى الصوت المختلط مثل هدمي، مكبرات الصوت، الخ.\n"
+"2) قم بتكوين جهاز ثانٍ في وضع الاستريو أو قناتين إخراج ، يجب أن يكون هذا "
+"جهازًا فعليًا حتى تتمكن من الاستماع إلى صوت مختلط مثل HDMI ومكبرات الصوت وما "
+"إلى ذلك.\n"
 "\n"
 
-#: Traduccion3/FormularioAyuda.cpp:20
+#: FormularioAyuda.cpp:20
 msgid ""
-"3) Asegurese que la frecuencia de muestreo de ambos dispositivos sea la misma.\n"
+"3) Asegurese que la frecuencia de muestreo de ambos dispositivos sea la "
+"misma.\n"
 "\n"
 msgstr ""
-"3) تأكد من أن تردد أخذ العينات من كلا الجهازين هو نفسه.\n"
+"3) تأكد من أن معدل العينة لكلا الجهازين هو نفسه.\n"
 "\n"
 
-#: Traduccion3/FormularioAyuda.cpp:21
+#: FormularioAyuda.cpp:21
 msgid ""
 "4) Presione el boton refrescar o codificar y escuche el audio en una mezcla "
 "compatible con sistemas matriciales de audio.\n"
 msgstr ""
-"4) اضغط على زر التحديث أو ترميز والاستماع إلى الصوت في مزيج متوافق مع أنظمة "
-"مصفوفة الصوت.\n"
+"4) اضغط على زر التحديث أو الترميز واستمع إلى الصوت في مزيج متوافق مع أنظمة "
+"صوت المصفوفة.\n"
+"\n"
 
-#: Traduccion3/FormularioAyuda.cpp:23
+#: FormularioAyuda.cpp:22
+msgid ""
+"\n"
+"\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+"\n"
+
+#: FormularioAyuda.cpp:23
 msgid "Notas: \n"
-msgstr "الملاحظات:\n"
+msgstr "ملاحظات:\n"
 
-#: Traduccion3/FormularioAyuda.cpp:15
-msgid "Uso del programa"
-msgstr "استخدام البرنامج"
-
-#: Traduccion3/FormularioControlVolumen.cpp:48
-msguid "Control de Volumen"
-msgstr ""
-
-#: Traduccion3/FormularioControlVolumen.cpp:189
-msgid "Filtrar canal LFE"
-msgstr "تصفية قناة L.F.E"
-
-#. 565 - valorPosicion, 65
-#: Traduccion3/FormularioControlVolumen.cpp:184
-msgid "Incluir canal LFE"
-msgstr "تشمل قناة L.F.E"
-
-#: Traduccion3/FormularioControlVolumen.cpp:192
+#: FormularioAyuda.cpp:24
 msgid ""
-"Marque para aplicar un filtro de pase bajo de 120hz a este canal y eliminar "
-"frecuencias que no corresponden a este canal. Advertencia: activar esto puede "
-"causar un aumento en el uso del CPU"
+"*Cambios a la frecuencia de muestreo, numero de canales o profundidad de "
+"bits,  puede interrumpir proceso de audio, pero el programa realiza los "
+"ajustes necesarios para mantenerlo activo\n"
+"\n"
 msgstr ""
-"تحقق من تطبيق مرشح تمريرة منخفضة يبلغ 120 هرتز لهذه القناة والقضاء على الترددات "
-"التي لا تتوافق مع هذه القناة. تحذير: قد يؤدي تفعيل هذا إلى زيادة في استخدام وحدة "
-"المعالجة المركزية"
+"* قد تؤدي التغييرات في تردد أخذ العينات أو عدد القنوات أو عمق البت إلى "
+"مقاطعة عملية الصوت ، لكن البرنامج يقوم بإجراء التعديلات اللازمة لإبقائه "
+"نشطًا\n"
+"\n"
 
-#: Traduccion3/FormularioControlVolumen.cpp:187
-msgid "Marque para incluir el canal de bajas frecuencias en la mezcla estereo"
-msgstr "تحقق لتشمل قناة التردد المنخفض في مزيج ستيريو"
-
-#: Traduccion3/FormularioControlVolumen.cpp:206
+#: FormularioAyuda.cpp:25
 msgid ""
-"Marque para no utilizar la compresion del rango dinamico. Usualmente las "
-"peliculas o videos tienen un rango dinamico o volumen menor a los juegos. Use "
-"esto modo cuando considere que el volumen de lo que esta reproduciendo es muy "
-"bajo"
-msgstr ""
-"تحقق من عدم استخدام ضغط النطاق الديناميكي. عادة ما تكون الأفلام أو مقاطع الفيديو "
-"ذات نطاق ديناميكي أو حجم أصغر من الألعاب. استخدام هذا الوضع عندما كنت تعتقد أن "
-"حجم ما كنت تلعب منخفضة جدا"
+"**Cambiar de un usuario a otro puede interrumpir tambien el flujo de audio."
+msgstr "** قد يؤدي التبديل من مستخدم إلى آخر إلى مقاطعة البث الصوتي أيضًا."
 
-#: Traduccion3/FormularioControlVolumen.cpp:201
-#: Traduccion3/PantallaPrincipal.cpp:1644
-msgid ""
-"Marque para usar todo el rango dinamico disponible. Los juegos usualmente poseen "
-"un rango dinamico o volumen muy alto, esto ayuda a usar todo el rango de un "
-"mezcla estero"
-msgstr ""
-"حدد هذا الإعداد لاستخدام كل النطاق الديناميكي المتاح. الألعاب عادة ما يكون نطاق "
-"ديناميكي أو حجم كبير جدا، وهذا يساعد على استخدام مجموعة كاملة من خليط استيرو"
-
-#. 578 - valorPosicion, 150
-#: Traduccion3/FormularioControlVolumen.cpp:198
-#: Traduccion3/PantallaPrincipal.cpp:1644
-msgid "Modo Juego"
-msgstr "وضع لعبة"
-
-#: Traduccion3/FormularioControlVolumen.cpp:203
-#: Traduccion3/PantallaPrincipal.cpp:1645
-msgid "Modo Pelicula"
-msgstr "وضع الفيلم"
-
-#: Traduccion3/FormularioControlVolumen.cpp:181
-msgid "Opciones LFE"
-msgstr "خيارات لف"
-
-#: Traduccion3/FormularioControlVolumen.cpp:71
-msgid "Perfil de Volumen"
-msgstr "حجم الملف"
-
-#: Traduccion3/FormularioControlVolumen.cpp:875
-msgid "Personalizado"
-msgstr "شخصية"
-
-#: Traduccion3/FormularioControlVolumen.cpp:194
-msgid "Rango Dinamico"
-msgstr "النطاق الديناميكي"
-
-#: Traduccion3/FormularioControlVolumen.cpp:76
-msgid "Reiniciar"
-msgstr "تمهيد"
-
-#. 3 Solo C
-#: Traduccion3/FormularioControlVolumen.cpp:355
-#: Traduccion3/FormularioControlVolumen.cpp:881
-#: Traduccion3/FormularioControlVolumen.cpp:892
-msgid "Solo C"
-msgstr "فقط C"
-
-#. 1 Solo L
-#: Traduccion3/FormularioControlVolumen.cpp:285
-#: Traduccion3/FormularioControlVolumen.cpp:879
-#: Traduccion3/FormularioControlVolumen.cpp:890
-msgid "Solo L"
-msgstr "فقط L"
-
-#. 9 Solo L y R
-#: Traduccion3/FormularioControlVolumen.cpp:569
-#: Traduccion3/FormularioControlVolumen.cpp:885
-#: Traduccion3/FormularioControlVolumen.cpp:898
-msgid "Solo L y R"
-msgstr "فقط L و R"
-
-#. 4 Solo LFE
-#: Traduccion3/FormularioControlVolumen.cpp:391
-#: Traduccion3/FormularioControlVolumen.cpp:882
-#: Traduccion3/FormularioControlVolumen.cpp:893
-msgid "Solo LFE"
-msgstr "فقط L.F.E"
-
-#. 2 Solo R
-#: Traduccion3/FormularioControlVolumen.cpp:320
-#: Traduccion3/FormularioControlVolumen.cpp:880
-#: Traduccion3/FormularioControlVolumen.cpp:891
-msgid "Solo R"
-msgstr "فقط R"
-
-#. 7 Solo RL
-#: Traduccion3/FormularioControlVolumen.cpp:498
-#: Traduccion3/FormularioControlVolumen.cpp:896
-msgid "Solo RL"
-msgstr "فقط RL"
-
-#. 11 Solo RL y RR
-#: Traduccion3/FormularioControlVolumen.cpp:639
-#: Traduccion3/FormularioControlVolumen.cpp:900
-msgid "Solo RL y RR"
-msgstr "فقط RR و RL"
-
-#. 8 Solo RR
-#: Traduccion3/FormularioControlVolumen.cpp:533
-#: Traduccion3/FormularioControlVolumen.cpp:897
-msgid "Solo RR"
-msgstr "فقط RR"
-
-#. 5 Solo SL
-#: Traduccion3/FormularioControlVolumen.cpp:427
-#: Traduccion3/FormularioControlVolumen.cpp:883
-#: Traduccion3/FormularioControlVolumen.cpp:894
-msgid "Solo SL"
-msgstr "فقط SL"
-
-#. 10 Solo SL y SR
-#: Traduccion3/FormularioControlVolumen.cpp:604
-#: Traduccion3/FormularioControlVolumen.cpp:886
-#: Traduccion3/FormularioControlVolumen.cpp:899
-msgid "Solo SL y SR"
-msgstr "فقط SR و SL"
-
-#. 6 Solo SR
-#: Traduccion3/FormularioControlVolumen.cpp:463
-#: Traduccion3/FormularioControlVolumen.cpp:884
-#: Traduccion3/FormularioControlVolumen.cpp:895
-msgid "Solo SR"
-msgstr "فقط SR"
-
-#: Traduccion3/FormularioControlVolumen.cpp:80
-msgid "Volumen Canales de Entrada"
-msgstr "قنوات الإدخال بحجم الصوت"
-
-#: Traduccion3/FormularioControlVolumen.cpp:159
-msgid "Volumen de Salida"
-msgstr "حجم الإخراج"
-
-#: Traduccion3/PantallaPrincipal.cpp:1637
-msgid "Abrir Pantalla Principal"
-msgstr "فتح الشاشة الرئيسية"
-
-#: Traduccion3/PantallaPrincipal.cpp:137
-msgid "Acerca"
-msgstr "حول"
-
-#: Traduccion3/PantallaPrincipal.cpp:1523
-msgid "Acerca de este programa"
-msgstr "حول هذا البرنامج"
-
-#: Traduccion3/PantallaPrincipal.cpp:177 Traduccion3/PantallaPrincipal.cpp:203
-msgid "Altas frecuencias de muestreo pueden incrementar el uso del CPU"
-msgstr "ارتفاع معدلات أخذ العينات يمكن أن تزيد من استخدام وحدة المعالجة المركزية"
-
-#: Traduccion3/PantallaPrincipal.cpp:141
-msgid "Archivo"
-msgstr "أرشيف"
-
-#: Traduccion3/PantallaPrincipal.cpp:138 Traduccion3/PantallaPrincipal.cpp:143
-msgid "Ayuda"
-msgstr "مساعدة"
-
-#: Traduccion3/PantallaPrincipal.cpp:1533
-msgid "Ayuda de este programa"
-msgstr "مساعدة من هذا البرنامج"
-
-#: Traduccion3/PantallaPrincipal.cpp:138
-msgid "Ayuda del programa"
-msgstr "Ayuda del programa"
-
-#: Traduccion3/PantallaPrincipal.cpp:134
-msgid "Cambiar Idioma"
-msgstr "تغيير اللغة"
-
-#: Traduccion3/PantallaPrincipal.cpp:162 Traduccion3/PantallaPrincipal.cpp:188
-msgid "Canales"
-msgstr "كاناليس"
-
-#: Traduccion3/PantallaPrincipal.cpp:129
-msgid "Cerrar"
-msgstr "قريب"
-
-#: Traduccion3/PantallaPrincipal.cpp:1656
-msgid "Cerrar Programa"
-msgstr "إغلاق البرنامج"
-
-#: Traduccion3/PantallaPrincipal.cpp:129
-msgid "Cierra el programa"
-msgstr "أغلق البرنامج"
-
-#: Traduccion3/PantallaPrincipal.cpp:208
-msgid "Codificar"
-msgstr "ترميز"
-
-#: Traduccion3/PantallaPrincipal.cpp:133 Traduccion3/PantallaPrincipal.cpp:1641
+#: FormularioControlVolumen.cpp:49 PantallaPrincipal.cpp:133
+#: PantallaPrincipal.cpp:1585
 msgid "Control de Volumen"
 msgstr "التحكم في مستوى الصوت"
 
-#: Traduccion3/PantallaPrincipal.cpp:210
-msgid "Detener"
-msgstr "توقف"
+#: FormularioControlVolumen.cpp:74
+msgid "Perfil de Volumen"
+msgstr "حجم الملف الشخصي"
 
-#. ContenedorDispositivoEntrada
-#: Traduccion3/PantallaPrincipal.cpp:154
-msgid "Dispositivo de Entrada"
-msgstr "جهاز الإدخال"
+#: FormularioControlVolumen.cpp:79
+msgid "Reiniciar"
+msgstr "إعادة بدء"
 
-#. Contenedor Dispositivo Salida
-#: Traduccion3/PantallaPrincipal.cpp:180
-msgid "Dispositivo de Salida"
-msgstr "جهاز الإخراج"
+#: FormularioControlVolumen.cpp:83
+msgid "Volumen Canales de Entrada"
+msgstr "حجم قنوات الإدخال"
 
-#: Traduccion3/PantallaPrincipal.cpp:167 Traduccion3/PantallaPrincipal.cpp:192
-msgid "Frecuencia de Muestreo"
-msgstr "تردد أخذ العينات"
+#: FormularioControlVolumen.cpp:162
+msgid "Volumen de Salida"
+msgstr "حجم الإخراج"
 
-#: Traduccion3/PantallaPrincipal.cpp:1593
-msgid "Idiomas disponibles"
-msgstr "اللغات المتاحة"
+#: FormularioControlVolumen.cpp:184
+msgid "Opciones LFE"
+msgstr "خيارات LFE"
 
-#: Traduccion3/PantallaPrincipal.cpp:137
-msgid "Informacion del Programa"
-msgstr "معلومات البرنامج"
+#: FormularioControlVolumen.cpp:187
+msgid "Incluir canal LFE"
+msgstr "Incluir canal LFE"
 
-#: Traduccion3/PantallaPrincipal.cpp:133
-msgid "Le permite ajustar el volumen de la mezcla"
-msgstr "يسمح لك لضبط حجم المزيج"
+#: FormularioControlVolumen.cpp:190
+msgid "Marque para incluir el canal de bajas frecuencias en la mezcla estereo"
+msgstr "تحقق من تضمين قناة التردد المنخفض في مزيج الاستريو"
 
-#: Traduccion3/PantallaPrincipal.cpp:1604
-msgid "Los cambios se efectuaran despues de que reinicie el programa"
-msgstr "سيتم إجراء تغييرات بعد إعادة تشغيل البرنامج"
+#: FormularioControlVolumen.cpp:192
+msgid "Filtrar canal LFE"
+msgstr "تصفية قناة LFE"
 
-#: Traduccion3/PantallaPrincipal.cpp:1645
+#: FormularioControlVolumen.cpp:195
+msgid ""
+"Marque para aplicar un filtro de pase bajo de 120hz a este canal y eliminar "
+"frecuencias que no corresponden a este canal. Advertencia: activar esto "
+"puede causar un aumento en el uso del CPU"
+msgstr ""
+"تحقق لتطبيق مرشح تمرير منخفض 120 هرتز على هذه القناة وإزالة الترددات التي لا "
+"تتوافق مع هذه القناة. تحذير: قد يؤدي تشغيل هذا إلى زيادة استخدام وحدة "
+"المعالجة المركزية"
+
+#: FormularioControlVolumen.cpp:197
+msgid "Rango Dinamico"
+msgstr "النطاق الديناميكي"
+
+#: FormularioControlVolumen.cpp:201 PantallaPrincipal.cpp:1589
+msgid "Modo Juego"
+msgstr "النطاق الديناميكي"
+
+#: FormularioControlVolumen.cpp:204 PantallaPrincipal.cpp:1589
+msgid ""
+"Marque para usar todo el rango dinamico disponible. Los juegos usualmente "
+"poseen un rango dinamico o volumen muy alto, esto ayuda a usar todo el rango "
+"de un mezcla estero"
+msgstr ""
+"تحقق من استخدام النطاق الديناميكي الكامل المتاح. عادةً ما تحتوي الألعاب على "
+"نطاق أو حجم ديناميكي عالٍ جدًا ، وهذا يساعد على استخدام النطاق الكامل لمزيج "
+"الاستريو."
+
+#: FormularioControlVolumen.cpp:206 PantallaPrincipal.cpp:1590
+msgid "Modo Pelicula"
+msgstr "وضع الفيلم"
+
+#: FormularioControlVolumen.cpp:209
 msgid ""
 "Marque para no utilizar la compresion del rango dinamico. Usualmente las "
-"peliculas o videos tiene un rango dinamico o volumen menor a los juegos. Use "
-"esto modo cuando considere que el volumen de lo que esta reproduciendo es muy "
-"bajo"
+"peliculas o videos tienen un rango dinamico o volumen menor a los juegos. "
+"Use esto modo cuando considere que el volumen de lo que esta reproduciendo "
+"es muy bajo"
 msgstr ""
-"تحقق من عدم استخدام ضغط النطاق الديناميكي. عادة ما تكون الأفلام أو مقاطع الفيديو "
-"ذات نطاق ديناميكي أو حجم أصغر من الألعاب. استخدام هذا الوضع عندما كنت تعتقد أن "
-"حجم ما كنت تلعب منخفضة جدا"
+"حدده لعدم استخدام ضغط النطاق الديناميكي. عادةً ما يكون للأفلام أو مقاطع "
+"الفيديو نطاق أو حجم ديناميكي أقل من الألعاب. استخدم هذا الوضع عندما تفكر في "
+"أن حجم ما تقوم بتشغيله منخفض للغاية"
 
-#: Traduccion3/PantallaPrincipal.cpp:1647
-msgid "Modos de Rango Dinamico"
-msgstr "وسائط المدى الديناميكي"
+#: FormularioControlVolumen.cpp:288 FormularioControlVolumen.cpp:860
+#: FormularioControlVolumen.cpp:871
+msgid "Solo L"
+msgstr "فقط L"
 
-#: Traduccion3/PantallaPrincipal.cpp:1604
-msgid "Notificacion"
-msgstr "إعلام"
+#: FormularioControlVolumen.cpp:323 FormularioControlVolumen.cpp:861
+#: FormularioControlVolumen.cpp:872
+msgid "Solo R"
+msgstr "فقط R"
 
-#: Traduccion3/PantallaPrincipal.cpp:142
-msgid "Opciones"
-msgstr "خيارات"
+#: FormularioControlVolumen.cpp:358 FormularioControlVolumen.cpp:862
+#: FormularioControlVolumen.cpp:873
+msgid "Solo C"
+msgstr "فقط C"
 
-#: Traduccion3/PantallaPrincipal.cpp:132
+#: FormularioControlVolumen.cpp:394 FormularioControlVolumen.cpp:863
+#: FormularioControlVolumen.cpp:874
+msgid "Solo LFE"
+msgstr "فقط L.F.E"
+
+#: FormularioControlVolumen.cpp:430 FormularioControlVolumen.cpp:864
+#: FormularioControlVolumen.cpp:875
+msgid "Solo SL"
+msgstr "فقط SL"
+
+#: FormularioControlVolumen.cpp:466 FormularioControlVolumen.cpp:865
+#: FormularioControlVolumen.cpp:876
+msgid "Solo SR"
+msgstr "فقط SR"
+
+#: FormularioControlVolumen.cpp:501 FormularioControlVolumen.cpp:877
+msgid "Solo RL"
+msgstr "فقط RL"
+
+#: FormularioControlVolumen.cpp:536 FormularioControlVolumen.cpp:878
+msgid "Solo RR"
+msgstr "فقط RR"
+
+#: FormularioControlVolumen.cpp:572 FormularioControlVolumen.cpp:866
+#: FormularioControlVolumen.cpp:879
+msgid "Solo L y R"
+msgstr "فقط L و R"
+
+#: FormularioControlVolumen.cpp:607 FormularioControlVolumen.cpp:867
+#: FormularioControlVolumen.cpp:880
+msgid "Solo SL y SR"
+msgstr "فقط SR و SL"
+
+#: FormularioControlVolumen.cpp:642 FormularioControlVolumen.cpp:881
+msgid "Solo RL y RR"
+msgstr "فقط RR و RL"
+
+#: FormularioControlVolumen.cpp:856
+msgid "Personalizado"
+msgstr "شخصية"
+
+#: PantallaPrincipal.cpp:129
+msgid "Cerrar"
+msgstr "قريب"
+
+#: PantallaPrincipal.cpp:129
+msgid "Cierra el programa"
+msgstr "أغلق البرنامج"
+
+#: PantallaPrincipal.cpp:132
 msgid "Panel de Dispositivos de Audio"
 msgstr "لوحة أجهزة الصوت"
 
-#: Traduccion3/PantallaPrincipal.cpp:1592
+#: PantallaPrincipal.cpp:133
+msgid "Le permite ajustar el volumen de la mezcla"
+msgstr "يسمح لك بضبط مستوى صوت المزيج"
+
+#: PantallaPrincipal.cpp:134
+msgid "Cambiar Idioma"
+msgstr "تغيير اللغة"
+
+#: PantallaPrincipal.cpp:137
+msgid "Acerca"
+msgstr "حول"
+
+#: PantallaPrincipal.cpp:137
+msgid "Informacion del Programa"
+msgstr "معلومات البرنامج"
+
+#: PantallaPrincipal.cpp:138 PantallaPrincipal.cpp:143
+msgid "Ayuda"
+msgstr "مساعدة"
+
+#: PantallaPrincipal.cpp:138
+msgid "Ayuda del programa"
+msgstr "مساعدة البرنامج"
+
+#: PantallaPrincipal.cpp:141
+msgid "Archivo"
+msgstr "أرشيف"
+
+#: PantallaPrincipal.cpp:142
+msgid "Opciones"
+msgstr "خيارات"
+
+#: PantallaPrincipal.cpp:154
+msgid "Dispositivo de Entrada"
+msgstr "جهاز الإدخال"
+
+#: PantallaPrincipal.cpp:162 PantallaPrincipal.cpp:188
+msgid "Canales"
+msgstr "القنوات"
+
+#: PantallaPrincipal.cpp:167 PantallaPrincipal.cpp:192
+msgid "Frecuencia de Muestreo"
+msgstr "تردد أخذ العينات"
+
+#: PantallaPrincipal.cpp:177 PantallaPrincipal.cpp:203
+msgid "Altas frecuencias de muestreo pueden incrementar el uso del CPU"
+msgstr "يمكن أن تزيد معدلات العينة العالية من استخدام وحدة المعالجة المركزية"
+
+#: PantallaPrincipal.cpp:180
+msgid "Dispositivo de Salida"
+msgstr "جهاز إخراج"
+
+#: PantallaPrincipal.cpp:206
+msgid "Refrescar"
+msgstr "تحديث"
+
+#: PantallaPrincipal.cpp:208
+msgid "Codificar"
+msgstr "تشفير"
+
+#: PantallaPrincipal.cpp:210
+msgid "Detener"
+msgstr "قف"
+
+#: PantallaPrincipal.cpp:1472
+msgid "Acerca de este programa"
+msgstr "حول هذا البرنامج"
+
+#: PantallaPrincipal.cpp:1482
+msgid "Ayuda de este programa"
+msgstr "مساعدة من هذا البرنامج"
+
+#: PantallaPrincipal.cpp:1537
 msgid "Por favor elija un idioma:"
 msgstr "الرجاء اختيار لغة:"
 
-#. Botones
-#: Traduccion3/PantallaPrincipal.cpp:206
-msgid "Refrescar"
-msgstr "تعيش"
+#: PantallaPrincipal.cpp:1538
+msgid "Idiomas disponibles"
+msgstr "اللغات المتوفرة"
 
-#: Traduccion3/PantallaPrincipal.cpp:1639
+#: PantallaPrincipal.cpp:1549
+msgid "Los cambios se efectuaran despues de que reinicie el programa"
+msgstr "تسري التغييرات بعد إعادة تشغيل البرنامج"
+
+#: PantallaPrincipal.cpp:1549
+msgid "Notificacion"
+msgstr "تنبيه"
+
+#: PantallaPrincipal.cpp:1581
+msgid "Abrir Pantalla Principal"
+msgstr "افتح الشاشة الرئيسية"
+
+#: PantallaPrincipal.cpp:1583
 msgid "Reiniciar Sonido"
-msgstr "إعادة تشغيل الصوت"
+msgstr "إعادة ضبط الصوت"
+
+#: PantallaPrincipal.cpp:1587
+msgid "Abrir Panel Dispositivos de Audio"
+msgstr "افتح لوحة أجهزة الصوت"
+
+#: PantallaPrincipal.cpp:1590
+msgid ""
+"Marque para no utilizar la compresion del rango dinamico. Usualmente las "
+"peliculas o videos tiene un rango dinamico o volumen menor a los juegos. Use "
+"esto modo cuando considere que el volumen de lo que esta reproduciendo es "
+"muy bajo"
+msgstr ""
+"حدده لعدم استخدام ضغط النطاق الديناميكي. عادةً ما يكون للأفلام أو مقاطع "
+"الفيديو نطاق أو حجم ديناميكي أقل من الألعاب. استخدم هذا الوضع عندما تفكر في "
+"أن حجم ما تقوم بتشغيله منخفض للغاية"
+
+#: PantallaPrincipal.cpp:1592
+msgid "Modos de Rango Dinamico"
+msgstr "أوضاع المدى الديناميكي"
+
+#: PantallaPrincipal.cpp:1601
+msgid "Cerrar Programa"
+msgstr "اغلق البرنامج"
