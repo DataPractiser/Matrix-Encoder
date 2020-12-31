@@ -1706,6 +1706,10 @@ ClienteMonitor::~ClienteMonitor()
 	SAFE_RELEASE(ptrEnumerador);
 }
 
+/*
+* Optiene el dispositivo predeterminado de audio pero desde la 
+* las liberias propias de windows 
+*/
 HRESULT STDMETHODCALLTYPE ClienteMonitor::getDefaultAudioEndpointId()
 {
 	HRESULT Resultado = NULL;
@@ -1735,6 +1739,8 @@ HRESULT STDMETHODCALLTYPE ClienteMonitor::getDefaultAudioEndpointId()
 				}
 				else
 				{
+					/*No se ha encontrado un dispositivo de audio*/
+					IDdispositivoPredeterminado = cm_cadena_vacia;
 					Dispositivo->Release();
 					Dispositivo = NULL;
 					Enumerador->Release();
@@ -1743,6 +1749,8 @@ HRESULT STDMETHODCALLTYPE ClienteMonitor::getDefaultAudioEndpointId()
 			}
 			else
 			{
+				/*No se ha encontrado un dispositivo de audio*/
+				IDdispositivoPredeterminado = cm_cadena_vacia;
 				Dispositivo = NULL;
 				Enumerador->Release();
 				Enumerador = NULL;

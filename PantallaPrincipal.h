@@ -57,8 +57,14 @@
 class ClienteMonitor : public IMMNotificationClient
 {
 	LONG Referencia;
-	IMMDeviceEnumerator *ptrEnumerador;
+	IMMDeviceEnumerator* ptrEnumerador;
 	LPWSTR IDdispositivoPredeterminado;
+
+	/*Esta variable es para que cuando no haya dispositivos
+	a IDdispositivoPredeterminado se le pueda asignar una cadena
+	nula para que cuando sea comparada no hay violaciones
+	de acceso */
+	wchar_t  cm_cadena_vacia[15] = {L'no audio device\0'};
 
 	HRESULT STDMETHODCALLTYPE getDefaultAudioEndpointId();
 
@@ -241,6 +247,8 @@ private:
 
 	void InicializarVolumen();
 	void GuardarPerfilVolumen();
+
+	bool test_rest = false;
 	void DetenerAudio();
 	void formatoEtiquetaCanales();
 
