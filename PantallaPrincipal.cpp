@@ -723,7 +723,7 @@ HRESULT PantallaPrincipal::EliminarMonitorDispositivoPredeterminado()
 
 bool PantallaPrincipal::BotonDetenerPresionado()
 {
-	return BotonDeteneHaSidoPresionado;
+	return BotonDetenerHaSidoPresionado;
 }
 
 PaError PantallaPrincipal::verificarNumerodeDispositivosEnSistema(PaHostApiTypeId Api)
@@ -928,6 +928,7 @@ static void InterrupcionAudioDispositivoPredeterminado(void *)
 {
 	bool BotonDetenerPresionado = NULL;
 
+	
 	BotonDetenerPresionado = formularioPrincipal->BotonDetenerPresionado();
 
 	if (BotonDetenerPresionado == false)
@@ -1258,7 +1259,7 @@ void PantallaPrincipal::DetenerAudio()
 	PaError ErrorSalida = NULL;
 	activarElementosPantallaPrincipal();
 
-	BotonDeteneHaSidoPresionado = true;
+	BotonDetenerHaSidoPresionado = true;
 
 	if ((Error = Pa_IsStreamActive(Flujo)) == 1)
 	{
@@ -1302,12 +1303,12 @@ void PantallaPrincipal::DetenerAudio()
 			MensajeError(ceFalloCierreEngineAudio);
 		}
 
-		BotonDeteneHaSidoPresionado = false;
+		BotonDetenerHaSidoPresionado = false;
 	}
 	else
 	{
 		Pa_Terminate();
-		BotonDeteneHaSidoPresionado = false;
+		BotonDetenerHaSidoPresionado = false;
 	}
 }
 

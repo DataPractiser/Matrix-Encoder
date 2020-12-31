@@ -304,8 +304,8 @@ private:
 	wxLocale& LocalizacionPantallaPrincipal;
 	void AjusteFormularioporIdioma(wxLanguage IdiomaenUso);
 
-	//Para determinar que el proceso fune detenido automaitcamente se usa este bool
-	bool BotonDeteneHaSidoPresionado = false;
+	//Para determinar que el proceso fue detenido automaticamente se usa este bool
+	bool BotonDetenerHaSidoPresionado = false;
 
 protected:
 	//Icono de Barra
