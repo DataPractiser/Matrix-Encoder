@@ -414,6 +414,7 @@ void PantallaPrincipal::CambiosDispositivoSalida()
 void PantallaPrincipal::CambioDispositivoPrincipal()
 {
 	PaError Error = NULL;
+	cambio_dispositivo = true;
 
 	DetenerAudio();
 
@@ -1267,9 +1268,9 @@ void PantallaPrincipal::DetenerAudio()
 
 		ptrFuncionMonitorDispositivoSalida = nullptr;
 
-		ErrorEntrada = Pa_AbortStream(FlujoMonitorDispositivoEntrada);
+		ErrorSalida = Pa_StopStream(Flujo);
 
-		ErrorSalida = Pa_AbortStream(Flujo);
+		ErrorEntrada = Pa_StopStream(FlujoMonitorDispositivoEntrada);
 
 		if (ErrorEntrada != paNoError || ErrorSalida != paNoError)
 		{
@@ -1282,9 +1283,15 @@ void PantallaPrincipal::DetenerAudio()
 		* usar y crezca sin necesidad.
 		*/
 
-		ErrorEntrada = Pa_CloseStream(FlujoMonitorDispositivoEntrada);
+		if (cambio_dispositivo == false)
+		{
+			ErrorEntrada = Pa_CloseStream(FlujoMonitorDispositivoEntrada);
 
-		ErrorSalida = Pa_CloseStream(Flujo);
+			ErrorSalida = Pa_CloseStream(Flujo);
+
+		}
+
+		cambio_dispositivo = false;
 
 		if (ErrorEntrada != paNoError || ErrorSalida != paNoError)
 		{

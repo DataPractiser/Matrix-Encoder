@@ -64,7 +64,7 @@ class ClienteMonitor : public IMMNotificationClient
 	a IDdispositivoPredeterminado se le pueda asignar una cadena
 	nula para que cuando sea comparada no hay violaciones
 	de acceso */
-	wchar_t  cm_cadena_vacia[15] = {L'no audio device\0'};
+	wchar_t  cm_cadena_vacia[1] = {L'no audio device\0'};
 
 	HRESULT STDMETHODCALLTYPE getDefaultAudioEndpointId();
 
@@ -248,7 +248,7 @@ private:
 	void InicializarVolumen();
 	void GuardarPerfilVolumen();
 
-	bool test_rest = false;
+	bool cambio_dispositivo = false;
 	void DetenerAudio();
 	void formatoEtiquetaCanales();
 
