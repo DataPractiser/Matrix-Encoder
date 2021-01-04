@@ -160,7 +160,7 @@ public:
 
 
 	virtual wxMenu *CreatePopupMenu() wxOVERRIDE; //Crea el menu del icono;
-	void dobleClickIzquierdo(wxTaskBarIconEvent& event);
+	void Click_Icono(wxTaskBarIconEvent& event);
 	void abrirPantallaPrincipal(wxCommandEvent& event);
 	void CerrarPrograma(wxCommandEvent& evento);
 	void AbrirPanelControlVolumen(wxCommandEvent& event);

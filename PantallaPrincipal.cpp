@@ -246,18 +246,20 @@ PantallaPrincipal::~PantallaPrincipal()
 
 void PantallaPrincipal::MostrarVentana()
 {
-	if (this->IsShown() == false)
+	if (this->IsShownOnScreen() == false)
 	{
 		this->Iconize(false);
 		this->Show(true);
+		this->Raise();
 		this->SetFocus();
+		this->Show(true);
 	}
 	else
 	{
 		this->Iconize(false);
 		this->Show(true);
-		this->SetFocus();
 		this->Raise();
+		this->SetFocus();
 	}
 }
 
@@ -1627,10 +1629,11 @@ void IconoBarra::ReiniciarSonido(wxCommandEvent& WXUNUSED(event))
 	formularioPrincipal->ReiniciarSonido();
 }
 
-void IconoBarra::dobleClickIzquierdo(wxTaskBarIconEvent&)
+void IconoBarra::Click_Icono(wxTaskBarIconEvent&)
 {
 	MonstrarVentanaPrincipal();
 }
+
 
 void IconoBarra::CerrarPrograma(wxCommandEvent& WXUNUSED(event))
 {
@@ -1697,7 +1700,8 @@ EVT_MENU(ID_MENU_MODO_JUEGO, IconoBarra::elegirModoJuego)
 EVT_MENU(ID_MENU_MODO_PELICULA, IconoBarra::elegirModoPelicula)
 EVT_UPDATE_UI(ID_MENU_MODO_JUEGO, IconoBarra::actualizarRadioBotonModoJuego)
 EVT_UPDATE_UI(ID_MENU_MODO_PELICULA, IconoBarra::actualizarRadioBotonModoPelicula)
-EVT_TASKBAR_LEFT_DCLICK(IconoBarra::dobleClickIzquierdo)
+EVT_TASKBAR_LEFT_UP(IconoBarra::Click_Icono)
+EVT_TASKBAR_LEFT_DCLICK(IconoBarra::Click_Icono)
 wxEND_EVENT_TABLE()
 
 
