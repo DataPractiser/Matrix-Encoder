@@ -246,21 +246,12 @@ PantallaPrincipal::~PantallaPrincipal()
 
 void PantallaPrincipal::MostrarVentana()
 {
-	if (this->IsShownOnScreen() == false)
-	{
-		this->Iconize(false);
-		this->Show(true);
-		this->Raise();
-		this->SetFocus();
-		this->Show(true);
-	}
-	else
-	{
-		this->Iconize(false);
-		this->Show(true);
-		this->Raise();
-		this->SetFocus();
-	}
+	this->Iconize(false);
+	this->Show(true);
+	this->Raise();
+	this->SetFocus();
+	this->Show(true);
+
 }
 
 void PantallaPrincipal::IncializarServidorInterno()
