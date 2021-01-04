@@ -1424,7 +1424,10 @@ void PantallaPrincipal::TerminarPrograma(wxCloseEvent& WXUNUSED(event))
 
 void PantallaPrincipal::Minimizar(wxIconizeEvent& WXUNUSED(event))
 {
-	this->Show(false);
+	if (this->IsIconized() == true )
+	{
+		this->Show(false);
+	}	
 }
 
 
