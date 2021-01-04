@@ -1745,7 +1745,7 @@ HRESULT STDMETHODCALLTYPE ClienteMonitor::getDefaultAudioEndpointId()
 				else
 				{
 					/*No se ha encontrado un dispositivo de audio*/
-					IDdispositivoPredeterminado = cm_cadena_vacia;
+					IDdispositivoPredeterminado = const_cast<LPWSTR>(cm_cadena_vacia.c_str());
 					Dispositivo->Release();
 					Dispositivo = NULL;
 					Enumerador->Release();
@@ -1755,7 +1755,7 @@ HRESULT STDMETHODCALLTYPE ClienteMonitor::getDefaultAudioEndpointId()
 			else
 			{
 				/*No se ha encontrado un dispositivo de audio*/
-				IDdispositivoPredeterminado = cm_cadena_vacia;
+				IDdispositivoPredeterminado = const_cast<LPWSTR>(cm_cadena_vacia.c_str());
 				Dispositivo = NULL;
 				Enumerador->Release();
 				Enumerador = NULL;
