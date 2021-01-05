@@ -5,7 +5,7 @@ FormularioAcerca::FormularioAcerca(wxWindow* parent, const wxString & Titulo) : 
 	this->SetSize(wxSize(TamanoVentanaX, TamanoVentanaY));
 	this->SetMinSize(wxSize(TamanoVentanaX, TamanoVentanaY));
 	this->SetMaxSize(wxSize(TamanoVentanaX, TamanoVentanaY));
-	Icono.CopyFromBitmap(wxBitmap(MatrixEncoderIcon_4));
+	Icono.CopyFromBitmap(wxBitmap(MatrixEncoderIcon_1));
 	this->SetIcon(Icono);
 
 	fondoVersionPrograma = new wxFont(11, wxFONTFAMILY_SWISS, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_BOLD, false, _T("Microsoft Sans Serif"), wxFONTENCODING_DEFAULT);
@@ -14,7 +14,7 @@ FormularioAcerca::FormularioAcerca(wxWindow* parent, const wxString & Titulo) : 
 	panelFormularioAcerca = new wxPanel(this, ID_PANEL_FORMULARIO_ACERCAR, wxDefaultPosition, wxSize(TamanoVentanaX, TamanoVentanaY), NULL, wxString("ID_PANEL_FORMULARIO_ACERCAR"));
 	panelFormularioAcerca->SetBackgroundColour(wxColor(255, 255, 255));
 
-	stVersionPrograma = new wxStaticText(panelFormularioAcerca, ID_STATICTEXT_VERSION_PROGRAMA, "Matrix Encoder v1.0.1", wxPoint(15, 20), wxDefaultSize, 0, wxString("ID_STATICTEXT_VERSION_PROGRAMA"));
+	stVersionPrograma = new wxStaticText(panelFormularioAcerca, ID_STATICTEXT_VERSION_PROGRAMA, "Matrix Encoder v1.1", wxPoint(15, 20), wxDefaultSize, 0, wxString("ID_STATICTEXT_VERSION_PROGRAMA"));
 	stVersionPrograma->SetFont(*fondoVersionPrograma);
 
 	stAgradecimiento = new wxStaticText(panelFormularioAcerca, ID_STATICTEXT_AGRADECIMIENTO, _("Este programa fue hecho con: "), wxPoint(30, 50), wxDefaultSize, 0, wxString("ID_STATICTEXT_AGRADECIMIENTO"));

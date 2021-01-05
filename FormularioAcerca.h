@@ -23,9 +23,9 @@
 // though we could still include the XPM here it would be unused)
 #ifndef wxHAS_IMAGES_IN_RESOURCES
 #include "../sample.xpm"
-#endif*/
+#endif
 
-#include "img\MatrixEncoderIcon_4.xpm"
+#include "img\MatrixEncoderIcon_1.xpm"
 #include "img\wxwidgetlogo.xpm"
 #include "img\portaudio_logo.xpm"
 #include "img\the_audacity_team.xpm"
