@@ -38,12 +38,12 @@ private:
 	//Se le asigan el numero de canales o niveles que se van a nivel
 	//si el dispositivo a procesar es 6 solo 6 controles deslizantes aparaceran.
 	int NumerodeCanalesenProceso;
-	//Este valor se usa para cambiar el tamaño del formulario cuando solo se procesan 6 canales de audio;
+	//Este valor se usa para cambiar el tamano del formulario cuando solo se procesan 6 canales de audio;
 	int valorPosicion = 0;
 
 	//Variables
-	int TamañoVentanaX = 706;
-	int TamañoVentanaY = 280; 
+	int TamanoVentanaX = 706;
+	int TamanoVentanaY = 280; 
 	int XajusteporIdioma = 0;
 
 	
@@ -132,7 +132,7 @@ public:
 	void btnReiniciar_click(wxCommandEvent& event);
 
 	//Esta funcion es para cuando se ha hecho una actualizacion en el dispositivo de entrada
-	//y este formulario esté en pantalla, efectuando los cambios necesarios.
+	//y este formulario estn en pantalla, efectuando los cambios necesarios.
 	void refrescarFormularioControlVolumen(int CanalesaProcesar);
 
 	void tbVolumenCanalL_cambioValor(wxCommandEvent& event);

@@ -57,9 +57,9 @@ FormularioControlVolumen::FormularioControlVolumen(wxWindow *Parent, int Numoero
 	LenguajeEnUso = IdiomaenUso;
 	AjusteFormularioporIdioma(IdiomaenUso);
 
-	this->SetSize(wxSize(TamañoVentanaX - valorPosicion + XajusteporIdioma, TamañoVentanaY));
-	this->SetMinSize(wxSize((TamañoVentanaX - valorPosicion + XajusteporIdioma), TamañoVentanaY));
-	this->SetMaxSize(wxSize(TamañoVentanaX - valorPosicion + XajusteporIdioma, TamañoVentanaY));
+	this->SetSize(wxSize(TamanoVentanaX - valorPosicion + XajusteporIdioma, TamanoVentanaY));
+	this->SetMinSize(wxSize((TamanoVentanaX - valorPosicion + XajusteporIdioma), TamanoVentanaY));
+	this->SetMaxSize(wxSize(TamanoVentanaX - valorPosicion + XajusteporIdioma, TamanoVentanaY));
 	
 	
 	Icono.CopyFromBitmap(wxBitmap(MatrixEncoderIcon_2));
@@ -68,7 +68,7 @@ FormularioControlVolumen::FormularioControlVolumen(wxWindow *Parent, int Numoero
 	wxFont estiloLetrasCanales(8, wxFONTFAMILY_SWISS, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_BOLD, false, _T("Microsoft Sans Serif"), wxFONTENCODING_DEFAULT);
 	wxFont estiloLetrasValoresSliders(8, wxFONTFAMILY_SWISS, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL, false, _T("Microsoft Sans Serif"), wxFONTENCODING_DEFAULT);
 
-	panelFormularioControlVolumen = new wxPanel(this, ID_PANEL_FORMULARIO_VOLUMEN, wxPoint(0, 0), wxSize(TamañoVentanaX - valorPosicion + XajusteporIdioma, TamañoVentanaY), NULL, wxString("Formulario Control Volumen"));
+	panelFormularioControlVolumen = new wxPanel(this, ID_PANEL_FORMULARIO_VOLUMEN, wxPoint(0, 0), wxSize(TamanoVentanaX - valorPosicion + XajusteporIdioma, TamanoVentanaY), NULL, wxString("Formulario Control Volumen"));
 	panelFormularioControlVolumen->SetBackgroundColour(wxColor(255, 255, 255));
 
 	stPerfilVolumen = new wxStaticText(panelFormularioControlVolumen, ID_STATICTEXT_PERFILESVOLUMEN, _("Perfil de Volumen"), wxPoint(18, 12), wxDefaultSize, NULL, wxString("ID_STATICTEXT_PERFILESVOLUMEN"));
@@ -943,7 +943,7 @@ void FormularioControlVolumen::refrescarFormularioControlVolumen(int CanalesaPro
 		AjusteFormularioporIdioma(LenguajeEnUso);
 
 		
-		panelFormularioControlVolumen->SetSize(wxSize(TamañoVentanaX - valorPosicion, TamañoVentanaY));
+		panelFormularioControlVolumen->SetSize(wxSize(TamanoVentanaX - valorPosicion, TamanoVentanaY));
 		stbContenedorVolumenEntrada->SetSize(wxSize(410 - valorPosicion, 178));
 		stbContenedorVolumenSalida->SetPosition(wxPoint(430 - valorPosicion, 40));
 		stbContenedorOpcionesLFE->SetPosition(wxPoint(562 - valorPosicion, 40));
@@ -959,9 +959,9 @@ void FormularioControlVolumen::refrescarFormularioControlVolumen(int CanalesaPro
 		establecerPerfilesVolumen(CanalesaProcesar);
 
 		
-		this->SetMinSize(wxSize((TamañoVentanaX - valorPosicion + XajusteporIdioma), TamañoVentanaY));
-		this->SetMaxSize(wxSize(TamañoVentanaX - valorPosicion + XajusteporIdioma, TamañoVentanaY));
-		this->SetSize(wxSize(TamañoVentanaX - valorPosicion + XajusteporIdioma, TamañoVentanaY));
+		this->SetMinSize(wxSize((TamanoVentanaX - valorPosicion + XajusteporIdioma), TamanoVentanaY));
+		this->SetMaxSize(wxSize(TamanoVentanaX - valorPosicion + XajusteporIdioma, TamanoVentanaY));
+		this->SetSize(wxSize(TamanoVentanaX - valorPosicion + XajusteporIdioma, TamanoVentanaY));
 		this->UpdateWindowUI();
 		return;
 
