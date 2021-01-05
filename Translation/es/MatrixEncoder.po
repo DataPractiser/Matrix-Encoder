@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-29 15:27-0600\n"
-"PO-Revision-Date: 2020-12-29 16:02-0600\n"
+"POT-Creation-Date: 2021-01-04 19:55-0600\n"
+"PO-Revision-Date: 2021-01-04 19:57-0600\n"
 "Last-Translator: \n"
+"Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.4.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language-Team: \n"
 
 #: ErroresPrograma.cpp:13
 msgid "El dispositivo Predeterminado de entrada no es compatible"
@@ -207,7 +207,7 @@ msgstr ""
 "**Cambiar de un usuario a otro puede interrumpir también el flujo de audio."
 
 #: FormularioControlVolumen.cpp:49 PantallaPrincipal.cpp:133
-#: PantallaPrincipal.cpp:1585
+#: PantallaPrincipal.cpp:1602
 msgid "Control de Volumen"
 msgstr "Control de Volumen"
 
@@ -257,11 +257,11 @@ msgstr ""
 msgid "Rango Dinamico"
 msgstr "Rango Dinmico"
 
-#: FormularioControlVolumen.cpp:201 PantallaPrincipal.cpp:1589
+#: FormularioControlVolumen.cpp:201 PantallaPrincipal.cpp:1606
 msgid "Modo Juego"
 msgstr "Modo Juego"
 
-#: FormularioControlVolumen.cpp:204 PantallaPrincipal.cpp:1589
+#: FormularioControlVolumen.cpp:204 PantallaPrincipal.cpp:1606
 msgid ""
 "Marque para usar todo el rango dinamico disponible. Los juegos usualmente "
 "poseen un rango dinamico o volumen muy alto, esto ayuda a usar todo el rango "
@@ -271,7 +271,7 @@ msgstr ""
 "poseen un rango dinámico o volumen muy alto, esto ayuda a usar todo el rango "
 "de un mezcla estero"
 
-#: FormularioControlVolumen.cpp:206 PantallaPrincipal.cpp:1590
+#: FormularioControlVolumen.cpp:206 PantallaPrincipal.cpp:1607
 msgid "Modo Pelicula"
 msgstr "Modo Película"
 
@@ -419,43 +419,43 @@ msgstr "Codificar"
 msgid "Detener"
 msgstr "Detener"
 
-#: PantallaPrincipal.cpp:1472
+#: PantallaPrincipal.cpp:1489
 msgid "Acerca de este programa"
 msgstr "Acerca de este programa"
 
-#: PantallaPrincipal.cpp:1482
+#: PantallaPrincipal.cpp:1499
 msgid "Ayuda de este programa"
 msgstr "Ayuda de este programa"
 
-#: PantallaPrincipal.cpp:1537
+#: PantallaPrincipal.cpp:1554
 msgid "Por favor elija un idioma:"
 msgstr "Por favor elija un idioma:"
 
-#: PantallaPrincipal.cpp:1538
+#: PantallaPrincipal.cpp:1555
 msgid "Idiomas disponibles"
 msgstr "Idiomas disponibles"
 
-#: PantallaPrincipal.cpp:1549
+#: PantallaPrincipal.cpp:1566
 msgid "Los cambios se efectuaran despues de que reinicie el programa"
 msgstr "Los cambios se efectuaran después de que reinicie el programa"
 
-#: PantallaPrincipal.cpp:1549
+#: PantallaPrincipal.cpp:1566
 msgid "Notificacion"
 msgstr "Notificación"
 
-#: PantallaPrincipal.cpp:1581
+#: PantallaPrincipal.cpp:1598
 msgid "Abrir Pantalla Principal"
 msgstr "Abrir Pantalla Principal"
 
-#: PantallaPrincipal.cpp:1583
+#: PantallaPrincipal.cpp:1600
 msgid "Reiniciar Sonido"
 msgstr "Reiniciar Sonido"
 
-#: PantallaPrincipal.cpp:1587
+#: PantallaPrincipal.cpp:1604
 msgid "Abrir Panel Dispositivos de Audio"
 msgstr "Abrir Panel de Dispositivos de Audio"
 
-#: PantallaPrincipal.cpp:1590
+#: PantallaPrincipal.cpp:1607
 msgid ""
 "Marque para no utilizar la compresion del rango dinamico. Usualmente las "
 "peliculas o videos tiene un rango dinamico o volumen menor a los juegos. Use "
@@ -467,10 +467,10 @@ msgstr ""
 "esto modo cuando considere que el volumen de lo que esta reproduciendo es "
 "muy bajo"
 
-#: PantallaPrincipal.cpp:1592
+#: PantallaPrincipal.cpp:1609
 msgid "Modos de Rango Dinamico"
 msgstr "Modos de Rango Dinámico"
 
-#: PantallaPrincipal.cpp:1601
+#: PantallaPrincipal.cpp:1618
 msgid "Cerrar Programa"
 msgstr "Cerrar Programa"

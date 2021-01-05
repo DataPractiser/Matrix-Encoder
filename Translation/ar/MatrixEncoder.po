@@ -7,9 +7,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-29 15:27-0600\n"
-"PO-Revision-Date: 2020-12-29 19:23-0600\n"
+"POT-Creation-Date: 2021-01-04 19:55-0600\n"
+"PO-Revision-Date: 2021-01-04 19:56-0600\n"
 "Last-Translator: \n"
+"Language-Team: \n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,7 +18,6 @@ msgstr ""
 "X-Generator: Poedit 2.4.2\n"
 "Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
-"Language-Team: \n"
 
 #: ErroresPrograma.cpp:13
 msgid "El dispositivo Predeterminado de entrada no es compatible"
@@ -201,7 +201,7 @@ msgid ""
 msgstr "** قد يؤدي التبديل من مستخدم إلى آخر إلى مقاطعة البث الصوتي أيضًا."
 
 #: FormularioControlVolumen.cpp:49 PantallaPrincipal.cpp:133
-#: PantallaPrincipal.cpp:1585
+#: PantallaPrincipal.cpp:1602
 msgid "Control de Volumen"
 msgstr "التحكم في مستوى الصوت"
 
@@ -243,7 +243,7 @@ msgid ""
 "frecuencias que no corresponden a este canal. Advertencia: activar esto "
 "puede causar un aumento en el uso del CPU"
 msgstr ""
-"تحقق لتطبيق مرشح تمرير منخفض 120 هرتز على هذه القناة وإزالة الترددات التي لا "
+"تحقق لتطبيق مرشح تمرير منخفض120  هرتز على هذه القناة وإزالة الترددات التي لا "
 "تتوافق مع هذه القناة. تحذير: قد يؤدي تشغيل هذا إلى زيادة استخدام وحدة "
 "المعالجة المركزية"
 
@@ -251,11 +251,11 @@ msgstr ""
 msgid "Rango Dinamico"
 msgstr "النطاق الديناميكي"
 
-#: FormularioControlVolumen.cpp:201 PantallaPrincipal.cpp:1589
+#: FormularioControlVolumen.cpp:201 PantallaPrincipal.cpp:1606
 msgid "Modo Juego"
 msgstr "النطاق الديناميكي"
 
-#: FormularioControlVolumen.cpp:204 PantallaPrincipal.cpp:1589
+#: FormularioControlVolumen.cpp:204 PantallaPrincipal.cpp:1606
 msgid ""
 "Marque para usar todo el rango dinamico disponible. Los juegos usualmente "
 "poseen un rango dinamico o volumen muy alto, esto ayuda a usar todo el rango "
@@ -265,7 +265,7 @@ msgstr ""
 "نطاق أو حجم ديناميكي عالٍ جدًا ، وهذا يساعد على استخدام النطاق الكامل لمزيج "
 "الاستريو."
 
-#: FormularioControlVolumen.cpp:206 PantallaPrincipal.cpp:1590
+#: FormularioControlVolumen.cpp:206 PantallaPrincipal.cpp:1607
 msgid "Modo Pelicula"
 msgstr "وضع الفيلم"
 
@@ -412,43 +412,43 @@ msgstr "تشفير"
 msgid "Detener"
 msgstr "قف"
 
-#: PantallaPrincipal.cpp:1472
+#: PantallaPrincipal.cpp:1489
 msgid "Acerca de este programa"
 msgstr "حول هذا البرنامج"
 
-#: PantallaPrincipal.cpp:1482
+#: PantallaPrincipal.cpp:1499
 msgid "Ayuda de este programa"
 msgstr "مساعدة من هذا البرنامج"
 
-#: PantallaPrincipal.cpp:1537
+#: PantallaPrincipal.cpp:1554
 msgid "Por favor elija un idioma:"
 msgstr "الرجاء اختيار لغة:"
 
-#: PantallaPrincipal.cpp:1538
+#: PantallaPrincipal.cpp:1555
 msgid "Idiomas disponibles"
 msgstr "اللغات المتوفرة"
 
-#: PantallaPrincipal.cpp:1549
+#: PantallaPrincipal.cpp:1566
 msgid "Los cambios se efectuaran despues de que reinicie el programa"
 msgstr "تسري التغييرات بعد إعادة تشغيل البرنامج"
 
-#: PantallaPrincipal.cpp:1549
+#: PantallaPrincipal.cpp:1566
 msgid "Notificacion"
 msgstr "تنبيه"
 
-#: PantallaPrincipal.cpp:1581
+#: PantallaPrincipal.cpp:1598
 msgid "Abrir Pantalla Principal"
 msgstr "افتح الشاشة الرئيسية"
 
-#: PantallaPrincipal.cpp:1583
+#: PantallaPrincipal.cpp:1600
 msgid "Reiniciar Sonido"
 msgstr "إعادة ضبط الصوت"
 
-#: PantallaPrincipal.cpp:1587
+#: PantallaPrincipal.cpp:1604
 msgid "Abrir Panel Dispositivos de Audio"
 msgstr "افتح لوحة أجهزة الصوت"
 
-#: PantallaPrincipal.cpp:1590
+#: PantallaPrincipal.cpp:1607
 msgid ""
 "Marque para no utilizar la compresion del rango dinamico. Usualmente las "
 "peliculas o videos tiene un rango dinamico o volumen menor a los juegos. Use "
@@ -459,10 +459,10 @@ msgstr ""
 "الفيديو نطاق أو حجم ديناميكي أقل من الألعاب. استخدم هذا الوضع عندما تفكر في "
 "أن حجم ما تقوم بتشغيله منخفض للغاية"
 
-#: PantallaPrincipal.cpp:1592
+#: PantallaPrincipal.cpp:1609
 msgid "Modos de Rango Dinamico"
 msgstr "أوضاع المدى الديناميكي"
 
-#: PantallaPrincipal.cpp:1601
+#: PantallaPrincipal.cpp:1618
 msgid "Cerrar Programa"
 msgstr "اغلق البرنامج"

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-29 15:27-0600\n"
-"PO-Revision-Date: 2020-12-29 19:25-0600\n"
+"POT-Creation-Date: 2021-01-04 19:55-0600\n"
+"PO-Revision-Date: 2021-01-04 19:56-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -206,7 +206,7 @@ msgstr ""
 "unterbrechen."
 
 #: FormularioControlVolumen.cpp:49 PantallaPrincipal.cpp:133
-#: PantallaPrincipal.cpp:1585
+#: PantallaPrincipal.cpp:1602
 msgid "Control de Volumen"
 msgstr "Lautstrkeregelung"
 
@@ -257,11 +257,11 @@ msgstr ""
 msgid "Rango Dinamico"
 msgstr "Dynamikbereich"
 
-#: FormularioControlVolumen.cpp:201 PantallaPrincipal.cpp:1589
+#: FormularioControlVolumen.cpp:201 PantallaPrincipal.cpp:1606
 msgid "Modo Juego"
 msgstr "Spielmodus"
 
-#: FormularioControlVolumen.cpp:204 PantallaPrincipal.cpp:1589
+#: FormularioControlVolumen.cpp:204 PantallaPrincipal.cpp:1606
 msgid ""
 "Marque para usar todo el rango dinamico disponible. Los juegos usualmente "
 "poseen un rango dinamico o volumen muy alto, esto ayuda a usar todo el rango "
@@ -272,7 +272,7 @@ msgstr ""
 "Lautstrken, dies hilft, die gesamte Bandbreite einer Mischung von Estero zu "
 "nutzen"
 
-#: FormularioControlVolumen.cpp:206 PantallaPrincipal.cpp:1590
+#: FormularioControlVolumen.cpp:206 PantallaPrincipal.cpp:1607
 msgid "Modo Pelicula"
 msgstr "Filmmodus"
 
@@ -421,43 +421,43 @@ msgstr "Code"
 msgid "Detener"
 msgstr "Stoppen"
 
-#: PantallaPrincipal.cpp:1472
+#: PantallaPrincipal.cpp:1489
 msgid "Acerca de este programa"
 msgstr "Über dieses Programm"
 
-#: PantallaPrincipal.cpp:1482
+#: PantallaPrincipal.cpp:1499
 msgid "Ayuda de este programa"
 msgstr "Hilfe von diesem Programm"
 
-#: PantallaPrincipal.cpp:1537
+#: PantallaPrincipal.cpp:1554
 msgid "Por favor elija un idioma:"
 msgstr "Bitte whlen Sie eine Sprache:"
 
-#: PantallaPrincipal.cpp:1538
+#: PantallaPrincipal.cpp:1555
 msgid "Idiomas disponibles"
 msgstr "Verfgbare Sprachen"
 
-#: PantallaPrincipal.cpp:1549
+#: PantallaPrincipal.cpp:1566
 msgid "Los cambios se efectuaran despues de que reinicie el programa"
 msgstr "Änderungen werden nach dem Neustart des Programms wirksam"
 
-#: PantallaPrincipal.cpp:1549
+#: PantallaPrincipal.cpp:1566
 msgid "Notificacion"
 msgstr "Benachrichtigung"
 
-#: PantallaPrincipal.cpp:1581
+#: PantallaPrincipal.cpp:1598
 msgid "Abrir Pantalla Principal"
 msgstr "Hauptbildschirm öffnen"
 
-#: PantallaPrincipal.cpp:1583
+#: PantallaPrincipal.cpp:1600
 msgid "Reiniciar Sonido"
 msgstr "Sound neu starten"
 
-#: PantallaPrincipal.cpp:1587
+#: PantallaPrincipal.cpp:1604
 msgid "Abrir Panel Dispositivos de Audio"
 msgstr "Öffnen Sie das Audiogerätefenster"
 
-#: PantallaPrincipal.cpp:1590
+#: PantallaPrincipal.cpp:1607
 msgid ""
 "Marque para no utilizar la compresion del rango dinamico. Usualmente las "
 "peliculas o videos tiene un rango dinamico o volumen menor a los juegos. Use "
@@ -470,10 +470,10 @@ msgstr ""
 "diesen Modus, wenn Sie bedenken, dass die Lautstrke Ihrer Wiedergabe sehr "
 "niedrig ist"
 
-#: PantallaPrincipal.cpp:1592
+#: PantallaPrincipal.cpp:1609
 msgid "Modos de Rango Dinamico"
 msgstr "Dynamikbereich-Modi"
 
-#: PantallaPrincipal.cpp:1601
+#: PantallaPrincipal.cpp:1618
 msgid "Cerrar Programa"
 msgstr "Programm schlieen"

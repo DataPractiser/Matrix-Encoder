@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-29 15:27-0600\n"
-"PO-Revision-Date: 2020-12-29 17:05-0600\n"
+"POT-Creation-Date: 2021-01-04 19:55-0600\n"
+"PO-Revision-Date: 2021-01-04 19:58-0600\n"
 "Last-Translator: \n"
+"Language-Team: \n"
 "Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.4.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language-Team: \n"
 
 #: ErroresPrograma.cpp:13
 msgid "El dispositivo Predeterminado de entrada no es compatible"
@@ -27,41 +27,32 @@ msgid "El numero de canales del dispositivo de audio no es compatible"
 msgstr "ऑडियो डिवाइस के चैनलों की संख्या समर्थित नहीं है"
 
 #: ErroresPrograma.cpp:21
-msgid ""
-"La frecuencias de muestreo de los dispositivos de audio deben ser iguales"
+msgid "La frecuencias de muestreo de los dispositivos de audio deben ser iguales"
 msgstr "ऑडियो उपकरणों की नमूना दर समान होनी चाहिए"
 
 #: ErroresPrograma.cpp:25
-msgid ""
-"Se cambio o elimino el dispositivo de Salida usado durante la ultima "
-"Ejecucion"
-msgstr ""
-"अंतिम निष्पादन के दौरान उपयोग किए गए आउटपुट डिवाइस को बदल दिया गया था या हटा "
-"दिया गया था"
+msgid "Se cambio o elimino el dispositivo de Salida usado durante la ultima Ejecucion"
+msgstr "अंतिम निष्पादन के दौरान उपयोग किए गए आउटपुट डिवाइस को बदल दिया गया था या हटा दिया गया था"
 
 #: ErroresPrograma.cpp:29
 msgid ""
-"Este dispositivo de audio no se encuentra disponible o hubo cambios en los "
-"dispositivos de audio"
+"Este dispositivo de audio no se encuentra disponible o hubo cambios en los dispositivos de "
+"audio"
 msgstr "यह ऑडियो डिवाइस उपलब्ध नहीं है या ऑडियो डिवाइस में परिवर्तन थे"
 
 #: ErroresPrograma.cpp:33
-msgid ""
-"Hay demasiados dispositivos de audio en el sistema, desactive los que no use"
+msgid "Hay demasiados dispositivos de audio en el sistema, desactive los que no use"
 msgstr "सिस्टम में बहुत अधिक ऑडियो डिवाइस हैं, जिन्हें आप उपयोग नहीं करते हैं उन्हें बंद कर दें"
 
 #: ErroresPrograma.cpp:37
-msgid ""
-"No hay dispositivos de audio compatibles en el sistema, instalelos o "
-"activelos por favor"
+msgid "No hay dispositivos de audio compatibles en el sistema, instalelos o activelos por favor"
 msgstr "सिस्टम में कोई संगत ऑडियो डिवाइस नहीं हैं, कृपया उन्हें इंस्टॉल या सक्रिय करें"
 
 #: ErroresPrograma.cpp:41
 msgid ""
-"No se encontraron dispositivos con 2 canales de Salida, configure alguno y "
-"presione el boton Refrescar"
-msgstr ""
-"2 आउटपुट चैनल वाले कोई उपकरण नहीं मिले, एक को कॉन्फ़िगर करें और ताज़ा करें बटन दबाएं"
+"No se encontraron dispositivos con 2 canales de Salida, configure alguno y presione el boton "
+"Refrescar"
+msgstr "2 आउटपुट चैनल वाले कोई उपकरण नहीं मिले, एक को कॉन्फ़िगर करें और ताज़ा करें बटन दबाएं"
 
 #: ErroresPrograma.cpp:49
 msgid "Ningun dispositivo de Entrada o Salida ha sido seleccionado"
@@ -129,39 +120,35 @@ msgstr "कार्यक्रम का उपयोग करना"
 
 #: FormularioAyuda.cpp:18
 msgid ""
-"1) Instale o configure un dispositivo de audio en modo de 5.1 o 7.1 y "
-"establezcalo como el predeterminado este puede ser virtual o fisico\n"
+"1) Instale o configure un dispositivo de audio en modo de 5.1 o 7.1 y establezcalo como el "
+"predeterminado este puede ser virtual o fisico\n"
 "\n"
 msgstr ""
-"1) 5.1 या 7.1 मोड में एक ऑडियो डिवाइस को स्थापित या कॉन्फ़िगर करें और इसे डिफ़ॉल्ट के "
-"रूप में सेट करें यह आभासी या भौतिक हो सकता है\n"
+"1) 5.1 या 7.1 मोड में एक ऑडियो डिवाइस को स्थापित या कॉन्फ़िगर करें और इसे डिफ़ॉल्ट के रूप में सेट करें यह "
+"आभासी या भौतिक हो सकता है\n"
 "\n"
 
 #: FormularioAyuda.cpp:19
 msgid ""
-"2) Configure un segundo dispositivo en modo estereo o 2 canales de salida, "
-"este debe ser un dispositivo fisico para que puede escuchar el audio "
-"mezclado como HDMI, altavoces, etc.\n"
+"2) Configure un segundo dispositivo en modo estereo o 2 canales de salida, este debe ser un "
+"dispositivo fisico para que puede escuchar el audio mezclado como HDMI, altavoces, etc.\n"
 "\n"
 msgstr ""
-"2) स्टीरियो मोड या 2 आउटपुट चैनलों में एक दूसरे डिवाइस को कॉन्फ़िगर करें, यह एक भौतिक "
-"उपकरण होना चाहिए ताकि आप मिश्रित ऑडियो जैसे एचडीएमआई, स्पीकर आदि सुन सकें।\n"
+"2) स्टीरियो मोड या 2 आउटपुट चैनलों में एक दूसरे डिवाइस को कॉन्फ़िगर करें, यह एक भौतिक उपकरण होना चाहिए "
+"ताकि आप मिश्रित ऑडियो जैसे एचडीएमआई, स्पीकर आदि सुन सकें।\n"
 "\n"
 
 #: FormularioAyuda.cpp:20
 msgid ""
-"3) Asegurese que la frecuencia de muestreo de ambos dispositivos sea la "
-"misma.\n"
+"3) Asegurese que la frecuencia de muestreo de ambos dispositivos sea la misma.\n"
 "\n"
 msgstr "3) सुनिश्चित करें कि दोनों उपकरणों का नमूना दर समान है।\n"
 
 #: FormularioAyuda.cpp:21
 msgid ""
-"4) Presione el boton refrescar o codificar y escuche el audio en una mezcla "
-"compatible con sistemas matriciales de audio.\n"
-msgstr ""
-"4) रिफ्रेश या एनकोड बटन को दबाएं और मैट्रिक्स ऑडियो सिस्टम के साथ संगत मिश्रण में ऑडियो "
-"सुनें।\n"
+"4) Presione el boton refrescar o codificar y escuche el audio en una mezcla compatible con "
+"sistemas matriciales de audio.\n"
+msgstr "4) रिफ्रेश या एनकोड बटन को दबाएं और मैट्रिक्स ऑडियो सिस्टम के साथ संगत मिश्रण में ऑडियो सुनें।\n"
 
 #: FormularioAyuda.cpp:22
 msgid ""
@@ -179,22 +166,20 @@ msgstr "टिप्पणियाँ:\n"
 
 #: FormularioAyuda.cpp:24
 msgid ""
-"*Cambios a la frecuencia de muestreo, numero de canales o profundidad de "
-"bits,  puede interrumpir proceso de audio, pero el programa realiza los "
-"ajustes necesarios para mantenerlo activo\n"
+"*Cambios a la frecuencia de muestreo, numero de canales o profundidad de bits,  puede "
+"interrumpir proceso de audio, pero el programa realiza los ajustes necesarios para mantenerlo "
+"activo\n"
 "\n"
 msgstr ""
-"* नमूना आवृत्ति, चैनलों की संख्या या बिट गहराई में परिवर्तन, ऑडियो प्रक्रिया को बाधित कर "
-"सकता है, लेकिन कार्यक्रम इसे सक्रिय रखने के लिए आवश्यक समायोजन करता है\n"
+"* नमूना आवृत्ति, चैनलों की संख्या या बिट गहराई में परिवर्तन, ऑडियो प्रक्रिया को बाधित कर सकता है, लेकिन "
+"कार्यक्रम इसे सक्रिय रखने के लिए आवश्यक समायोजन करता है\n"
 "\n"
 
 #: FormularioAyuda.cpp:25
-msgid ""
-"**Cambiar de un usuario a otro puede interrumpir tambien el flujo de audio."
+msgid "**Cambiar de un usuario a otro puede interrumpir tambien el flujo de audio."
 msgstr "** एक उपयोगकर्ता से दूसरे में स्विच करने से ऑडियो स्ट्रीम भी बाधित हो सकती है"
 
-#: FormularioControlVolumen.cpp:49 PantallaPrincipal.cpp:133
-#: PantallaPrincipal.cpp:1585
+#: FormularioControlVolumen.cpp:49 PantallaPrincipal.cpp:133 PantallaPrincipal.cpp:1602
 msgid "Control de Volumen"
 msgstr "ध्वनि नियंत्रण"
 
@@ -232,46 +217,43 @@ msgstr "फ़िल्टर LFE चैनल"
 
 #: FormularioControlVolumen.cpp:195
 msgid ""
-"Marque para aplicar un filtro de pase bajo de 120hz a este canal y eliminar "
-"frecuencias que no corresponden a este canal. Advertencia: activar esto "
-"puede causar un aumento en el uso del CPU"
+"Marque para aplicar un filtro de pase bajo de 120hz a este canal y eliminar frecuencias que "
+"no corresponden a este canal. Advertencia: activar esto puede causar un aumento en el uso del "
+"CPU"
 msgstr ""
-"इस चैनल पर 120hz का कम पास फ़िल्टर लागू करने के लिए और इस चैनल के अनुरूप नहीं होने वाले "
-"आवृत्तियों को खत्म करने के \"\n"
+"इस चैनल पर 120hz का कम पास फ़िल्टर लागू करने के लिए और इस चैनल के अनुरूप नहीं होने वाले आवृत्तियों को खत्म करने "
+"के \"\n"
 "\"लिए जांचें। चेतावनी: इसे सक्रिय करने से CPU उपयोग में वृद्धि हो सकती है"
 
 #: FormularioControlVolumen.cpp:197
 msgid "Rango Dinamico"
 msgstr "गतिशील सीमा"
 
-#: FormularioControlVolumen.cpp:201 PantallaPrincipal.cpp:1589
+#: FormularioControlVolumen.cpp:201 PantallaPrincipal.cpp:1606
 msgid "Modo Juego"
 msgstr "खेल मोड"
 
-#: FormularioControlVolumen.cpp:204 PantallaPrincipal.cpp:1589
+#: FormularioControlVolumen.cpp:204 PantallaPrincipal.cpp:1606
 msgid ""
-"Marque para usar todo el rango dinamico disponible. Los juegos usualmente "
-"poseen un rango dinamico o volumen muy alto, esto ayuda a usar todo el rango "
-"de un mezcla estero"
+"Marque para usar todo el rango dinamico disponible. Los juegos usualmente poseen un rango "
+"dinamico o volumen muy alto, esto ayuda a usar todo el rango de un mezcla estero"
 msgstr ""
-"उपलब्ध पूर्ण गतिशील रेंज का उपयोग करने के लिए जाँच करें। खेलों में आमतौर पर बहुत अधिक "
-"गतिशील रेंज या वॉल्यूम होता है, यह एक स्टीरियो मिश्रण की पूरी श्रृंखला का उपयोग करने में "
-"मदद करता है"
+"उपलब्ध पूर्ण गतिशील रेंज का उपयोग करने के लिए जाँच करें। खेलों में आमतौर पर बहुत अधिक गतिशील रेंज या वॉल्यूम "
+"होता है, यह एक स्टीरियो मिश्रण की पूरी श्रृंखला का उपयोग करने में मदद करता है"
 
-#: FormularioControlVolumen.cpp:206 PantallaPrincipal.cpp:1590
+#: FormularioControlVolumen.cpp:206 PantallaPrincipal.cpp:1607
 msgid "Modo Pelicula"
 msgstr "मूवी मोड"
 
 #: FormularioControlVolumen.cpp:209
 msgid ""
-"Marque para no utilizar la compresion del rango dinamico. Usualmente las "
-"peliculas o videos tienen un rango dinamico o volumen menor a los juegos. "
-"Use esto modo cuando considere que el volumen de lo que esta reproduciendo "
-"es muy bajo"
+"Marque para no utilizar la compresion del rango dinamico. Usualmente las peliculas o videos "
+"tienen un rango dinamico o volumen menor a los juegos. Use esto modo cuando considere que el "
+"volumen de lo que esta reproduciendo es muy bajo"
 msgstr ""
-"डायनेमिक रेंज कम्प्रेशन का उपयोग नहीं करने की जाँच करें। फिल्मों या वीडियो में आमतौर पर गेम्स "
-"की तुलना में कम गतिशील रेंज या वॉल्यूम होता है। जब आप विचार करें कि आप जो खेल रहे हैं उसका "
-"आयतन बहुत कम है, तो इस विधा का उपयोग करें"
+"डायनेमिक रेंज कम्प्रेशन का उपयोग नहीं करने की जाँच करें। फिल्मों या वीडियो में आमतौर पर गेम्स की तुलना में कम "
+"गतिशील रेंज या वॉल्यूम होता है। जब आप विचार करें कि आप जो खेल रहे हैं उसका आयतन बहुत कम है, तो इस विधा का "
+"उपयोग करें"
 
 #: FormularioControlVolumen.cpp:288 FormularioControlVolumen.cpp:860
 #: FormularioControlVolumen.cpp:871
@@ -405,57 +387,56 @@ msgstr "एन्कोड"
 msgid "Detener"
 msgstr "रुकें"
 
-#: PantallaPrincipal.cpp:1472
+#: PantallaPrincipal.cpp:1489
 msgid "Acerca de este programa"
 msgstr "इस कार्यक्रम के बारे में"
 
-#: PantallaPrincipal.cpp:1482
+#: PantallaPrincipal.cpp:1499
 msgid "Ayuda de este programa"
 msgstr "इस कार्यक्रम से मदद"
 
-#: PantallaPrincipal.cpp:1537
+#: PantallaPrincipal.cpp:1554
 msgid "Por favor elija un idioma:"
 msgstr "कृपया एक भाषा चुनें:"
 
-#: PantallaPrincipal.cpp:1538
+#: PantallaPrincipal.cpp:1555
 msgid "Idiomas disponibles"
 msgstr "उपलब्ध भाषा"
 
-#: PantallaPrincipal.cpp:1549
+#: PantallaPrincipal.cpp:1566
 msgid "Los cambios se efectuaran despues de que reinicie el programa"
 msgstr "प्रोग्राम को पुनरारंभ करने के बाद परिवर्तन प्रभावी होंगे"
 
-#: PantallaPrincipal.cpp:1549
+#: PantallaPrincipal.cpp:1566
 msgid "Notificacion"
 msgstr "अधिसूचना"
 
-#: PantallaPrincipal.cpp:1581
+#: PantallaPrincipal.cpp:1598
 msgid "Abrir Pantalla Principal"
 msgstr "मुख्य स्क्रीन खोलें"
 
-#: PantallaPrincipal.cpp:1583
+#: PantallaPrincipal.cpp:1600
 msgid "Reiniciar Sonido"
 msgstr "ध्वनि रीसेट करें"
 
-#: PantallaPrincipal.cpp:1587
+#: PantallaPrincipal.cpp:1604
 msgid "Abrir Panel Dispositivos de Audio"
 msgstr "ऑडियो डिवाइस पैनल खोलें"
 
-#: PantallaPrincipal.cpp:1590
+#: PantallaPrincipal.cpp:1607
 msgid ""
-"Marque para no utilizar la compresion del rango dinamico. Usualmente las "
-"peliculas o videos tiene un rango dinamico o volumen menor a los juegos. Use "
-"esto modo cuando considere que el volumen de lo que esta reproduciendo es "
-"muy bajo"
+"Marque para no utilizar la compresion del rango dinamico. Usualmente las peliculas o videos "
+"tiene un rango dinamico o volumen menor a los juegos. Use esto modo cuando considere que el "
+"volumen de lo que esta reproduciendo es muy bajo"
 msgstr ""
-"डायनेमिक रेंज कम्प्रेशन का उपयोग नहीं करने की जाँच करें। आमतौर पर फिल्मों या वीडियो में गेम्स "
-"की तुलना में कम गतिशील रेंज या वॉल्यूम होता है। जब आप विचार करें कि आप जो खेल रहे हैं उसका "
-"आयतन बहुत कम है, तो इस विधा का उपयोग करें"
+"डायनेमिक रेंज कम्प्रेशन का उपयोग नहीं करने की जाँच करें। आमतौर पर फिल्मों या वीडियो में गेम्स की तुलना में कम "
+"गतिशील रेंज या वॉल्यूम होता है। जब आप विचार करें कि आप जो खेल रहे हैं उसका आयतन बहुत कम है, तो इस विधा का "
+"उपयोग करें"
 
-#: PantallaPrincipal.cpp:1592
+#: PantallaPrincipal.cpp:1609
 msgid "Modos de Rango Dinamico"
 msgstr "डायनामिक रेंज मोड्स"
 
-#: PantallaPrincipal.cpp:1601
+#: PantallaPrincipal.cpp:1618
 msgid "Cerrar Programa"
 msgstr "प्रोग्राम बंद करें"
