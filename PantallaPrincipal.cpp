@@ -1369,28 +1369,41 @@ void PantallaPrincipal::desactivarElementosPantallaPrincipal()
 void PantallaPrincipal::abrir_panel_dispositivos_audio()
 {
 	//Necesita windows.h
-	int Error = NULL;
-	std::string CadenaComplementaria = { '\\','c','o','n','t','r','o','l','.','e','x','e',' ','m','m','s','y','s','.','c','p','l' };
-	const unsigned int TamanoCadena = MAX_PATH;
-	TCHAR DireccionDirectorioTemporal[MAX_PATH];
-	char DireccionDirectorioSistema[MAX_PATH];
+	/*El proceso WinExec esta depresiado esta es una reimplementación
+	para actulizar la forma en que se abre el panel de dispositivos de audio */
+	STARTUPINFO informacion_inicio;
+	PROCESS_INFORMATION informacion_proceso;
 
-	//MAX_
-	GetSystemDirectory(DireccionDirectorioTemporal, TamanoCadena);
+	std::wstring cadena_comando = L"control.exe mmsys.cpl\0";
 
-	for (int i = 0; i < TamanoCadena; i++)
-	{
-		DireccionDirectorioSistema[i] = DireccionDirectorioTemporal[i];
-	}
+	LPWSTR comando = const_cast<LPWSTR>(cadena_comando.c_str());
 
-	strcat_s(DireccionDirectorioSistema, CadenaComplementaria.c_str());
+	ZeroMemory(&informacion_inicio, sizeof(informacion_inicio));
+	informacion_inicio.cb = sizeof(informacion_inicio);
+	ZeroMemory(&informacion_proceso, sizeof(informacion_proceso));
 
-	//Necesita windows.h
-	Error = WinExec(DireccionDirectorioSistema, SW_NORMAL);
-	if (Error < 31)
+	if (!CreateProcess(NULL,   // No nombre modulo (usa linea de comando)
+		comando,        // Commando
+		NULL,           // Manejador de Proceso No heredable
+		NULL,           //  Manejador de proceso no heredable
+		FALSE,          //  Establece la herencia del manejador a falso
+		0,              // Sin banderas de creación.
+		NULL,           //Usar bloque del ambiente del proceso padre
+		NULL,           // Usa el dirctorio del proceso padre
+		&informacion_inicio,            // Puntero a estructura STARTUPINFO 
+		&informacion_proceso)           // Pointer a estructura PROCESS_INFORMATION
+		)
 	{
 		MensajeError(ceFalloAbrirPanelDispositivoAudio);
 	}
+
+	// Wait until child process exits.
+	WaitForSingleObject(informacion_proceso.hProcess, INFINITE);
+
+	// Close process and thread handles. 
+	CloseHandle(informacion_proceso.hProcess);
+	CloseHandle(informacion_proceso.hThread);
+
 }
 
 void PantallaPrincipal::AbrirPanelDispositivosAudio(wxCommandEvent& WXUNUSED(event))
