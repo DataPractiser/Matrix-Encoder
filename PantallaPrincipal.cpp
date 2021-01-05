@@ -1051,9 +1051,9 @@ PaError PantallaPrincipal::TransformarAudio(PaDeviceIndex DispositivoSalidaAudio
 	FrecuenciaMuestreo = informacionDispositivoSalida->defaultSampleRate;
 
 	/*Esta mejora es parte de la implementacion de un filtro de bajas frecuencias para el canal LFE
-	* Se redujo al estandar de corte de 80hz.
+	* Se redujo al estandar de corte de 120hz.
 	*/
-	CodificadorMatriz->inicializarFiltroPaseBajo(FrecuenciaMuestreo, 80.00);
+	CodificadorMatriz->inicializarFiltroPaseBajo(FrecuenciaMuestreo, 120.00);
 	//////////////////////////////////////////////////////////////////////////////////////////////
 
 
