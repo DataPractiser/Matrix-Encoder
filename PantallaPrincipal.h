@@ -36,7 +36,7 @@
 #include "Callbacks.h"
 #include "MatrixEncoder.h"
 #include "FormularioAcerca.h"
-#include "ArchivoIndiceDispostivos.h"
+#include "ArchivoIndiceDispositivos.h"
 #include "FormularioControlVolumen.h"
 #include "FormularioAyuda.h"
 #include "ArchivoControlVolumen.h"
