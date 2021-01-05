@@ -62,7 +62,7 @@ FormularioControlVolumen::FormularioControlVolumen(wxWindow *Parent, int Numoero
 	this->SetMaxSize(wxSize(TamanoVentanaX - valorPosicion + XajusteporIdioma, TamanoVentanaY));
 	
 	
-	Icono.CopyFromBitmap(wxBitmap(MatrixEncoderIcon_2));
+	Icono.CopyFromBitmap(wxBitmap(MatrixEncoderIcon_1));
 	this->SetIcon(Icono);
 
 	wxFont estiloLetrasCanales(8, wxFONTFAMILY_SWISS, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_BOLD, false, _T("Microsoft Sans Serif"), wxFONTENCODING_DEFAULT);
