@@ -407,7 +407,7 @@ enum
 
 };
 
-//Se Usta esta puntero como referencia a la pantalla principal
+//Se Usa esta puntero como referencia a la pantalla principal
 //porque se usa para distintas manipulaciones como la del icono
 //de barra el servidor interno y los eventos de audio
 static PantallaPrincipal* formularioPrincipal = nullptr;
