@@ -3,13 +3,13 @@
 FormularioAyuda::FormularioAyuda(wxWindow* parent, const wxString & Titulo) : wxDialog(parent, wxID_ANY, Titulo)
 {
 
-	this->SetSize(wxSize(TamañoVentanaX, TamañoVentanaY));
-	this->SetMinSize(wxSize(TamañoVentanaX, TamañoVentanaY));
-	this->SetMaxSize(wxSize(TamañoVentanaX, TamañoVentanaY));
-	Icono.CopyFromBitmap(wxBitmap(MatrixEncoderIcon_3));
+	this->SetSize(wxSize(TamanoVentanaX, TamanoVentanaY));
+	this->SetMinSize(wxSize(TamanoVentanaX, TamanoVentanaY));
+	this->SetMaxSize(wxSize(TamanoVentanaX, TamanoVentanaY));
+	Icono.CopyFromBitmap(wxBitmap(MatrixEncoderIcon_1));
 	this->SetIcon(Icono);
 
-	panelFormularioAyuda = new wxPanel(this, ID_PANEL_FORMULARIO_AYUDA, wxDefaultPosition, wxSize(TamañoVentanaX, TamañoVentanaY), NULL, wxString("ID_PANEL_FORMULARIO_AYUDA"));
+	panelFormularioAyuda = new wxPanel(this, ID_PANEL_FORMULARIO_AYUDA, wxDefaultPosition, wxSize(TamanoVentanaX, TamanoVentanaY), NULL, wxString("ID_PANEL_FORMULARIO_AYUDA"));
 	panelFormularioAyuda->SetBackgroundColour(wxColor(255, 255, 255));
 
 	ContenedorInstrucciones = new wxStaticBox(panelFormularioAyuda, ID_CONTENEDOR_INSTRUCCION, (_("Uso del programa")), wxPoint(12, 10), wxSize(300, 450), 0, _T("ID_CONTENEDOR_DISPOSITIVO_INSTRUCCION"));

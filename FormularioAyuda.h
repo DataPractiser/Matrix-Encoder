@@ -26,7 +26,7 @@
 #include "../sample.xpm"
 #endif
 
-#include "img\MatrixEncoderIcon_3.xpm"
+#include "img\MatrixEncoderIcon_1.xpm"
 
 class textoInstrucciones : public wxTextCtrl
 {
@@ -49,8 +49,8 @@ protected:
 	wxLanguage IdiomaenUso;
 private:
 	wxIcon Icono;
-	int TamañoVentanaX = 340;
-	int TamañoVentanaY = 520;
+	int TamanoVentanaX = 340;
+	int TamanoVentanaY = 520;
 
 	wxPanel* panelFormularioAyuda = nullptr;
 	wxStaticBox* ContenedorInstrucciones = nullptr;
