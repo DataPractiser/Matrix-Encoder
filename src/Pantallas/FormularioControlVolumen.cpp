@@ -1,5 +1,5 @@
-#include "FormularioControlVolumen.h"
-#include "ArchivoControlVolumen.h"
+#include "..\Pantallas\FormularioControlVolumen.h"
+#include "..\Archivos\ArchivoControlVolumen.h"
 
 //Funciones internas
 bool EstadoFormularioControlVolumen = false;

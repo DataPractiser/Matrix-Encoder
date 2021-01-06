@@ -28,21 +28,21 @@
 #include "../sample.xpm"
 #endif
 
-#include "img\MatrixEncoderl6to2.xpm" 
-#include "img\MatrixEncoderl8to2.xpm"
-#include "img\advertencia.xpm"
-#include "img\MatrixEncoderIcon_1.xpm"
+#include "..\..\img\MatrixEncoderl6to2.xpm" 
+#include "..\..\img\MatrixEncoderl8to2.xpm"
+#include "..\..\img\advertencia.xpm"
+#include "..\..\img\MatrixEncoderIcon_1.xpm"
 
-#include "Callbacks.h"
-#include "MatrixEncoder.h"
-#include "FormularioAcerca.h"
-#include "ArchivoIndiceDispositivos.h"
-#include "FormularioControlVolumen.h"
-#include "FormularioAyuda.h"
-#include "ArchivoControlVolumen.h"
-#include "ArchivoCambioLenguaje.h"
-#include "ErroresPrograma.h"
-#include "RutaArchivo.h"
+#include "..\Callbacks\Callbacks.h"
+#include "..\Encoder\MatrixEncoder.h"
+#include "..\Pantallas\FormularioAcerca.h"
+#include "..\Archivos\ArchivoIndiceDispositivos.h"
+#include "..\Pantallas\FormularioControlVolumen.h"
+#include "..\Pantallas\FormularioAyuda.h"
+#include "..\Archivos\ArchivoControlVolumen.h"
+#include "..\Archivos\ArchivoCambioLenguaje.h"
+#include "..\Errores\ErroresPrograma.h"
+#include "..\Rutas\RutaArchivo.h"
 
 //Para cliente monitor
 #include  <Mmdeviceapi.h>

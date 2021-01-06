@@ -2,8 +2,8 @@
 #define __CALLBACKS_H_INCLUDED__
 
 
-#include "MatrixEncoder.h"
-#include "Canales.h"
+#include "../Encoder/MatrixEncoder.h"
+#include "../Encoder/Canales.h"
 #include <memory>
 #include <portaudio.h>
 
