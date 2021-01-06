@@ -1,4 +1,4 @@
-#include "ArchivoIndiceDispostivos.h"
+#include "ArchivoIndiceDispositivos.h"
 #include <wx/msgdlg.h>
 
 ArchivoDatosDispositivoSalida ArchivoDatosDispositivoSalidaAudio;
