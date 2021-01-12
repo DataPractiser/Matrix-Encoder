@@ -31,8 +31,8 @@
 
 #include <wx/snglinst.h>
 #include "Conexion.h"
-#include "RutaArchivo.h"
-#include "ArchivoCambioLenguaje.h"
+#include "..\Rutas\RutaArchivo.h"
+#include "..\Archivos\ArchivoCambioLenguaje.h"
 
 // ----------------------------------------------------------------------------
 // private classes

@@ -25,10 +25,10 @@
 #include "../sample.xpm"
 #endif
 
-#include "img\MatrixEncoderIcon_1.xpm"
-#include "RutaArchivo.h"
+#include "..\..\img\MatrixEncoderIcon_1.xpm"
+#include "..\Rutas\RutaArchivo.h"
 
-#include "Callbacks.h"
+#include "..\Callbacks\Callbacks.h"
 
 extern bool EstadoFormularioControlVolumen;
 

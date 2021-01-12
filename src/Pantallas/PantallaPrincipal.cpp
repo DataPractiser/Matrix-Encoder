@@ -279,7 +279,7 @@ int PantallaPrincipal::obtenerIndiceDispositivoSalida()
 void PantallaPrincipal::CambiosDispositivoPredeterminadoEntrada()
 {
 	PaError Error;
-	const PaDeviceInfo *InformacionDispositivoPredeterminadoEntrada;
+	const PaDeviceInfo* InformacionDispositivoPredeterminadoEntrada;
 	PaDeviceIndex IndiceDispositivoPredeterminadoEntrada;
 	//Para que no se vuelva a llamar
 	ptrFuncionMonitorDispositivoEntrada = nullptr;
@@ -305,7 +305,7 @@ void PantallaPrincipal::CambiosDispositivoPredeterminadoEntrada()
 	IndiceDispositivoPredeterminadoEntrada = (Pa_GetHostApiInfo(Pa_HostApiTypeIdToHostApiIndex(ApiaUsar))->defaultOutputDevice + 1);
 
 	InformacionDispositivoPredeterminadoEntrada = Pa_GetDeviceInfo(IndiceDispositivoPredeterminadoEntrada);
-	
+
 	//Se revisa que cambios ocurrieron.
 	if (InformacionDispositivoEntrada.NombreDispositivo.compare(InformacionDispositivoPredeterminadoEntrada->name) != 0)
 	{
@@ -317,7 +317,7 @@ void PantallaPrincipal::CambiosDispositivoPredeterminadoEntrada()
 	else if (InformacionDispositivoEntrada.FrecuenciaMuestreo != InformacionDispositivoPredeterminadoEntrada->defaultSampleRate)
 	{
 		//Caso de desconexion o eliminacion del dispositivo
-		
+
 		Pa_Terminate();
 		MensajeError(ceCambioFrecuenciaMuestreoDispositivoPredeterminado);
 		InicializarAudio();
@@ -337,9 +337,9 @@ void PantallaPrincipal::CambiosDispositivoPredeterminadoEntrada()
 			Codificar();
 			return;
 		}
-		
+
 	}
-	else 
+	else
 	{
 		//Cambio de profundidad de bits
 		Pa_Terminate();
@@ -351,7 +351,7 @@ void PantallaPrincipal::CambiosDispositivoPredeterminadoEntrada()
 void PantallaPrincipal::CambiosDispositivoSalida()
 {
 	PaError Error = NULL;
-	const PaDeviceInfo *informaciondelDispositivoSalida = nullptr;
+	const PaDeviceInfo* informaciondelDispositivoSalida = nullptr;
 
 	//Para que no se vuelva a llamar
 	ptrFuncionMonitorDispositivoEntrada = nullptr;
