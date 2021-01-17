@@ -1,3 +1,9 @@
+  Note: Matrix Encoder is distributed under the terms of the GNU GPL Version 2.
+This includes everything in the source code distribution
+except code in the lib-src directory.  Code in the libs
+directory may be released under a different license
+(which is GPL-compatible). 
+
                    GNU LESSER GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
