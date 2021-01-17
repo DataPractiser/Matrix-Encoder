@@ -276,131 +276,252 @@ int PantallaPrincipal::obtenerIndiceDispositivoSalida()
 	return DispositivoSalida;
 }
 
+void PantallaPrincipal::Interrupcion_Dispositivo_Predeterminado_Entrada(void* pantalla)
+{
+	/*Se usa este puntero porque pantalla no apunta al elemento actual
+    a como lo hace en el archivo de ejemplo*/
+	formularioPrincipal->CambiosDispositivoPredeterminadoEntrada();
+	//return ((PantallaPrincipal*)pantalla)->CambiosDispositivoPredeterminadoEntrada();
+}
+
 void PantallaPrincipal::CambiosDispositivoPredeterminadoEntrada()
 {
 	PaError Error;
 	const PaDeviceInfo* InformacionDispositivoPredeterminadoEntrada;
 	PaDeviceIndex IndiceDispositivoPredeterminadoEntrada;
-	//Para que no se vuelva a llamar
-	ptrFuncionMonitorDispositivoEntrada = nullptr;
-	ptrFuncionMonitorDispositivoSalida = nullptr;
 
-	//DetenerAudio();
-	Error = Pa_Terminate();
-
-	if (Error != paNoError)
+	if (BotonDetenerHaSidoPresionado == false)
 	{
-		return;
-	}
+		/*
+		* Se cambia la funcion de llamado para evitar
+		* que sea llamada multiples veces.
+		*/
+		Pa_SetStreamFinishedCallback(Flujo, nullptr);
+		Pa_SetStreamFinishedCallback(FlujoMonitorDispositivoEntrada, nullptr);
 
-	Pa_Sleep(500);
-
-	Error = Pa_Initialize();
-
-	if (Error != paNoError)
-	{
-		return;
-	}
-
-	IndiceDispositivoPredeterminadoEntrada = (Pa_GetHostApiInfo(Pa_HostApiTypeIdToHostApiIndex(ApiaUsar))->defaultOutputDevice + 1);
-
-	InformacionDispositivoPredeterminadoEntrada = Pa_GetDeviceInfo(IndiceDispositivoPredeterminadoEntrada);
-
-	//Se revisa que cambios ocurrieron.
-	if (InformacionDispositivoEntrada.NombreDispositivo.compare(InformacionDispositivoPredeterminadoEntrada->name) != 0)
-	{
-		//Cambio El dispositivo Predeterminado
-		Pa_Terminate();
-		InicializarAudio();
-		return;
-	}
-	else if (InformacionDispositivoEntrada.FrecuenciaMuestreo != InformacionDispositivoPredeterminadoEntrada->defaultSampleRate)
-	{
-		//Caso de desconexion o eliminacion del dispositivo
-
-		Pa_Terminate();
-		MensajeError(ceCambioFrecuenciaMuestreoDispositivoPredeterminado);
-		InicializarAudio();
-		return;
-	}
-	else if (InformacionDispositivoEntrada.NumCanales != InformacionDispositivoPredeterminadoEntrada->maxInputChannels)
-	{
-		if (InformacionDispositivoPredeterminadoEntrada->maxInputChannels < 6 || InformacionDispositivoPredeterminadoEntrada->maxInputChannels > 8 || InformacionDispositivoPredeterminadoEntrada->maxInputChannels == 7)
+		Error = Pa_Terminate();
+		//	Pa_Sleep(500);
+		if (Error != paNoError)
 		{
-			Pa_Terminate();
-			InicializarAudio();
-			return;
-		}
-		else if (InformacionDispositivoPredeterminadoEntrada->maxInputChannels == 6 || InformacionDispositivoPredeterminadoEntrada->maxInputChannels == 8)
-		{
-			Pa_Terminate();
-			Codificar();
 			return;
 		}
 
+		Error = Pa_Initialize();
+
+		if (Error != paNoError)
+		{
+			return;
+		}
+
+		IndiceDispositivoPredeterminadoEntrada = (Pa_GetHostApiInfo(Pa_HostApiTypeIdToHostApiIndex(ApiaUsar))->defaultOutputDevice + 1);
+
+		InformacionDispositivoPredeterminadoEntrada = Pa_GetDeviceInfo(IndiceDispositivoPredeterminadoEntrada);
+
+		//Se revisa que cambios ocurrieron.
+		if (InformacionDispositivoEntrada.NombreDispositivo.compare(InformacionDispositivoPredeterminadoEntrada->name) != 0)
+		{
+			//Cambio El dispositivo Predeterminado
+			Error = Pa_Terminate();
+
+			if (Error != paNoError)
+			{
+				return;
+			}
+
+			Error = InicializarAudio();
+
+			if (Error != paNoError)
+			{
+				return;
+			}
+		}
+		else if (InformacionDispositivoEntrada.FrecuenciaMuestreo != InformacionDispositivoPredeterminadoEntrada->defaultSampleRate)
+		{
+			//Caso de desconexion o eliminacion del dispositivo
+
+			Error = Pa_Terminate();
+
+			if (Error != paNoError)
+			{
+				return;
+			}
+
+			MensajeError(ceCambioFrecuenciaMuestreoDispositivoPredeterminado);
+
+			Error = InicializarAudio();
+
+			if (Error != paNoError)
+			{
+				return;
+			}
+		}
+		else if (InformacionDispositivoEntrada.NumCanales != InformacionDispositivoPredeterminadoEntrada->maxInputChannels)
+		{
+			if (InformacionDispositivoPredeterminadoEntrada->maxInputChannels < 6 || InformacionDispositivoPredeterminadoEntrada->maxInputChannels > 8 || InformacionDispositivoPredeterminadoEntrada->maxInputChannels == 7)
+			{
+				Error = Pa_Terminate();
+
+				if (Error != paNoError)
+				{
+					return;
+				}
+
+				Error = InicializarAudio();
+
+				if (Error != paNoError)
+				{
+					return;
+				}
+			}
+			else if (InformacionDispositivoPredeterminadoEntrada->maxInputChannels == 6 || InformacionDispositivoPredeterminadoEntrada->maxInputChannels == 8)
+			{
+				Error = Pa_Terminate();
+
+				if (Error != paNoError)
+				{
+					return;
+				}
+
+				Error = Codificar();
+
+				if (Error != paNoError)
+				{
+					return;
+				}
+
+			}
+		}
+		/*Cambio solo la profundidad de Bits*/
+		else
+		{
+			Error = Pa_Terminate();
+
+			if (Error != paNoError)
+			{
+				return;
+			}
+
+			Error = Codificar();
+
+			if (Error != paNoError)
+			{
+				return;
+			}
+		}
 	}
-	else
-	{
-		//Cambio de profundidad de bits
-		Pa_Terminate();
-		Codificar();
-		return;
-	}
+}
+
+void PantallaPrincipal::Interrupcion_Dispositivo_Salida(void* pantalla)
+{
+	/*Se usa este puntero porque pantalla no apunta al elemento actual
+	a como lo hace en el archivo de ejemplo*/
+	formularioPrincipal->CambiosDispositivoSalida();
+	/*(PantallaPrincipal*)pantalla;
+	return ((PantallaPrincipal*)pantalla)->CambiosDispositivoSalida();*/
 }
 
 void PantallaPrincipal::CambiosDispositivoSalida()
 {
-	PaError Error = NULL;
+	PaError Error; 
 	const PaDeviceInfo* informaciondelDispositivoSalida = nullptr;
 
-	//Para que no se vuelva a llamar
-	ptrFuncionMonitorDispositivoEntrada = nullptr;
-	ptrFuncionMonitorDispositivoSalida = nullptr;
-
-	Error = Pa_Terminate();
-	Pa_Sleep(500);
-	if (Error != paNoError)
+	if (BotonDetenerHaSidoPresionado == false)
 	{
-		return;
-	}
+		/*
+		* Se cambia la funcion de llamado para evitar 
+		* que sea llamada multiples veces.
+		*/
+		Pa_SetStreamFinishedCallback(Flujo, nullptr);
 
-	Error = Pa_Initialize();
+		Error = Pa_Terminate();
+		//	Pa_Sleep(500);
+		if (Error != paNoError)
+		{
+			return;
+		}
 
-	if (Error != paNoError)
-	{
-		Pa_Terminate();
-		return;
-	}
+		Error = Pa_Initialize();
 
-	informaciondelDispositivoSalida = Pa_GetDeviceInfo(DispositivoSalida);
+		if (Error != paNoError)
+		{
+			Pa_Terminate();
+			return;
+		}
+
+		//Verificar cambios al dispositivo de salida
+
+		informaciondelDispositivoSalida = Pa_GetDeviceInfo(DispositivoSalida);
 
 
-	if (ListaDispositivosSalida[IndicecbDispositivoSalida].NombreDispositivo.compare(informaciondelDispositivoSalida->name) != 0)
-	{
-		Pa_Terminate();
-		//Mensaje
-		InicializarAudio();
-		return;
-	}
-	else if (ListaDispositivosSalida[IndicecbDispositivoSalida].FrecuenciaMuestreo != informaciondelDispositivoSalida->defaultSampleRate)
-	{
-		Pa_Terminate();
-		MensajeError(ceCambioFrecuenciaMuestreoDispositivoSalida);
-		InicializarAudio();
-		return;
-	}
-	else if (informaciondelDispositivoSalida->maxOutputChannels != 2)
-	{
-		Pa_Terminate();
-		MensajeError(ceCambioNumeroCanaelesDispositivoSalida);
-		InicializarAudio();
-		return;
-	}
-	else
-	{
-		Pa_Terminate();
-		Codificar();
-		return;
+		if (ListaDispositivosSalida[IndicecbDispositivoSalida].NombreDispositivo.compare(informaciondelDispositivoSalida->name) != 0)
+		{
+			Error = Pa_Terminate();
+
+			if (Error != paNoError)
+			{
+				return;
+			}
+
+			Error = InicializarAudio();
+
+			if (Error != paNoError)
+			{
+				return;
+			}
+		}
+		else if (ListaDispositivosSalida[IndicecbDispositivoSalida].FrecuenciaMuestreo != informaciondelDispositivoSalida->defaultSampleRate)
+		{
+			Error = Pa_Terminate();
+
+			if (Error != paNoError)
+			{
+				return;
+			}
+
+			MensajeError(ceCambioFrecuenciaMuestreoDispositivoSalida);
+
+			Error = InicializarAudio();
+
+			if (Error != paNoError)
+			{
+				return;
+			}
+		}
+		else if (informaciondelDispositivoSalida->maxOutputChannels != 2)
+		{
+			Error = Pa_Terminate();
+
+			if (Error != paNoError)
+			{
+				return;
+			}
+
+			MensajeError(ceCambioNumeroCanaelesDispositivoSalida);
+
+			Error = InicializarAudio();
+
+			if (Error != paNoError)
+			{
+				return;
+			}
+		}
+		/*Cambio solo la profundidad de Bits*/
+		else
+		{
+			Error = Pa_Terminate();
+
+			if (Error != paNoError)
+			{
+				return;
+			}
+
+			Error = Codificar();
+
+			if (Error != paNoError)
+			{
+				return;
+			}
+		}
 	}
 }
 
@@ -715,11 +836,6 @@ HRESULT PantallaPrincipal::EliminarMonitorDispositivoPredeterminado()
 	return Resultado;
 }
 
-bool PantallaPrincipal::BotonDetenerPresionado()
-{
-	return BotonDetenerHaSidoPresionado;
-}
-
 PaError PantallaPrincipal::verificarNumerodeDispositivosEnSistema(PaHostApiTypeId Api)
 {
 	PaError Error = NULL;
@@ -918,30 +1034,6 @@ void  PantallaPrincipal::errorFrecuenciadeMuestreo()
 	}
 }
 
-static void InterrupcionAudioDispositivoPredeterminado(void *)
-{
-	bool BotonDetenerPresionado = NULL;
-
-	
-	BotonDetenerPresionado = formularioPrincipal->BotonDetenerPresionado();
-
-	if (BotonDetenerPresionado == false)
-	{
-		formularioPrincipal->CambiosDispositivoPredeterminadoEntrada();
-	}
-}
-
-static void InterrupcionAudioDispositivoSalida(void *)
-{
-	bool BotonDetenerPresionado = NULL;
-
-	BotonDetenerPresionado = formularioPrincipal->BotonDetenerPresionado();
-
-	if (BotonDetenerPresionado == false)
-	{
-		formularioPrincipal->CambiosDispositivoSalida();
-	}
-}
 
 PaError PantallaPrincipal::TransformarAudio(PaDeviceIndex DispositivoSalidaAudio)
 {
@@ -1125,25 +1217,28 @@ PaError PantallaPrincipal::TransformarAudio(PaDeviceIndex DispositivoSalidaAudio
 	/*
 	* Esta funcion es para abrir un stream que se usa para monitorear cambios en el dispositvo principal de audio
 	*/
-	Error = Pa_OpenStream(&FlujoMonitorDispositivoEntrada, &parametrosEntrada, NULL, FrecuenciaMuestreo, 128, NULL, callbacknulo, NULL);
+	Error = Pa_OpenStream(&FlujoMonitorDispositivoEntrada, &parametrosEntrada, NULL, FrecuenciaMuestreo, 1, NULL, callbacknulo, NULL);
 
-	ptrFuncionMonitorDispositivoEntrada = InterrupcionAudioDispositivoPredeterminado;
-	Error = Pa_SetStreamFinishedCallback(FlujoMonitorDispositivoEntrada, ptrFuncionMonitorDispositivoEntrada);
+	Error = Pa_SetStreamFinishedCallback(FlujoMonitorDispositivoEntrada, &PantallaPrincipal::Interrupcion_Dispositivo_Predeterminado_Entrada);
 
 	Error = Pa_StartStream(FlujoMonitorDispositivoEntrada);
 
-
 	/*
 	* Callback Principal el cual se encargar de tomar y procesar el audio.
+	* 
 	*/
 	Error = Pa_OpenStream(&Flujo, &parametrosEntrada, &parametrosSalida, FrecuenciaMuestreo, 1, paClipOff && paDitherOff, punteroFuncionDeProceso, NULL);
 
-	ptrFuncionMonitorDispositivoSalida = InterrupcionAudioDispositivoSalida;
-	Pa_SetStreamFinishedCallback(Flujo, ptrFuncionMonitorDispositivoSalida);
+	/*
+	* Se apunta a una función propia de la clase pero 
+	* la direccion en algun punto se pierde.
+	*/
+	Error = Pa_SetStreamFinishedCallback(Flujo, &PantallaPrincipal::Interrupcion_Dispositivo_Salida);
 
 
 	if (Error != paNoError)
 	{
+		MensajeError(Error);
 		Pa_Terminate();
 		return Error;
 	}
@@ -1257,9 +1352,6 @@ void PantallaPrincipal::DetenerAudio()
 
 	if ((Error = Pa_IsStreamActive(Flujo)) == 1)
 	{
-		ptrFuncionMonitorDispositivoEntrada = nullptr;
-
-		ptrFuncionMonitorDispositivoSalida = nullptr;
 
 		ErrorSalida = Pa_StopStream(Flujo);
 

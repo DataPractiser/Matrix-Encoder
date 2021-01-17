@@ -186,10 +186,6 @@ enum
 	ID_MENU_MODO_PELICULA
 };
 
-static void InterrupcionAudioDispositivoPredeterminado(void *);
-
-static void InterrupcionAudioDispositivoSalida(void *);
-
 class PantallaPrincipal : public wxFrame
 {
 private:
@@ -220,8 +216,6 @@ private:
 	//Datos internos
 	PaStream *Flujo; //Este es el flujo de audio que se controlara
 	PaStream  *FlujoMonitorDispositivoEntrada;
-	PaStreamFinishedCallback *ptrFuncionMonitorDispositivoEntrada = nullptr;
-	PaStreamFinishedCallback *ptrFuncionMonitorDispositivoSalida = nullptr;
 	int RetrasoEnMilisegundos = 3; //Este dato es para el buffer de retraso usaod para los canales envolventes
 
 	//Funciones internas del programa
@@ -237,6 +231,17 @@ private:
 	HRESULT InicilizarMonitorDispositivoPredeterminado();
 	HRESULT EliminarMonitorDispositivoPredeterminado();
 
+	/*
+	* Funciones para el fin de los procesos de audio.
+	*/
+	static void Interrupcion_Dispositivo_Predeterminado_Entrada(void* pantalla);
+
+	void CambiosDispositivoPredeterminadoEntrada();
+
+	static void Interrupcion_Dispositivo_Salida(void* pantalla);
+
+	void CambiosDispositivoSalida();
+	///////////////////////////////////////////////////////////////
 
 	void errorFrecuenciadeMuestreo();
 	PaError verificarNumerodeDispositivosEnSistema(PaHostApiTypeId Api); //Esta funcion verfica que haya dispositivos en el sistema;
@@ -329,13 +334,11 @@ public:
 	void MostrarVentana();
 	void DesconectarServidorInterno();
 
-	//Funciones para el menajeo de cambio en los dispositivos 
+	//Funciones para el manejo de cambio en los dispositivos 
 	//de audio 
-	bool BotonDetenerPresionado();
 	int obtenerIndiceDispositivoSalida();
 	void CambioDispositivoPrincipal();
-	void CambiosDispositivoPredeterminadoEntrada();
-	void CambiosDispositivoSalida();
+
 	void abrir_panel_dispositivos_audio();
 
 	// event handlers (these functions should _not_ be virtual)
