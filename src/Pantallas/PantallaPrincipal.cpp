@@ -300,7 +300,7 @@ void PantallaPrincipal::CambiosDispositivoPredeterminadoEntrada()
 		Pa_SetStreamFinishedCallback(FlujoMonitorDispositivoEntrada, nullptr);
 
 		Error = Pa_Terminate();
-		//	Pa_Sleep(500);
+
 		if (Error != paNoError)
 		{
 			return;
@@ -434,7 +434,7 @@ void PantallaPrincipal::CambiosDispositivoSalida()
 		Pa_SetStreamFinishedCallback(Flujo, nullptr);
 
 		Error = Pa_Terminate();
-		//	Pa_Sleep(500);
+
 		if (Error != paNoError)
 		{
 			return;
@@ -1047,7 +1047,7 @@ PaError PantallaPrincipal::TransformarAudio(PaDeviceIndex DispositivoSalidaAudio
 	/*
 	* El valor de la latencia es el que al parecer, hace que sucedar los 
 	* cortes de audio en las versiones mas recientes de windows 10 empezando
-	* con windows 10 2004, esta latencia más alta de lo habitual es 
+	* con windows 10 2004, esta latencia mï¿½s alta de lo habitual es 
 	* el compromiso para garantizar sonido continuo
 	*/
 	float Latencia = 1.0;
@@ -1230,7 +1230,7 @@ PaError PantallaPrincipal::TransformarAudio(PaDeviceIndex DispositivoSalidaAudio
 	Error = Pa_OpenStream(&Flujo, &parametrosEntrada, &parametrosSalida, FrecuenciaMuestreo, 1, paClipOff && paDitherOff, punteroFuncionDeProceso, NULL);
 
 	/*
-	* Se apunta a una función propia de la clase pero 
+	* Se apunta a una funciï¿½n propia de la clase pero 
 	* la direccion en algun punto se pierde.
 	*/
 	Error = Pa_SetStreamFinishedCallback(Flujo, &PantallaPrincipal::Interrupcion_Dispositivo_Salida);
@@ -1461,7 +1461,7 @@ void PantallaPrincipal::desactivarElementosPantallaPrincipal()
 void PantallaPrincipal::abrir_panel_dispositivos_audio()
 {
 	//Necesita windows.h
-	/*El proceso WinExec esta depresiado esta es una reimplementación
+	/*El proceso WinExec esta depresiado esta es una reimplementaciï¿½n
 	para actulizar la forma en que se abre el panel de dispositivos de audio */
 	STARTUPINFO informacion_inicio;
 	PROCESS_INFORMATION informacion_proceso;
@@ -1479,7 +1479,7 @@ void PantallaPrincipal::abrir_panel_dispositivos_audio()
 		NULL,           // Manejador de Proceso No heredable
 		NULL,           //  Manejador de proceso no heredable
 		FALSE,          //  Establece la herencia del manejador a falso
-		0,              // Sin banderas de creación.
+		0,              // Sin banderas de creaciï¿½n.
 		NULL,           //Usar bloque del ambiente del proceso padre
 		NULL,           // Usa el dirctorio del proceso padre
 		&informacion_inicio,            // Puntero a estructura STARTUPINFO 
