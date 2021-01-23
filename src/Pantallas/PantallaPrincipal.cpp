@@ -1219,15 +1219,39 @@ PaError PantallaPrincipal::TransformarAudio(PaDeviceIndex DispositivoSalidaAudio
 	*/
 	Error = Pa_OpenStream(&FlujoMonitorDispositivoEntrada, &parametrosEntrada, NULL, FrecuenciaMuestreo, 1, NULL, callbacknulo, NULL);
 
+	if (Error != paNoError)
+	{
+		Pa_Terminate();
+		return Error;
+	}
+
 	Error = Pa_SetStreamFinishedCallback(FlujoMonitorDispositivoEntrada, &PantallaPrincipal::Interrupcion_Dispositivo_Predeterminado_Entrada);
 
+	if (Error != paNoError)
+	{
+		Pa_Terminate();
+		return Error;
+	}
+
 	Error = Pa_StartStream(FlujoMonitorDispositivoEntrada);
+
+	if (Error != paNoError)
+	{
+		Pa_Terminate();
+		return Error;
+	}
 
 	/*
 	* Callback Principal el cual se encargar de tomar y procesar el audio.
 	* 
 	*/
 	Error = Pa_OpenStream(&Flujo, &parametrosEntrada, &parametrosSalida, FrecuenciaMuestreo, 1, paClipOff && paDitherOff, punteroFuncionDeProceso, NULL);
+
+	if (Error != paNoError)
+	{
+		Pa_Terminate();
+		return Error;
+	}
 
 	/*
 	* Se apunta a una funci�n propia de la clase pero 
@@ -1238,7 +1262,6 @@ PaError PantallaPrincipal::TransformarAudio(PaDeviceIndex DispositivoSalidaAudio
 
 	if (Error != paNoError)
 	{
-		MensajeError(Error);
 		Pa_Terminate();
 		return Error;
 	}

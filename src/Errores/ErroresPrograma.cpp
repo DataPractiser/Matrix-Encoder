@@ -74,7 +74,7 @@ void MensajeError(int CodigoError)
 		break;
 
 	case paInvalidDevice:
-		MensajedeError = _("Dispositivo no compatible, elija otro por favor");
+		MensajedeError = _("Dispositivo no compatible o estan usando el modo exclusivo, elija otro por favor o cambie la configuración de exclusividad");
 		break;
 
 	case ceCambioFrecuenciaMuestreoDispositivoPredeterminado:
@@ -94,8 +94,7 @@ void MensajeError(int CodigoError)
 		break;
 	}
 
-	if (CodigoError > 0  && CodigoError <= ceCambioNumeroCanaelesDispositivoSalida)
-	{
-		wxMessageBox(MensajedeError, _("Advertencia"), wxICON_WARNING);
-	}
+
+	wxMessageBox(MensajedeError, _("Advertencia"), wxICON_WARNING);
+
 }
