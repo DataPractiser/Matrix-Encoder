@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-04 19:17-0600\n"
-"PO-Revision-Date: 2021-01-04 19:58-0600\n"
+"POT-Creation-Date: 2021-01-23 11:01-0600\n"
+"PO-Revision-Date: 2021-01-23 11:08-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -18,21 +18,21 @@ msgstr ""
 "X-Generator: Poedit 2.4.2\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: ErroresPrograma.cpp:13
+#: src/Errores/ErroresPrograma.cpp:13
 msgid "El dispositivo Predeterminado de entrada no es compatible"
 msgstr "Le périphérique d'entrée par défaut n'est pas pris en charge"
 
-#: ErroresPrograma.cpp:17 ErroresPrograma.cpp:45
+#: src/Errores/ErroresPrograma.cpp:17 src/Errores/ErroresPrograma.cpp:45
 msgid "El numero de canales del dispositivo de audio no es compatible"
 msgstr "Le nombre de canaux du périphérique audio n'est pas pris en charge"
 
-#: ErroresPrograma.cpp:21
+#: src/Errores/ErroresPrograma.cpp:21
 msgid ""
 "La frecuencias de muestreo de los dispositivos de audio deben ser iguales"
 msgstr ""
 "Les fréquences d'échantillonnage des appareils audio doivent être les mêmes"
 
-#: ErroresPrograma.cpp:25
+#: src/Errores/ErroresPrograma.cpp:25
 msgid ""
 "Se cambio o elimino el dispositivo de Salida usado durante la ultima "
 "Ejecucion"
@@ -40,7 +40,7 @@ msgstr ""
 "Le périphérique de sortie utilisé lors de la dernière exécution a été "
 "modifié ou supprimé"
 
-#: ErroresPrograma.cpp:29
+#: src/Errores/ErroresPrograma.cpp:29
 msgid ""
 "Este dispositivo de audio no se encuentra disponible o hubo cambios en los "
 "dispositivos de audio"
@@ -48,14 +48,14 @@ msgstr ""
 "Ce priphrique audio n'est pas disponible ou des modifications ont t apportes "
 "aux priphriques audio"
 
-#: ErroresPrograma.cpp:33
+#: src/Errores/ErroresPrograma.cpp:33
 msgid ""
 "Hay demasiados dispositivos de audio en el sistema, desactive los que no use"
 msgstr ""
 "Il y a trop de périphériques audio dans le système, éteignez ceux que vous "
 "n'utilisez pas"
 
-#: ErroresPrograma.cpp:37
+#: src/Errores/ErroresPrograma.cpp:37
 msgid ""
 "No hay dispositivos de audio compatibles en el sistema, instalelos o "
 "activelos por favor"
@@ -63,7 +63,7 @@ msgstr ""
 "Il n'y a pas de périphériques audio compatibles dans le système, veuillez "
 "les installer ou les activer"
 
-#: ErroresPrograma.cpp:41
+#: src/Errores/ErroresPrograma.cpp:41
 msgid ""
 "No se encontraron dispositivos con 2 canales de Salida, configure alguno y "
 "presione el boton Refrescar"
@@ -71,72 +71,76 @@ msgstr ""
 "Aucun appareil avec 2 canaux de sortie n'a été trouvé, configurez-en un et "
 "appuyez sur le bouton Actualiser"
 
-#: ErroresPrograma.cpp:49
+#: src/Errores/ErroresPrograma.cpp:49
 msgid "Ningun dispositivo de Entrada o Salida ha sido seleccionado"
 msgstr "Aucun périphérique d'entrée ou de sortie n'a été sélectionné"
 
-#: ErroresPrograma.cpp:53
+#: src/Errores/ErroresPrograma.cpp:53
 msgid "El dispositivo de Predeterminado no esta configurado en modo 5.1 o 7.1"
 msgstr "L'appareil par défaut n'est pas réglé sur le mode 5.1 ou 7.1"
 
-#: ErroresPrograma.cpp:57
+#: src/Errores/ErroresPrograma.cpp:57
 msgid "No se ha seleccionado un dispositivo de Salida"
 msgstr "Aucun périphérique de sortie sélectionné"
 
-#: ErroresPrograma.cpp:61
+#: src/Errores/ErroresPrograma.cpp:61
 msgid "Error al procesar el audio"
 msgstr "Erreur lors du traitement de l'audio"
 
-#: ErroresPrograma.cpp:65
+#: src/Errores/ErroresPrograma.cpp:65
 msgid "No se pudo abrir el panel de dispositivos de audio"
 msgstr "Impossible d'ouvrir le panneau des périphériques audio"
 
-#: ErroresPrograma.cpp:69
+#: src/Errores/ErroresPrograma.cpp:69
 msgid "No se pudo cerrar el proceso de audio"
 msgstr "Impossible de fermer le processus audio"
 
-#: ErroresPrograma.cpp:73
+#: src/Errores/ErroresPrograma.cpp:73
 msgid "No se pudo cerrar el Engine de audio"
 msgstr "Impossible d'arrêter le moteur audio"
 
-#: ErroresPrograma.cpp:77
-msgid "Dispositivo no compatible, elija otro por favor"
-msgstr "Appareil non compatible, veuillez en choisir un autre"
+#: src/Errores/ErroresPrograma.cpp:77
+msgid ""
+"Dispositivo no compatible o estan usando el modo exclusivo, elija otro por "
+"favor o cambie la configuracin de exclusividad"
+msgstr ""
+"Périphérique non pris en charge ou utilisez un mode exclusif, veuillez en "
+"choisir un autre ou modifier le paramètre d’exclusivité"
 
-#: ErroresPrograma.cpp:81
+#: src/Errores/ErroresPrograma.cpp:81
 msgid "Cambio la frecuencia de muestreo del dispositivo predeterminado"
 msgstr ""
 "Changement de la fréquence d'échantillonnage du périphérique par défaut"
 
-#: ErroresPrograma.cpp:85
+#: src/Errores/ErroresPrograma.cpp:85
 msgid "Cambio la frecuencia de muestreo del dispositivo de salida"
 msgstr "La fréquence d'échantillonnage du périphérique de sortie a changé"
 
-#: ErroresPrograma.cpp:89
+#: src/Errores/ErroresPrograma.cpp:89
 msgid "Cambio el numero de canales del dispositivo de salida"
 msgstr "La fréquence d'échantillonnage du périphérique de sortie a changé"
 
-#: ErroresPrograma.cpp:93
+#: src/Errores/ErroresPrograma.cpp:93
 msgid "Codigo de error no existente"
 msgstr "Le code d'erreur n'existe pas"
 
-#: ErroresPrograma.cpp:99
+#: src/Errores/ErroresPrograma.cpp:98
 msgid "Advertencia"
 msgstr "Avertissement"
 
-#: FormularioAcerca.cpp:20
+#: src/Pantallas/FormularioAcerca.cpp:20
 msgid "Este programa fue hecho con: "
 msgstr "Ce programme a été réalisé avec:"
 
-#: FormularioAcerca.cpp:28
+#: src/Pantallas/FormularioAcerca.cpp:28
 msgid "Con modificaciones del equipo:"
 msgstr "Avec des modifications d'équipement:"
 
-#: FormularioAyuda.cpp:15
+#: src/Pantallas/FormularioAyuda.cpp:15
 msgid "Uso del programa"
 msgstr "Utilisation du programme"
 
-#: FormularioAyuda.cpp:18
+#: src/Pantallas/FormularioAyuda.cpp:18
 msgid ""
 "1) Instale o configure un dispositivo de audio en modo de 5.1 o 7.1 y "
 "establezcalo como el predeterminado este puede ser virtual o fisico\n"
@@ -145,7 +149,7 @@ msgstr ""
 "1) Installez ou configurez un périphérique audio en mode 5.1 ou 7.1 et "
 "définissez-le par défaut, cela peut être virtuel ou physique\n"
 
-#: FormularioAyuda.cpp:19
+#: src/Pantallas/FormularioAyuda.cpp:19
 msgid ""
 "2) Configure un segundo dispositivo en modo estereo o 2 canales de salida, "
 "este debe ser un dispositivo fisico para que puede escuchar el audio "
@@ -156,7 +160,7 @@ msgstr ""
 "s'agir d'un appareil physique afin que vous puissiez écouter un son mixte "
 "tel que HDMI, haut-parleurs, etc.\n"
 
-#: FormularioAyuda.cpp:20
+#: src/Pantallas/FormularioAyuda.cpp:20
 msgid ""
 "3) Asegurese que la frecuencia de muestreo de ambos dispositivos sea la "
 "misma.\n"
@@ -166,7 +170,7 @@ msgstr ""
 "même.\n"
 "\n"
 
-#: FormularioAyuda.cpp:21
+#: src/Pantallas/FormularioAyuda.cpp:21
 msgid ""
 "4) Presione el boton refrescar o codificar y escuche el audio en una mezcla "
 "compatible con sistemas matriciales de audio.\n"
@@ -174,7 +178,7 @@ msgstr ""
 "4) Appuyez sur le bouton d'actualisation ou d'encodage et écoutez l'audio "
 "dans un mixage compatible avec les systèmes audio matriciels.\n"
 
-#: FormularioAyuda.cpp:22
+#: src/Pantallas/FormularioAyuda.cpp:22
 msgid ""
 "\n"
 "\n"
@@ -184,11 +188,11 @@ msgstr ""
 "\n"
 "\n"
 
-#: FormularioAyuda.cpp:23
+#: src/Pantallas/FormularioAyuda.cpp:23
 msgid "Notas: \n"
 msgstr "Notes:\n"
 
-#: FormularioAyuda.cpp:24
+#: src/Pantallas/FormularioAyuda.cpp:24
 msgid ""
 "*Cambios a la frecuencia de muestreo, numero de canales o profundidad de "
 "bits,  puede interrumpir proceso de audio, pero el programa realiza los "
@@ -200,53 +204,59 @@ msgstr ""
 "programme effectue les ajustements nécessaires pour le maintenir actif\n"
 "\n"
 
-#: FormularioAyuda.cpp:25
+#: src/Pantallas/FormularioAyuda.cpp:25
 msgid ""
 "**Cambiar de un usuario a otro puede interrumpir tambien el flujo de audio."
 msgstr ""
 "** Le passage d'un utilisateur à un autre peut également interrompre le flux "
 "audio."
 
-#: FormularioControlVolumen.cpp:49 PantallaPrincipal.cpp:133
-#: PantallaPrincipal.cpp:1602
+#: src/Pantallas/FormularioControlVolumen.cpp:49
+#: src/Pantallas/PantallaPrincipal.cpp:133
+#: src/Pantallas/PantallaPrincipal.cpp:1717
 msgid "Control de Volumen"
 msgstr "Contrôle du volume"
 
-#: FormularioControlVolumen.cpp:74
+#: src/Pantallas/FormularioControlVolumen.cpp:74
 msgid "Perfil de Volumen"
 msgstr "Profil de volume"
 
-#: FormularioControlVolumen.cpp:79
+#: src/Pantallas/FormularioControlVolumen.cpp:79
 msgid "Reiniciar"
 msgstr "Redémarrer"
 
-#: FormularioControlVolumen.cpp:83
+#: src/Pantallas/FormularioControlVolumen.cpp:83
 msgid "Volumen Canales de Entrada"
 msgstr "Volume des canaux d'entrée"
 
-#: FormularioControlVolumen.cpp:162
+#: src/Pantallas/FormularioControlVolumen.cpp:162
 msgid "Volumen de Salida"
 msgstr "Volume de sortie"
 
-#: FormularioControlVolumen.cpp:184
+#: src/Pantallas/FormularioControlVolumen.cpp:184
 msgid "Opciones LFE"
 msgstr "Options LFE"
 
-#: FormularioControlVolumen.cpp:187
+#: src/Pantallas/FormularioControlVolumen.cpp:187
 msgid "Incluir canal LFE"
 msgstr "Inclure le canal LFE"
 
-#: FormularioControlVolumen.cpp:190
+#: src/Pantallas/FormularioControlVolumen.cpp:190
 msgid "Marque para incluir el canal de bajas frecuencias en la mezcla estereo"
 msgstr "Cochez pour inclure le canal basse fréquence dans le mixage stéréo"
 
-#: FormularioControlVolumen.cpp:192
+#: src/Pantallas/FormularioControlVolumen.cpp:192
 msgid "Filtrar canal LFE"
 msgstr "Filtre canal LFE"
 
-#: FormularioControlVolumen.cpp:195
+#: src/Pantallas/FormularioControlVolumen.cpp:195
+#, fuzzy
+#| msgid ""
+#| "Marque para aplicar un filtro de pase bajo de 80hz a este canal y "
+#| "eliminar frecuencias que no corresponden a este canal. Advertencia: "
+#| "activar esto puede causar un aumento en el uso del CPU"
 msgid ""
-"Marque para aplicar un filtro de pase bajo de 80hz a este canal y eliminar "
+"Marque para aplicar un filtro de pase bajo de 120hz a este canal y eliminar "
 "frecuencias que no corresponden a este canal. Advertencia: activar esto "
 "puede causar un aumento en el uso del CPU"
 msgstr ""
@@ -254,15 +264,17 @@ msgstr ""
 "les fréquences qui ne correspondent pas à ce canal. Attention: l'activer "
 "peut entraîner une augmentation de l'utilisation du processeur"
 
-#: FormularioControlVolumen.cpp:197
+#: src/Pantallas/FormularioControlVolumen.cpp:197
 msgid "Rango Dinamico"
 msgstr "Plage dynamique"
 
-#: FormularioControlVolumen.cpp:201 PantallaPrincipal.cpp:1606
+#: src/Pantallas/FormularioControlVolumen.cpp:201
+#: src/Pantallas/PantallaPrincipal.cpp:1721
 msgid "Modo Juego"
 msgstr "Mode de jeu"
 
-#: FormularioControlVolumen.cpp:204 PantallaPrincipal.cpp:1606
+#: src/Pantallas/FormularioControlVolumen.cpp:204
+#: src/Pantallas/PantallaPrincipal.cpp:1721
 msgid ""
 "Marque para usar todo el rango dinamico disponible. Los juegos usualmente "
 "poseen un rango dinamico o volumen muy alto, esto ayuda a usar todo el rango "
@@ -272,11 +284,12 @@ msgstr ""
 "généralement une plage dynamique ou un volume très élevé, ce qui permet "
 "d'utiliser toute la plage d'un mixage stéréo."
 
-#: FormularioControlVolumen.cpp:206 PantallaPrincipal.cpp:1607
+#: src/Pantallas/FormularioControlVolumen.cpp:206
+#: src/Pantallas/PantallaPrincipal.cpp:1722
 msgid "Modo Pelicula"
 msgstr "Mode vidéo"
 
-#: FormularioControlVolumen.cpp:209
+#: src/Pantallas/FormularioControlVolumen.cpp:209
 msgid ""
 "Marque para no utilizar la compresion del rango dinamico. Usualmente las "
 "peliculas o videos tienen un rango dinamico o volumen menor a los juegos. "
@@ -288,177 +301,192 @@ msgstr ""
 "les jeux. Utilisez ce mode lorsque vous considérez que le volume de ce que "
 "vous jouez est très faible"
 
-#: FormularioControlVolumen.cpp:288 FormularioControlVolumen.cpp:860
-#: FormularioControlVolumen.cpp:871
+#: src/Pantallas/FormularioControlVolumen.cpp:288
+#: src/Pantallas/FormularioControlVolumen.cpp:860
+#: src/Pantallas/FormularioControlVolumen.cpp:871
 msgid "Solo L"
 msgstr "Seulement L"
 
-#: FormularioControlVolumen.cpp:323 FormularioControlVolumen.cpp:861
-#: FormularioControlVolumen.cpp:872
+#: src/Pantallas/FormularioControlVolumen.cpp:323
+#: src/Pantallas/FormularioControlVolumen.cpp:861
+#: src/Pantallas/FormularioControlVolumen.cpp:872
 msgid "Solo R"
 msgstr "Seulement R"
 
-#: FormularioControlVolumen.cpp:358 FormularioControlVolumen.cpp:862
-#: FormularioControlVolumen.cpp:873
+#: src/Pantallas/FormularioControlVolumen.cpp:358
+#: src/Pantallas/FormularioControlVolumen.cpp:862
+#: src/Pantallas/FormularioControlVolumen.cpp:873
 msgid "Solo C"
 msgstr "Seulement C"
 
-#: FormularioControlVolumen.cpp:394 FormularioControlVolumen.cpp:863
-#: FormularioControlVolumen.cpp:874
+#: src/Pantallas/FormularioControlVolumen.cpp:394
+#: src/Pantallas/FormularioControlVolumen.cpp:863
+#: src/Pantallas/FormularioControlVolumen.cpp:874
 msgid "Solo LFE"
 msgstr "Seulement LFE"
 
-#: FormularioControlVolumen.cpp:430 FormularioControlVolumen.cpp:864
-#: FormularioControlVolumen.cpp:875
+#: src/Pantallas/FormularioControlVolumen.cpp:430
+#: src/Pantallas/FormularioControlVolumen.cpp:864
+#: src/Pantallas/FormularioControlVolumen.cpp:875
 msgid "Solo SL"
 msgstr "Seulement SL"
 
-#: FormularioControlVolumen.cpp:466 FormularioControlVolumen.cpp:865
-#: FormularioControlVolumen.cpp:876
+#: src/Pantallas/FormularioControlVolumen.cpp:466
+#: src/Pantallas/FormularioControlVolumen.cpp:865
+#: src/Pantallas/FormularioControlVolumen.cpp:876
 msgid "Solo SR"
 msgstr "Seulement SR"
 
-#: FormularioControlVolumen.cpp:501 FormularioControlVolumen.cpp:877
+#: src/Pantallas/FormularioControlVolumen.cpp:501
+#: src/Pantallas/FormularioControlVolumen.cpp:877
 msgid "Solo RL"
 msgstr "Seulement RL"
 
-#: FormularioControlVolumen.cpp:536 FormularioControlVolumen.cpp:878
+#: src/Pantallas/FormularioControlVolumen.cpp:536
+#: src/Pantallas/FormularioControlVolumen.cpp:878
 msgid "Solo RR"
 msgstr "Seulement RR"
 
-#: FormularioControlVolumen.cpp:572 FormularioControlVolumen.cpp:866
-#: FormularioControlVolumen.cpp:879
+#: src/Pantallas/FormularioControlVolumen.cpp:572
+#: src/Pantallas/FormularioControlVolumen.cpp:866
+#: src/Pantallas/FormularioControlVolumen.cpp:879
 msgid "Solo L y R"
 msgstr "Seulement L et R"
 
-#: FormularioControlVolumen.cpp:607 FormularioControlVolumen.cpp:867
-#: FormularioControlVolumen.cpp:880
+#: src/Pantallas/FormularioControlVolumen.cpp:607
+#: src/Pantallas/FormularioControlVolumen.cpp:867
+#: src/Pantallas/FormularioControlVolumen.cpp:880
 msgid "Solo SL y SR"
 msgstr "Seulement SL et SR"
 
-#: FormularioControlVolumen.cpp:642 FormularioControlVolumen.cpp:881
+#: src/Pantallas/FormularioControlVolumen.cpp:642
+#: src/Pantallas/FormularioControlVolumen.cpp:881
 msgid "Solo RL y RR"
 msgstr "Seulement RL et RR"
 
-#: FormularioControlVolumen.cpp:856
+#: src/Pantallas/FormularioControlVolumen.cpp:856
 msgid "Personalizado"
 msgstr "Personalizado"
 
-#: PantallaPrincipal.cpp:129
+#: src/Pantallas/PantallaPrincipal.cpp:129
 msgid "Cerrar"
 msgstr "Fermer"
 
-#: PantallaPrincipal.cpp:129
+#: src/Pantallas/PantallaPrincipal.cpp:129
 msgid "Cierra el programa"
 msgstr "Fermer le programme"
 
-#: PantallaPrincipal.cpp:132
+#: src/Pantallas/PantallaPrincipal.cpp:132
 msgid "Panel de Dispositivos de Audio"
 msgstr "Panneau des périphériques audio"
 
-#: PantallaPrincipal.cpp:133
+#: src/Pantallas/PantallaPrincipal.cpp:133
 msgid "Le permite ajustar el volumen de la mezcla"
 msgstr "Permet de régler le volume du mix"
 
-#: PantallaPrincipal.cpp:134
+#: src/Pantallas/PantallaPrincipal.cpp:134
 msgid "Cambiar Idioma"
 msgstr "Changer la langue"
 
-#: PantallaPrincipal.cpp:137
+#: src/Pantallas/PantallaPrincipal.cpp:137
 msgid "Acerca"
 msgstr "À propos"
 
-#: PantallaPrincipal.cpp:137
+#: src/Pantallas/PantallaPrincipal.cpp:137
 msgid "Informacion del Programa"
 msgstr "Informations sur le programme"
 
-#: PantallaPrincipal.cpp:138 PantallaPrincipal.cpp:143
+#: src/Pantallas/PantallaPrincipal.cpp:138
+#: src/Pantallas/PantallaPrincipal.cpp:143
 msgid "Ayuda"
 msgstr "Aide"
 
-#: PantallaPrincipal.cpp:138
+#: src/Pantallas/PantallaPrincipal.cpp:138
 msgid "Ayuda del programa"
 msgstr "Aide au programme"
 
-#: PantallaPrincipal.cpp:141
+#: src/Pantallas/PantallaPrincipal.cpp:141
 msgid "Archivo"
 msgstr "Archiver"
 
-#: PantallaPrincipal.cpp:142
+#: src/Pantallas/PantallaPrincipal.cpp:142
 msgid "Opciones"
 msgstr "Les choix"
 
-#: PantallaPrincipal.cpp:154
+#: src/Pantallas/PantallaPrincipal.cpp:154
 msgid "Dispositivo de Entrada"
 msgstr "Dispositif d'entrée"
 
-#: PantallaPrincipal.cpp:162 PantallaPrincipal.cpp:188
+#: src/Pantallas/PantallaPrincipal.cpp:162
+#: src/Pantallas/PantallaPrincipal.cpp:188
 msgid "Canales"
 msgstr "Chaînes"
 
-#: PantallaPrincipal.cpp:167 PantallaPrincipal.cpp:192
+#: src/Pantallas/PantallaPrincipal.cpp:167
+#: src/Pantallas/PantallaPrincipal.cpp:192
 msgid "Frecuencia de Muestreo"
 msgstr "Fréquence d'échantillonnage"
 
-#: PantallaPrincipal.cpp:177 PantallaPrincipal.cpp:203
+#: src/Pantallas/PantallaPrincipal.cpp:177
+#: src/Pantallas/PantallaPrincipal.cpp:203
 msgid "Altas frecuencias de muestreo pueden incrementar el uso del CPU"
 msgstr ""
 "Des taux d'échantillonnage élevés peuvent augmenter l'utilisation du "
 "processeur"
 
-#: PantallaPrincipal.cpp:180
+#: src/Pantallas/PantallaPrincipal.cpp:180
 msgid "Dispositivo de Salida"
 msgstr "Dispositif de sortie"
 
-#: PantallaPrincipal.cpp:206
+#: src/Pantallas/PantallaPrincipal.cpp:206
 msgid "Refrescar"
 msgstr "Actualiser"
 
-#: PantallaPrincipal.cpp:208
+#: src/Pantallas/PantallaPrincipal.cpp:208
 msgid "Codificar"
 msgstr "Encoder"
 
-#: PantallaPrincipal.cpp:210
+#: src/Pantallas/PantallaPrincipal.cpp:210
 msgid "Detener"
 msgstr "Arrêtez"
 
-#: PantallaPrincipal.cpp:1489
+#: src/Pantallas/PantallaPrincipal.cpp:1604
 msgid "Acerca de este programa"
 msgstr "À propos de ce programme"
 
-#: PantallaPrincipal.cpp:1499
+#: src/Pantallas/PantallaPrincipal.cpp:1614
 msgid "Ayuda de este programa"
 msgstr "Aide de ce programme"
 
-#: PantallaPrincipal.cpp:1554
+#: src/Pantallas/PantallaPrincipal.cpp:1669
 msgid "Por favor elija un idioma:"
 msgstr "Veuillez choisir une langue:"
 
-#: PantallaPrincipal.cpp:1555
+#: src/Pantallas/PantallaPrincipal.cpp:1670
 msgid "Idiomas disponibles"
 msgstr "Langues disponibles"
 
-#: PantallaPrincipal.cpp:1566
+#: src/Pantallas/PantallaPrincipal.cpp:1681
 msgid "Los cambios se efectuaran despues de que reinicie el programa"
 msgstr "Des modifications seront apportées après le redémarrage du programme"
 
-#: PantallaPrincipal.cpp:1566
+#: src/Pantallas/PantallaPrincipal.cpp:1681
 msgid "Notificacion"
 msgstr "Notification"
 
-#: PantallaPrincipal.cpp:1598
+#: src/Pantallas/PantallaPrincipal.cpp:1713
 msgid "Abrir Pantalla Principal"
 msgstr "Ouvrir l'écran principal"
 
-#: PantallaPrincipal.cpp:1600
+#: src/Pantallas/PantallaPrincipal.cpp:1715
 msgid "Reiniciar Sonido"
 msgstr "Réinitialiser le son"
 
-#: PantallaPrincipal.cpp:1604
+#: src/Pantallas/PantallaPrincipal.cpp:1719
 msgid "Abrir Panel Dispositivos de Audio"
 msgstr "Ouvrir le panneau des périphériques audio"
 
-#: PantallaPrincipal.cpp:1607
+#: src/Pantallas/PantallaPrincipal.cpp:1722
 msgid ""
 "Marque para no utilizar la compresion del rango dinamico. Usualmente las "
 "peliculas o videos tiene un rango dinamico o volumen menor a los juegos. Use "
@@ -470,10 +498,13 @@ msgstr ""
 "les jeux. Utilisez ce mode lorsque vous considérez que le volume de ce que "
 "vous jouez est très faible"
 
-#: PantallaPrincipal.cpp:1609
+#: src/Pantallas/PantallaPrincipal.cpp:1724
 msgid "Modos de Rango Dinamico"
 msgstr "Modes de plage dynamique"
 
-#: PantallaPrincipal.cpp:1618
+#: src/Pantallas/PantallaPrincipal.cpp:1733
 msgid "Cerrar Programa"
 msgstr "Fermer le programme"
+
+#~ msgid "Dispositivo no compatible, elija otro por favor"
+#~ msgstr "Appareil non compatible, veuillez en choisir un autre"
